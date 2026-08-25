@@ -1,159 +1,233 @@
-# Day 1: Python Basics
+# 🐍 Python Basics — Day 1
 
-## 🖨️ Print Function
-The `print()` function displays output on the screen.
+> 🚀 Start of my AI/ML Journey  
+> 📅 Day 1 — Python Fundamentals
 
-**Example:**
+---
+
+## 📌 1. First Program
+
+Python me `print()` function ka use output show karne ke liye hota hai.
+
 ```python
-print("Hello, World!")
-Output: Hello, World!
+print("Hello World")
+````
 
-You can use both double quotes (" ") and single quotes (' ') inside print().
+👉 Jo bhi text quotes (`" "` ya `' '`) ke andar hota hai, wahi output me print hota hai.
 
-📦 Variables
-A variable is a container that stores data.
+---
 
-Example:
+## 📌 2. Variables
 
-python
+Variable ek container hota hai jisme hum data store karte hain.
+
+```python
 name = "Sohail"
-age = 25
-Rules for Variable Names:
-Cannot start with a number (e.g., 5name is invalid)
+num = 52
+```
 
-Cannot contain special symbols like #, $, %
+### ⚠️ Rules for Variable Names
 
-Python is case-sensitive — name and Name are different.
+* Number se start nahi ho sakta ❌ (e.g. `5name`)
+* Special symbols allowed nahi ❌ (`#`, `$`, `%`)
+* Case-sensitive hote hain
+  👉 `name` aur `Name` alag variables hain
 
-📊 Data Types in Python
-Data Type	Description	Example
-String (str)	Text inside quotes	"Sohail", "22"
-Integer (int)	Whole numbers	5, -1, 0
-Float	Decimal numbers	50.22, 3.14
-Boolean (bool)	True or False	True, False
-NoneType	Empty or nothing	None
-⚠️ Important Notes:
-True, False, and None always start with a capital letter.
+---
 
-Python is case-sensitive — true is not the same as True.
+## 📌 3. Data Types
 
-🔑 Keywords
-Reserved words in Python that cannot be used as variable names.
+### 🔹 String (`str`)
 
-Common Keywords:
+Quotes ke andar likha hua data string hota hai
 
-text
-and, as, assert, break, class, continue, def, del, elif, else, except,
-finally, for, from, False, global, if, import, in, is, lambda, None,
-nonlocal, not, or, pass, raise, return, True, try, while, with, yield
-💬 Comments in Python
-Comments are used to make code more readable and are ignored by Python.
+```python
+name = "Sohail"
+num = "22"
+```
 
-Single-line comment:
+---
 
-python
+### 🔹 Integer (`int`)
+
+Whole numbers (without decimal)
+
+```python
+num = 4
+```
+
+---
+
+### 🔹 Float (`float`)
+
+Decimal numbers
+
+```python
+price = 50.22
+```
+
+---
+
+### 🔹 Boolean (`bool`)
+
+True ya False values
+
+```python
+a = True
+print(type(a))  # bool
+```
+
+---
+
+### 🔹 None
+
+Empty / no value
+
+```python
+a = None
+```
+
+---
+
+## ⚠️ Important
+
+* `True`, `False`, `None` → capital letter se start hote hain
+* Python case-sensitive language hai
+
+---
+
+## 📌 4. Keywords
+
+Keywords reserved words hote hain (inko variable name nahi bana sakte)
+
+```text
+and, or, not, if, else, for, while, break, continue,
+True, False, None, def, return, class, try, except
+```
+
+---
+
+## 📌 5. Comments
+
+Code me explanation ya notes likhne ke liye use hote hain.
+
+### Single-line comment
+
+```python
 # This is a comment
-print("Hello")
-Multi-line comment (Shortcut): Ctrl + /
+```
 
-📌 Alternate multi-line comment: Use """ """ or ''' ''' (triple quotes).
+### Shortcut
 
-➕ Arithmetic Operations
-Python follows the BODMAS rule.
+```
+Ctrl + /
+```
 
-Example:
+---
 
-python
+## 📌 6. Basic Operation
+
+```python
 a = 96
 b = 4
-print(a + b)  # Output: 100
-🔢 Operators in Python
-Arithmetic Operators
-Operator	Description	Example
-+	Addition	a + b
--	Subtraction	a - b
-*	Multiplication	a * b
-/	Division (float)	a / b
-%	Modulus (remainder)	a % b
-**	Exponentiation	a ** b
-Relational / Comparison Operators
-Operator	Description	Example
-==	Equal to	a == b
-!=	Not equal to	a != b
->	Greater than	a > b
-<	Less than	a < b
->=	Greater than or equal to	a >= b
-<=	Less than or equal to	a <= b
-Assignment Operators
-Operator	Description	Example
-=	Assign value	a = 5
-+=	Add and assign	a += 3
--=	Subtract and assign	a -= 2
-*=	Multiply and assign	a *= 4
-/=	Divide and assign	a /= 2
-%=	Modulus and assign	a %= 3
-**=	Power and assign	a **= 2
-Logical Operators
-Operator	Description
-and	Returns True if both are true
-or	Returns True if at least one is true
-not	Reverses the boolean value
-🔄 Type Conversion & Casting
-Implicit Type Conversion (Automatic)
-Python automatically converts one data type to another.
+print(a + b)
+```
 
-Example:
+👉 Output: `100`
+👉 Python BODMAS rule follow karta hai
 
-python
-a = 1       # int
-b = 2.0     # float
-sum = a + b
-print(sum)  # Output: 3.0 (float)
-⚠️ Error Case:
+---
 
-python
-a = 1
-b = "2"
-print(a + b)  # ❌ TypeError
-Explicit Type Casting (Manual)
-We can force convert using int(), float(), str(), etc.
+## 📌 7. Operators
 
-Example:
+### ➕ Arithmetic
 
-python
-a = 1
-b = "2"
-c = int(b)      # Convert string to int
-print(a + c)    # Output: 3
-⌨️ Taking Input from User
-Syntax:
+```
++, -, *, /, %, **
+```
 
-python
-input("Enter something: ")
-⚠️ Note: The result of input() is always a string.
+### 🔍 Comparison
 
-To Convert Input:
-python
+```
+==, !=, >, <, >=, <=
+```
+
+### 📝 Assignment
+
+```
+=, +=, -=, *=, /=, %=, **=
+```
+
+### 🧠 Logical
+
+```
+and, or, not
+```
+
+---
+
+## 📌 8. Type Conversion (Automatic)
+
+```python
+a, b = 1, 2.0
+print(a + b)  # 3.0
+```
+
+---
+
+## ❌ Error Example
+
+```python
+a, b = 1, "2"
+print(a + b)  # TypeError
+```
+
+---
+
+## 📌 9. Type Casting (Manual)
+
+```python
+a, b = 1, "2"
+c = int(b)
+print(a + c)  # 3
+```
+
+---
+
+## 📌 10. Input in Python
+
+```python
 name = input("Enter your name: ")
-age = int(input("Enter your age: "))   # Convert to int
-height = float(input("Enter height: ")) # Convert to float
-📌 Summary
-print() → Output
+```
 
-input() → Input (always string)
+👉 Default input string hota hai
 
-# → Single-line comment
+### Convert Input
 
-int(), float(), str() → Type casting
+```python
+num = int(input("Enter number: "))
+price = float(input("Enter price: "))
+```
 
-Python is case-sensitive
+---
 
-True, False, None → Capital first letter
+# 🚀 Summary
 
-Variables cannot start with numbers or special symbols
+* `print()` → output show karta hai
+* Variables → data store karte hain
+* Data Types → str, int, float, bool, None
+* Python case-sensitive hai
+* Operators → operations perform karte hain
+* Type casting → data convert karta hai
+* `input()` → user input leta hai
 
-✍️ Created by: Sohail Ansari
-📅 Date: 23 August 2026
-🚀 Goal: Build strong Python foundation for AI/ML
+---
 
-#BuildInPublic #Python #BCA #AI #100DaysOfCode
+# 📈 Progress
+
+* [x] Day 1 Completed ✅
+* [ ] Day 2 Coming Soon 🚀
+
+---
+
+# 🔥 #BuildInPublic
