@@ -119,3 +119,94 @@ else:
     print("too sort")
 
 
+"""Q5. [Middle Character Extractor]
+User se ek string lo. Program us string ka middle character (ya characters) print kare:
+Agar string ki length odd hai, toh exact middle character print karo (e.g., "abcde" → "c").
+Agar length even hai, toh dono middle characters print karo (e.g., "abcd" → "bc")."""
+text = input("enter any string: ")
+if (len(text)%2!=0):
+    print(text[len(text)//2])
+
+else:
+    print(text[(len(text)//2)-1:(len(text)//2)+1])
+
+
+"""Q6. [Replace with Condition]
+User se ek sentence input lo. Agar us sentence mein "python" word aata hai,
+toh usko "Java" se replace karo aur new sentence print karo. Lekin agar "python" nahi aata, 
+toh sentence ko uppercase mein convert karke print karo."""
+sent = input("enter a sentence: ")
+if ("python" in sent):
+    print(sent.replace("python","Java"))
+else:
+    print(sent.upper())
+
+
+"""Q7. Ek program likho jo yeh exact pattern print kare (using \n and \t):
+Name:    Sohail
+Age:     25
+City:    Delhi"""
+print("Name:\tSohail\nAge:\t25\nCity:\tDelhi")
+
+
+"""Q8. [Concatenation + Slicing Combo]
+Do strings lo a = "Hello" aur b = "World". Inko aise jodo ki output aaye: "Hello World".
+Ab is final string ka pehla character, aakhri character, aur length print karo.
+Phir check karo:
+Agar length 10 se zyada hai, toh "Long string" print karo.
+Else "Short string"."""
+a = "Hello"
+b = "World"
+char = a + " " + b
+print(char)
+print(char[0])
+print(char[-1])
+print(len(char))
+if (len(char)>10):
+    print("long string")
+else:
+    print("short string")
+
+
+"""Q9. [Nested If – Grade Calculator]
+User se ek number (0 se 100 ke beech) input lo. Nested if ka use karke grade assign karo:
+Agar number >= 90 → "A"
+Agar number >= 80 aur < 90 → "B"
+Agar number >= 70 aur < 80 → "C"
+Agar number >= 60 aur < 70 → "D"
+Agar number < 60 → "Fail"
+Lekin condition yeh hai: Pehle check karo ki number 0 se 100 ke beech hai ya nahi. 
+Agar nahi hai, toh "Invalid score" print karo, bina grade check kiye."""
+num = int(input("enter your marks: "))
+if (0<= num <= 100):
+    if (num>=90):
+        print("your grade is A")
+    elif (90>num>=80):
+        print("your grade is B")
+    elif (80>num>=70):
+        print("your grade is C")
+    elif (70>num>=60):
+        print("your grade is D")
+    else:
+        print("sorry you are fail")
+else:
+    print("invalid score")
+
+
+"""Q10. [The Ultimate Brain Teaser – Output Prediction]
+Bina code run kiye, neeche diye code ka exact output batao, aur reason bhi likho ki kyun aaya:
+s = "aAbBcC"
+print(s.find('b'))
+print(s.count('B'))
+print(s[::2])   # Step 2
+print(s[-1::-1]) # Reverse
+
+if s[2] > s[3]:
+    print("True")
+else:
+    print("False")"""
+# print(s.find('b')) output - 2
+# print(s.count('B')) output - 1
+# print(s[::2]) output - abc
+# print(s[-1::-1]) oputput - CcBbAa
+# or if else vale ka output - True 
