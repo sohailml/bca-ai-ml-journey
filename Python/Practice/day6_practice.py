@@ -62,3 +62,55 @@ Hint : use list & index as parameters"""
 # fruites = ["mango","orange","papita"]
 # ele(fruites)
 
+#basic test - python
+"""Q1. The Stepped Recursion
+Ek recursive function likho print_stepped(lst, step=1) jo list ke elements ko step ke hisaab se print kare.
+
+Default step=1 → normal order (0,1,2,3...)
+
+Agar step=2 → index 0,2,4,... print kare
+
+Base case handle karo (jab index list length se bahar ho).
+Bina kisi loop ke, sirf recursion."""
+# def print_stepped(lst, idx=0, step=1):
+#     if idx >= len(lst):
+#         return
+#     print(lst[idx], end=" ")
+#     print_stepped(lst, idx + step, step)
+# print_stepped([10, 20, 30, 40, 50], step=2)
+
+
+"""Q2. Reverse String – Recursive Way
+Ek function reverse_str(s) likho jo string ko recursively reverse kare aur return kare.
+Condition: Slicing ([::-1]) use nahi karna. Sirf concatenation (+) aur recursion.
+(Hint socho: base case empty string, return last char + reverse(rest))"""
+# def reverse_str(s):
+#     if len(s) <= 1:
+#         return s
+#     return s[-1] + reverse_str(s[:-1])
+# print(reverse_str("hello"))
+
+
+"""Q3. Default Parameter Trap
+Ek function multiply(n=1, times=1) likho jo n ko times baar multiply karke return kare (i.e., n ** times).
+Par agar user sirf ek argument deta hai (e.g., multiply(3)), toh usko n maano aur times default 1 rahe.
+Agar koi argument nahi deta, toh n=1, times=1 → return 1.
+Twist: Function ko call karo multiply(times=3) – output kya hoga? (Bina run kiye batao aur reason do)"""    
+# def multiply(n=1, times=1):
+#     return(n**times)
+# print(multiply(times=3))
+
+
+"""Q4. The Sorted List Checker (Recursion)
+Function is_sorted(lst) likho jo recursively check kare ki list ascending order mein sorted hai ya nahi.
+Empty list ya single element → True
+Compare first two, fir rest pe recursion.
+Output predict karo: is_sorted([1, 3, 2]) kya return karega?"""
+# def is_sorted(lst):
+#     if len(lst) <= 1:
+#         return True
+#     if lst[0] > lst[1]:
+#         return False
+#     return is_sorted(lst[1:])
+# print(is_sorted([1, 3, 2]))
+# print(is_sorted([1, 2, 3]))
