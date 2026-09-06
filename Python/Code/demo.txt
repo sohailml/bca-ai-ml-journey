@@ -1,0 +1,3 @@
+I am learning.
+Python then i'll learn numpythen i'll learn numpy
+after that pandas
