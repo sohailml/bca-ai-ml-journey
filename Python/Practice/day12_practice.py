@@ -44,3 +44,18 @@ that inherits properties from Employee & has additional attributes: name & age."
 
 """Q3: Create a class called Order which stores item & its price.
 Use Dunder function __gt__() to convey that: order1 > order2 if price of order1 > price of order2"""
+class Order:
+    def __init__(self, item, price):
+        self.item = item
+        self.price = price
+
+    def __gt__(self, other):
+        return self.price > other.price
+
+order1 = Order("Chips", 20)
+order2 = Order("Chocolate", 50)
+
+if order1 > order2:
+    print(order1.item,"is more costly then",order2.item)
+else:
+    print(order2.item,"is more costly then",order1.item)
