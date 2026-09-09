@@ -110,7 +110,7 @@ class person:
         cls.name = name
 
 p1 = person()
-p1.change("sohail")
+p1.changeName("sohail")
 print(p1.name)
 print(person.name)
 
