@@ -1,0 +1,1 @@
+today I can't study git and GitHub because today is my college introduction session in which they told about courses and there will be 2 class in a week Saturday or Sunday and Tommorow is my first classes which is about c language may be. 
