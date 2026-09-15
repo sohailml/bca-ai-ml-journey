@@ -1,0 +1,240 @@
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code
+$ git -- version
+unknown option: --
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]
+           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]
+           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code
+$ git --version
+git version 2.55.0.windows.5
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code
+$ git init
+Initialized empty Git repository in C:/startup-project/bca-aiml/git-github/Code/.git/
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.css
+        index.html
+        index.txt
+        style.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code (master)
+$ git config --global user.name "Sohail Ansari"
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code (master)
+$ git config --global user.email "sohail.ai.work@gmail.com"
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code (master)
+$ git add index.css
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.css
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+        index.txt
+        style.css
+
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code (master)
+$ git add index.html
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code (master)
+$ git log
+fatal: your current branch 'master' does not have any commits yet
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.css
+        new file:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.txt
+        style.css
+
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code (master)
+$ git commit -m "initial website ready!"
+[master (root-commit) c6161ed] initial website ready!
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.css
+ create mode 100644 index.html
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code (master)
+$ git log
+commit c6161eddc744e80e98aca050c4c4e04266e4c8a6 (HEAD -> master)
+Author: Sohail Ansari <sohail.ai.work@gmail.com>
+Date:   Mon Sep 14 15:29:47 2026 +0530
+
+    initial website ready!
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code (master)
+$ git add index.txt style.css
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code (master)
+$ git commit -m "add extra file"
+[master d592ccd] add extra file
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.txt
+ create mode 100644 style.css
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code (master)
+$ git log
+commit d592ccd455eb9d12d522b1d7fa5172189d201ecc (HEAD -> master)
+Author: Sohail Ansari <sohail.ai.work@gmail.com>
+Date:   Mon Sep 14 15:36:53 2026 +0530
+
+    add extra file
+
+commit c6161eddc744e80e98aca050c4c4e04266e4c8a6
+Author: Sohail Ansari <sohail.ai.work@gmail.com>
+Date:   Mon Sep 14 15:29:47 2026 +0530
+
+    initial website ready!
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code (master)
+$ git log --oneline
+d592ccd (HEAD -> master) add extra file
+c6161ed initial website ready!
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.css
+        modified:   index.txt
+        modified:   style.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code (master)
+$ git add .
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.css
+        modified:   index.txt
+        modified:   style.css
+
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code (master)
+$ git restore --staged index.css
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.txt
+        modified:   style.css
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.css
+
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code (master)
+$ git commit  -m "fixed styles"
+[master 4859249] fixed styles
+ 2 files changed, 2 insertions(+)
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code (master)
+$ git log --online
+fatal: unrecognized argument: --online
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code (master)
+$ gi log --oneline
+bash: gi: command not found
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code (master)
+$ git log --oneline
+4859249 (HEAD -> master) fixed styles
+d592ccd add extra file
+c6161ed initial website ready!
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code (master)
+$
+
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/ecom-electronics
+$ git init
+Initialized empty Git repository in C:/startup-project/bca-aiml/git-github/ecom-electronics/.git/
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/ecom-electronics (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/ecom-electronics (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+        style.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/ecom-electronics (master)
+$ git add .
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/ecom-electronics (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+        new file:   style.css
+
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/ecom-electronics (master)
+$ 
