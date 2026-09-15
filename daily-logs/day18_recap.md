@@ -1,160 +1,75 @@
-# 📘 Day 18 Log — AI/ML Journey
+## 📝 Daily Log – Day 18
 
-> 🚀 Building in Public
-> 📅 Day 18 — Git Basics Started
+Aaj meri journey ka 18th day tha.
 
----
-
-## 🧠 Aaj maine kya kiya
-
-so day 18 of my journey
-
-kal maine git install kar liya tha
-
-aur aaj maine uska setup aur basics start kiya
-
-aaj maine git aur github ke bare me padha
-
-ki git kisne banaya aur kyun banaya
-
-👉 git **Linus Torvalds** ne banaya
-
-kyunki pehle ye track karna mushkil tha ki kisne code me kya changes kiye
-
-is problem ko solve karne ke liye git banaya gaya — ek **version control system**
+Kal maine Git install kiya tha, aur aaj uska proper setup complete kiya.
 
 ---
 
-## 💻 Practice / Kaam
+### 📚 Aaj kya seekha:
 
-### 🔹 Version Control System
+Aaj maine Git aur GitHub ke baare me padha.
 
-2 type ke hote hain:
+* **Git** ko Linus Torvalds ne banaya tha
+* Iska main purpose code changes ko track karna hota hai
+* Maine **Version Control System (VCS)** ka concept samjha, aur uske types ke baare me bhi padha:
 
-* centralized
-* distributed
+  * Centralized
+  * Distributed
 
-👉 centralized me ek single server hota hai
-
-agar server down → sabka kaam ruk jata hai
-
-👉 distributed me har bande ka apna repo hota hai
-
-isliye safe aur flexible hota hai
+👉 In sab ka detailed explanation `notes` folder me available hai.
 
 ---
 
-### 🔹 Git vs GitHub
+### 🌐 GitHub:
 
-* Git → tool (local system pe kaam karta hai)
-* GitHub → storage platform (repositories store hoti hain)
-
-👉 jaise YouTube pe videos hoti hain
-
-👉 waise GitHub pe code repositories hoti hain
+* GitHub ek platform hai jahan repositories store hoti hain aur projects manage kiye jaate hain
 
 ---
 
-### 🔹 Git Working Flow (Basic)
+### ⚙️ Practical Learning:
 
-* Working Directory → jaha code hota hai
-* Staging Area → jaha selected files jaati hain
-* (aaj yahi tak padha)
+Aaj maine Git ka working process samjha, specially **staging area** tak.
 
----
+Saath hi kuch basic commands bhi sikhi:
 
-### 🔹 Commands jo maine seekhe
+* `git init`
+* `git add`
+* `git commit`
+* `git status`
+* `git log`
 
-```bash
-git --version
-```
-
-👉 git ka version check karne ke liye
-
-```bash
-git init
-```
-
-👉 folder ko git repository banane ke liye
-
-```bash
-git config --global user.name "Your Name"
-git config --global user.email "Your Email"
-```
-
-👉 apni identity set karne ke liye
-
-```bash
-git status
-```
-
-👉 current state check karne ke liye
-
-```bash
-git add filename
-```
-
-👉 file ko staging area me bhejne ke liye
-
-```bash
-git add .
-```
-
-👉 saari files ek sath add karne ke liye
-
-```bash
-git commit -m "message"
-```
-
-👉 changes save karne ke liye
-
-```bash
-git log
-git log --oneline
-```
-
-👉 commit history dekhne ke liye
-
-```bash
-git restore --staged filename
-```
-
-👉 galti se add ki hui file wapas lene ke liye
+👉 In commands ka detailed explanation bhi `notes` folder me hai.
 
 ---
 
-## 🧠 Mujhe kya samajh aaya
+### 🎓 Learning Source:
 
-* git ka main purpose tracking hai
-* har change ka record rakha jata hai
-* GitHub ek tarah ka online storage hai code ke liye
-* commands use karke pura workflow control hota hai
+Main Git aur GitHub **CodeWithHarry YouTube channel** se padh raha hoon.
 
 ---
 
-## ⚠️ Problem / Confusion
+### 📂 Notes & Practice:
 
-* abhi tak pura flow clear nahi hai (commit ke baad kya hota hai etc)
-* thoda command yaad rakhne me time lagega
-
----
-
-## 🚀 Next Plan
-
-* kal Git ka next part padhunga
-* full workflow samjhunga (commit → push etc)
-* practice bhi karunga
+* Jo bhi padh raha hoon uske **detailed notes** maine `git-github` folder ke `notes` section me maintain kiye hain
+  *(handbook + cheatsheet)*
+* Aur `code` folder me maine apna **practice code aur terminal commands** ka record rakha hai
 
 ---
 
-## 💭 Personal Note
+## ⚠️ Problems / Confusion
 
-aaj thoda technical start hua Git ka
-
-starting me thoda confusing lag raha hai
-
-but lag raha hai ki ek baar flow samajh aa gaya to powerful tool hai 🔥
+* Abhi full workflow (staging → commit → push) thoda confusing lag raha hai
+* Commands yaad rakhne me thoda time lagega
 
 ---
 
-# 🔥 #BuildInPublic
+## 🎯 Kal ka plan
+
+* Git workflow complete karna (commit → push → remote)
+* GitHub pe repo properly connect karna
+* Commands ka practice karna
+
+---
+
+# #buildinpublic 🚀
