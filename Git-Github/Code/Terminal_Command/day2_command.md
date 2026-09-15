@@ -344,3 +344,111 @@ Switched to branch 'ui'
 
 Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/ecom-electronics (ui)
 $
+
+
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/ecom-electronics (ui)
+$ git branch
+  master
+* ui
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/ecom-electronics (ui)
+$ git switch master
+Switched to branch 'master'
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/ecom-electronics (master)
+$ git branch
+* master
+  ui
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/ecom-electronics (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        info2/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/ecom-electronics (master)
+$ git switch ui
+Switched to branch 'ui'
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/ecom-electronics (ui)
+$ git status
+On branch ui
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        info2/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/ecom-electronics (ui)
+$ git add .
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/ecom-electronics (ui)
+$ git commit -m "added e "
+[ui c0166d1] added e
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 info2/.gitkeep
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/ecom-electronics (ui)
+$ git log --oneline
+c0166d1 (HEAD -> ui) added e
+012b5af commict c
+25b7f8b added B
+1e80235 added A
+04543c6 added img and info directories
+1946154 added buids in gitignore
+a902597 Added .gitignore
+05c5d07 added asstes
+6f2c276 Added nav bar and a container
+42b8f29 added base file
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/ecom-electronics (ui)
+$ git branch
+  master
+* ui
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/ecom-electronics (ui)
+$ git switch master
+Switched to branch 'master'
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/ecom-electronics (master)
+$ git merge ui
+Merge made by the 'ort' strategy.
+ index.html                         | 16 ----------------
+ assets/login.svg => info2/.gitkeep |  0
+ assets/photo.jpg => login.svg      |  0
+ photo.jpg                          |  0
+ 4 files changed, 16 deletions(-)
+ delete mode 100644 index.html
+ rename assets/login.svg => info2/.gitkeep (100%)
+ rename assets/photo.jpg => login.svg (100%)
+ create mode 100644 photo.jpg
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/ecom-electronics (master)
+$ git log --oneline
+55ee521 (HEAD -> master) Merge branch 'ui'
+c0166d1 (ui) added e
+6b02c5e commit D
+012b5af commict c
+25b7f8b added B
+1e80235 added A
+04543c6 added img and info directories
+1946154 added buids in gitignore
+a902597 Added .gitignore
+05c5d07 added asstes
+6f2c276 Added nav bar and a container
+42b8f29 added base file
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/ecom-electronics (master)
+$ git branch -d ui
+Deleted branch ui (was c0166d1).
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/ecom-electronics (master)
+$ git branch
+* master
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/ecom-electronics (master)
+$
