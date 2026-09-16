@@ -104,7 +104,19 @@ git merge ui
 
 ---
 
-## 📌 8. Why Branching is Important 🤔
+## 📌 8. Deleting Branch
+
+Jab hum apna kaam complete kar lete hain, and hame vo purani branch delete karni ho to us branch ko delete kiya ja sakta hai
+
+```bash
+git branch -d ui
+```
+
+👉 Isse `ui` branch delete ho jayega
+
+---
+
+## 📌 9. Why Branching is Important 🤔
 
 👉 Safe development (main code safe rehta hai)  
 👉 Multiple features ek sath develop kar sakte hain  
@@ -112,7 +124,7 @@ git merge ui
 
 ---
 
-## 📌 9. Practice & Workflow
+## 📌 10. Practice & Workflow
 
 👉 Aaj maine:
 - `.gitignore` use karna seekha  
@@ -125,7 +137,7 @@ git merge ui
 
 ---
 
-## 📌 10. What’s Next 🚀
+## 📌 11. What’s Next 🚀
 
 👉 Next topics:
 - Merge Conflicts  
