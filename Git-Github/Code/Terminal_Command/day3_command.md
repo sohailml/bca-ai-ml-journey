@@ -392,3 +392,206 @@ a902597 Added .gitignore
 
 Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code/ecom-electronics (master)
 $
+
+
+# git rebase
+
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code/ecom-electronics (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code/ecom-electronics (master)
+$ git log --oneline
+5cfb919 (HEAD -> master, tag: v2) release 2
+38fa979 (tag: v1.0) release 1
+984e33d commit
+204cf28 rename photo to logo
+1df7891 merging
+b60eba3 commit B
+53c99ca commit A
+55ee521 Merge branch 'ui'
+c0166d1 added e
+6b02c5e commit D
+012b5af commict c
+25b7f8b added B
+1e80235 added A
+04543c6 added img and info directories
+1946154 added buids in gitignore
+a902597 Added .gitignore
+05c5d07 added asstes
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code/ecom-electronics (master)
+$ git log --oneline -5
+5cfb919 (HEAD -> master, tag: v2) release 2
+38fa979 (tag: v1.0) release 1
+984e33d commit
+204cf28 rename photo to logo
+1df7891 merging
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code/ecom-electronics (master)
+$ git switch -c feture/login
+Switched to a new branch 'feture/login'
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code/ecom-electronics (feture/login)
+$ git branch
+* feture/login
+  master
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code/ecom-electronics (feture/login)
+$ git add .
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code/ecom-electronics (feture/login)
+$ git commit -m "added login"
+[feture/login ea1b391] added login
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code/ecom-electronics (feture/login)
+$ git log --oneline -5
+ea1b391 (HEAD -> feture/login) added login
+5cfb919 (tag: v2, master) release 2
+38fa979 (tag: v1.0) release 1
+984e33d commit
+204cf28 rename photo to logo
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code/ecom-electronics (feture/login)
+$ git swtich master
+git: 'swtich' is not a git command. See 'git --help'.
+
+The most similar command is
+        switch
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code/ecom-electronics (feture/login)
+$ git switch
+fatal: missing branch or commit argument
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code/ecom-electronics (feture/login)
+$ git switch master
+Switched to branch 'master'
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code/ecom-electronics (master)
+$ git add .
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code/ecom-electronics (master)
+$ git commit -m "commit dummy"
+[master 3ed2b36] commit dummy
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code/ecom-electronics (master)
+$ touch this.md
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code/ecom-electronics (master)
+$ git add .;
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code/ecom-electronics (master)
+$ git add .
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code/ecom-electronics (master)
+$ git commit -m "create new file"
+[master 0488f87] create new file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 this.md
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code/ecom-electronics (master)
+$ git log --oneline
+0488f87 (HEAD -> master) create new file
+3ed2b36 commit dummy
+5cfb919 (tag: v2) release 2
+38fa979 (tag: v1.0) release 1
+984e33d commit
+204cf28 rename photo to logo
+1df7891 merging
+b60eba3 commit B
+53c99ca commit A
+55ee521 Merge branch 'ui'
+c0166d1 added e
+6b02c5e commit D
+012b5af commict c
+25b7f8b added B
+1e80235 added A
+04543c6 added img and info directories
+1946154 added buids in gitignore
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code/ecom-electronics (master)
+$ git switch feture/login
+Switched to branch 'feture/login'
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code/ecom-electronics (feture/login)
+$ git rebase master
+Auto-merging dummyA.txt
+CONFLICT (content): Merge conflict in dummyA.txt
+error: could not apply ea1b391... added login
+hint: Resolve all conflicts manually, mark them as resolved with
+hint: "git add/rm <conflicted_files>", then run "git rebase --continue".
+hint: You can instead skip this commit: run "git rebase --skip".
+hint: To abort and get back to the state before "git rebase", run "git rebase --abort".
+hint: Disable this message with "git config set advice.mergeConflict false"
+Could not apply ea1b391... # added login
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code/ecom-electronics (feture/login|REBASE 1/1)
+$ git rebase master
+fatal: It seems that there is already a rebase-merge directory, and
+I wonder if you are in the middle of another rebase.  If that is the
+case, please try
+        git rebase (--continue | --abort | --skip)
+If that is not the case, please
+        rm -fr ".git/rebase-merge"
+and run me again.  I am stopping in case you still have something
+valuable there.
+
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code/ecom-electronics (feture/login|REBASE 1/1)
+$ git log --oneline
+0488f87 (HEAD, master) create new file
+3ed2b36 commit dummy
+5cfb919 (tag: v2) release 2
+38fa979 (tag: v1.0) release 1
+984e33d commit
+204cf28 rename photo to logo
+1df7891 merging
+b60eba3 commit B
+53c99ca commit A
+55ee521 Merge branch 'ui'
+c0166d1 added e
+6b02c5e commit D
+012b5af commict c
+25b7f8b added B
+1e80235 added A
+04543c6 added img and info directories
+1946154 added buids in gitignore
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code/ecom-electronics (feture/login|REBASE 1/1)
+$ git switch master
+fatal: cannot switch branch while rebasing
+Consider "git rebase --quit" or "git worktree add".
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code/ecom-electronics (feture/login|REBASE 1/1)
+$ git merge feture/login
+error: Merging is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code/ecom-electronics (feture/login|REBASE 1/1)
+$ git log --oneline
+0488f87 (HEAD, master) create new file
+3ed2b36 commit dummy
+5cfb919 (tag: v2) release 2
+38fa979 (tag: v1.0) release 1
+984e33d commit
+204cf28 rename photo to logo
+1df7891 merging
+b60eba3 commit B
+53c99ca commit A
+55ee521 Merge branch 'ui'
+c0166d1 added e
+6b02c5e commit D
+012b5af commict c
+25b7f8b added B
+1e80235 added A
+04543c6 added img and info directories
+1946154 added buids in gitignore
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code/ecom-electronics (feture/login|REBASE 1/1)
+$
