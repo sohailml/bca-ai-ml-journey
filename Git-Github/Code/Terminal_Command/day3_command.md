@@ -268,3 +268,127 @@ $
 
 
 # git tags
+
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code/ecom-electronics (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code/ecom-electronics (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   style.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code/ecom-electronics (master)
+$ git add .
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code/ecom-electronics (master)
+$ git commit -m "release 1"
+[master 38fa979] release 1
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code/ecom-electronics (master)
+$ git tag
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code/ecom-electronics (master)
+$ git tag -a v1.0 -m "my release 1"
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code/ecom-electronics (master)
+$ git tag
+v1.0
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code/ecom-electronics (master)
+$ git log --oneline
+38fa979 (HEAD -> master, tag: v1.0) release 1
+984e33d commit
+204cf28 rename photo to logo
+1df7891 merging
+b60eba3 commit B
+53c99ca commit A
+55ee521 Merge branch 'ui'
+c0166d1 added e
+6b02c5e commit D
+012b5af commict c
+25b7f8b added B
+1e80235 added A
+04543c6 added img and info directories
+1946154 added buids in gitignore
+a902597 Added .gitignore
+05c5d07 added asstes
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code/ecom-electronics (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   dummyB.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code/ecom-electronics (master)
+$ git add .
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code/ecom-electronics (master)
+$ git commit -m "release 2"
+[master 5cfb919] release 2
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code/ecom-electronics (master)
+$ git tag
+v1.0
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code/ecom-electronics (master)
+$ git log --oneline
+5cfb919 (HEAD -> master) release 2
+38fa979 (tag: v1.0) release 1
+984e33d commit
+204cf28 rename photo to logo
+1df7891 merging
+b60eba3 commit B
+53c99ca commit A
+55ee521 Merge branch 'ui'
+c0166d1 added e
+6b02c5e commit D
+012b5af commict c
+25b7f8b added B
+1e80235 added A
+04543c6 added img and info directories
+1946154 added buids in gitignore
+a902597 Added .gitignore
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code/ecom-electronics (master)
+$ git tag v2
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code/ecom-electronics (master)
+$ git tag
+v1.0
+v2
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code/ecom-electronics (master)
+$ git log --oneline
+5cfb919 (HEAD -> master, tag: v2) release 2
+38fa979 (tag: v1.0) release 1
+984e33d commit
+204cf28 rename photo to logo
+1df7891 merging
+b60eba3 commit B
+53c99ca commit A
+55ee521 Merge branch 'ui'
+c0166d1 added e
+6b02c5e commit D
+012b5af commict c
+25b7f8b added B
+1e80235 added A
+04543c6 added img and info directories
+1946154 added buids in gitignore
+a902597 Added .gitignore
+
+Dell@Arbaaz MINGW64 /c/startup-project/bca-aiml/git-github/Code/ecom-electronics (master)
+$
