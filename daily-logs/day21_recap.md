@@ -71,7 +71,6 @@ Saath hi maine ye bhi samjha:
 
 ## 🎯 Kal ka plan
 
-* Git aur GitHub ka practical use start karna (real projects me)
 * GitHub pe consistency maintain karna (daily commits)
 * Next learning phase start karna
 
