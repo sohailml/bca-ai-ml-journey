@@ -1,0 +1,1 @@
+only typing practice and i decided to revise python because according to roadmap after git GitHub dsa in python will start but I thought that first I have to make strong command in python opps so Tommorow is Sunday so college day and from Monday yani day 25 se python revision start kar dunga multiple questions practice karunga projects banunga ye plan hai mera
