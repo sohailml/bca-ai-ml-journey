@@ -27,4 +27,4 @@ Build a strong command in Python (especially OOP) before starting DSA.
 
 ---
 
-💡 Consistency > Perfection. Just keep going.
+💡 Consistency > Perfection. 
