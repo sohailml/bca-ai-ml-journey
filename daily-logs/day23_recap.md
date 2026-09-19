@@ -1,1 +1,30 @@
-only typing practice and i decided to revise python because according to roadmap after git GitHub dsa in python will start but I thought that first I have to make strong command in python opps so Tommorow is Sunday so college day and from Monday yani day 25 se python revision start kar dunga multiple questions practice karunga projects banunga ye plan hai mera
+📅 Day 23 Log
+
+🧠 What I Did Today
+
+- Focused only on typing practice ⌨️
+- Took time to reflect on my roadmap
+
+🤔 Thoughts & Decisions
+
+According to my roadmap, after Git & GitHub, the next step is DSA in Python.
+But I realized that before jumping into DSA, I need a strong foundation in Python, especially OOP concepts.
+
+So I made a small but important decision 👉
+➡️ First, I will revise Python properly, then move to DSA.
+
+📌 Plan Ahead
+
+- Tomorrow (Sunday): College day 📚
+- From Monday (Day 25):
+  - Start Python revision
+  - Practice multiple questions
+  - Build small projects 🛠️
+
+🎯 Goal
+
+Build a strong command in Python (especially OOP) before starting DSA.
+
+---
+
+💡 Consistency > Perfection. Just keep going.
