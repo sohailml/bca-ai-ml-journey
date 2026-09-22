@@ -311,3 +311,46 @@ Q80. Ek program likho jo user se ek 5-digit number le aur uske saare digits ko a
 
 # ANSWER
 
+"""
+1 - print() function ke andar jo bhi hota hai vo usse print karta hai
+
+2 - option b and d variable nahi hai kyunki variable number se start nahi hota hai and special chracter nahi ho sakta
+
+3 - name and Name alag alag variables hai kyunki pyhton case senstive hota hai
+
+4 - a = int , b = float , c = string , d = bool , e = None , f = float
+
+5 - True None False ye capital letter mai likhte hai ye keywords hai small mai likh ke variable bana sakte hai but jo kaam True False ka hota hai vo nahi hoga fir
+
+6 - comment karne ka ek tarika hai aage # lagana or dusra multiline so triple comma mai likh sakte hai and vs code mai ctrl + / se bhi comment ho jata hai 
+
+7 - iska output hoga Hello fir new line ke bad World and new line ke bad Hello World
+
+8 - iska output hoga pehle 3.33 fir 3 fir 1 fir 1000
+
+9 - iska output hoga 3.0 and type float
+
+10 - iska output int fir  float fir string fir bool fir none
+
+11 - iska output 16
+
+12 - iska output False fir True fir True fir False
+
+13 - True = 1 False = 0 so output 2 fir 1 fir 0 fir 5
+
+14 - pehle 14 fir 20 fir 8.0 fir fir 512 , because 2 ** (3 ** 2) right-to-left associativity
+
+15 - b ki value 5
+
+16 - pehle 55 fir 555 fir 10
+
+"""
+# 17 - output 99
+# price = 99.99
+# print(int(price))
+
+# 18 - 
+# num1 = int(input("Enter first number: "))
+# num2 = int(input("Enter second number: "))
+# print(num1+num2)
+
