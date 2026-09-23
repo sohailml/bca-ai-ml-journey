@@ -429,16 +429,61 @@ Q80. Ek program likho jo user se ek 5-digit number le aur uske saare digits ko a
 
 # 40 - isme variable number se start hua hai isilye ye bug hai
 
+# 41 - isme bug ye hai ki type cast nahi hua hai or bina type cast ke add nahi hoga
+# num = int(input("Enter number: "))
+# result = num + 5
+# print(result)
 
+# 42 - isme error ayega ki price define nahi hai kyunkii hamne jo variable baana rakha ha vo captial se start hai or python case sensitve hota hai
 
+# 43 -   isme 4th[print(x + y)] line error degi kyunki bina type cast kiye add kar rahe hai
 
+# 44 - not divide by 0 erroe aayega [division by zero]
 
+# 45 - add nahi ho sakta diffrent data types sol = print("Result:", 5 + 5)  , print("Result:", 5 + int("5"))
 
+# 46 - Yahan "5" * 1 string repetition karta hai, conversion nahi. aise print to ho jayega 5 but type uska string hi rahega
 
+# 47 - skip 
+# num = int(input("Enter a number: "))
+# result = ["Even", "Odd"]
+# print(result[num % 2])
 
+# 48 - 
+# n = 456
+# last_digit = n%10
+# remaing_digit = n//10
+# middle_digit = remaing_digit%10
+# first_digit = n//100
 
+# print(first_digit+middle_digit+last_digit)
 
+# 49 - skip
 
+# 50 -
+# n = 12345
+# last = n%10
+# remain = n//10
+# last2 = remain%10
+# remain = remain//10
+# last3 = remain%10
+# remain = remain//10
+# last4 = remain%10
+# remain = remain//10
+# last5 = remain%10
+# print(str(last)+str(last2)+str(last3)+str(last4)+str(last5))
 
+# 53 - true true small number ek jaisa object isiliye
 
+# 54 -
+# seconds = int(input("Enter seconds: "))
 
+# hours = seconds // 3600
+# remaining = seconds % 3600
+
+# minutes = remaining // 60
+# seconds = remaining % 60
+
+# print(hours, "h", minutes, "m", seconds, "s")
+
+# 55 skip 56 skip
