@@ -354,3 +354,91 @@ Q80. Ek program likho jo user se ek 5-digit number le aur uske saare digits ko a
 # num2 = int(input("Enter second number: "))
 # print(num1+num2)
 
+# 19 -
+# name = input("Enter your name: ")
+# age = input("Enter your age: ")
+# print("Hello",name+",","your age is",age)
+
+# 20 - 
+# n = 47
+# if (n%2 == 0 ):
+#     print("this is even")
+# else: 
+#     print("this is odd")
+
+# 21 -
+# s = "123"
+# print(int(s)+10)
+
+# 22 - 
+# a = 5
+# b = 2
+# a,b=b,a
+# print(a)
+# print(b)
+
+# 23 -
+# num = 12345
+# last_digit = num%10
+# print("last digit of your number is:",last_digit)
+
+# 24 - decimal part hat jayega
+# num = float(input("enter num: "))
+# print(int(num))
+
+# 25 -error aayega two diffrent data type add nahi hote
+# x = 10
+# print(x + str(x))
+
+# 26 - float aayega answer = 11.0
+
+# 27 - 
+# mark1 = int(input("Enter marks of subject 1: "))
+# mark2 = int(input("Enter marks of subject 2: "))
+# mark3 = int(input("Enter marks of subject 3: "))
+
+# print((mark1+mark2+mark3)/3)
+
+# 28 - 
+# n = 5
+# print("squre =",n**2)
+# print("cube =",n**3)
+# print("square root =",n**0.5)
+
+# 29 - iska output (0.3 and true)  ye nahi aayega kyunki python decimal ko binary mai store karta hai so exact 0.1 0.2 0.3 ye store nahhi kar pata so output  0.30000000000000004 and False
+
+# 30 - error dega int("5.5") kyunki string se hatne ke bad ye float ban jayega so ye direct int mai nahi badal sakta int(float("5.5")) isse int mai conver ho jata
+
+# 31 - error aayega kyuniki abc string hai usko int mai  covert nahi kar sakte
+
+# 32 - false , true , false, false ,True  bool empty string ko false deta hai and non empty ko true , true  = 1 and false = 0
+
+# 33 - error aayega kyuni none int ke sath nahi jod sakte
+
+# 34 - error kyunki diffrent data types hai
+
+# 35 - False hoga kynki dono captial hai agar A small a hota to small a ka Unicode value bada hota hai captial b se isiliye
+
+# 36 -  true true false aayega is dekhta hai same object hai ki nahi or == same value hai ki nahi list python mai do alag object se store hoti hai and small integer ek hi object se
+
+# 37 - True , False, True , False
+
+# 38 - error dega kyunki variable number se start nahi hote
+
+# 39 - isme double quate missing hai "
+
+# 40 - isme variable number se start hua hai isilye ye bug hai
+
+
+
+
+
+
+
+
+
+
+
+
+
+
