@@ -332,10 +332,86 @@ Warna → "Not palindrome"
 #ANSWER
 
 
+# 1 - apostrophe use karne ke liye ham double quate ka use karenge ex:
+# var = "that's my pen"
+# print(var)
 
+# 2 - \n iska kaam hota hai character ko new line mai print karna and \t charater ko same line print karna but tab jitna space ke bad 4 space ex:
+# print("this is my pen\ncoulor is blue")
+# print("the brand is\tbutterfly")
 
+# 3 - len() lenght provide karta hai len("soh ail") iska output 7 aayega
+# print(len("soh ail"))
 
+# 4 - positive index start se start hota hai and negative end se ex:
+# var = "sohail"
+# print(var[2]) #output - h
+# print(var[-3]) #output - a
 
+# 5 - slicing mai last index count nai hota 1 subtract ho jata hai jaise str[0:3] so ye 0 se 2 tak ka print karega
+# name = "sohail"
+# print(name[0:3]) #output - soh
 
+# 6 - find() us value ka index dundh ke deta hai jab vo pehli bar appear hui hogi tab ka and count() us value ko count karta hai kitne bar aayi hai find ka use tab karenge jab hame pata karna ho ki first time vo kon se index pe hai and count tab use karenge jab hame pata karna ho ki kitne bar hamne vo chiz apne string mai likhi hai
 
+# 7 - pehle output aayega SohailAnsari kyunki isme space concatinate nahi kiye hai and second Sohail Ansari kyunki alag se " " space add kiye hai
+
+# 8 - pehla output Hello new line mai World and second output Hello    World
+
+# 9 - pehla ka output 6 length 6 hai isiliye and second output h and third output h
+
+# 10 - first soh second soh third ohail fourth sohail
+
+# 11 - first soh last index mai -1 ho jata hai so -3-1 = -4  second ail third soh
+
+# 12 - first True second False third True
+
+# 13 - ye first letter capital kar dega so output Sohail and original value change nahi hoti so second output sohail
+
+# 14 - first i am learning python and second i am learnig html change nahi hoti original value
+
+# 15 - fisrt 5 second 10 third -1
+
+# 16 - first 3 second 1 third 1
+
+# 17 - output = can vote
+
+# 18 - iska output can not vote but apply for pan card
+
+# 19 - output can not vote
+
+# 20 - iska output a is positive and even
+
+# 21 - a is negative
+
+# 22 - a is 0 
+
+# 23 - 
+# s = "programming"
+# print(s[-3::1])
+
+# 24 -
+# s = "programming"
+# print(s[0])
+# print(s[-1])
+
+# 25 -
+# s = "python"
+# print(s[2:5])
+
+# 26 - 
+# s = "hello world"
+# print(s[6:])
+
+# 27 -
+# s = "abcdefgh"
+# print(s[1::2])
+
+# 28 -
+# s = "Sohail"
+# print(s[-1::-1])
+
+# 29 - error nahi aayega kyunki bhale hi end index bada ho but python jitne available hai utne print kar deta hai pehle mujhe laga error aayega but nahi
+# s = "python"
+# print(s[1:100])
 
