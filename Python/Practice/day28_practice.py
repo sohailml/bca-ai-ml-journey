@@ -415,3 +415,97 @@ Warna → "Not palindrome"
 # s = "python"
 # print(s[1:100])
 
+# 30 - 
+# s = "madam"
+
+# if (s[:] == s[::-1]):
+#     print("this is palindrom")
+# else:
+#     print("not palindrom")
+
+# 31 - agar ham result kisi variable mai store nahi karenge to original value same hi rahegi capital nahi hoga isiliye store karna padega agar result hamesha use karna hai to
+# name = "sohail"
+# a = name.capitalize()
+# print(name)
+# print(a)
+
+# 32 - 
+# s = "i love python"
+# new = s.replace("python","java")
+# print(new)
+
+# 33 - 
+# name = input("Enter your name: ")
+# if (len(name)>5):
+#     print("long name")
+# else:
+#     print("short name")
+
+# 34 - 
+# char = input("enter a character")
+# if (char =="a"):
+#     print("vowel")
+# elif (char =="e"):
+#     print("vowel")
+# elif (char =="i"):
+#     print("vowel")
+# elif (char =="o"):
+#     print("vowel")
+# elif (char =="u"):
+#     print("vowel")
+# else:
+#     print("consonant")
+
+# 35 - error dega kyunki lenth hai hi nahi string ki out of range hai index IndexError: string index out of range
+
+# 36 - ye chalega iska output hail kyunki slicing mai agar outof rang index dal dete hai to vo sirf utne hi print karega jitna available ho yani len of string tak
+
+# 37 - ye nahi chalega IndexError: string index out of range
+
+# 38 - empty string kyunki default step +1 ka hota hai so 3 ke bad 4 aise jayga but stop to 1 diya hai islliye empty string
+# s = "sohail"
+# print(s[3:1])
+
+# 39 - len mai 0 aa jayega and s[0] error dega kyuki string empty hai so outof range aa jayega
+# s = ""
+# print(len(s))
+# print(s[0])
+
+# 40 - iska output sohail aayega kyunki ye function original value ko change nahi karta 
+# s = "sohail"
+# s.capitalize()
+# print(s)
+
+# 41 - ab Sohail aayega kyunki hamne assign kar idya new value ko original se
+# s = "sohail"
+# s = s.capitalize()
+# print(s)
+
+# 42 - False kyunki python casesensitve hai
+# print("Sohail" == "sohail")
+
+# 43 - pehle true fir true kyunki small letter ki ascii value jyada hoti hai capital letter se and jaise jaise alphabet badhenge value badhegi
+# print("a" < "b")
+# print("Z" < "a")
+
+# 44 - s.find() hame vo index dega jaha pehli bar vo value appear hogi and s.rfind() highest index dega jaha vo value aakiri bar aayi
+# s = "hello"
+# print(s.find("l"))
+# print(s.rfind("l"))
+
+# 45 - iska output positive a>10 vala elif nahi chalega kyunki pehle hi conditon true ho gayi hai  agar false hoti to chalta
+# a = 5
+# if a > 0:
+#     print("positive")
+# elif a > 10:
+#     print("greater than 10")
+# else:
+#     print("other")
+
+# 46 -
+# age = 25
+# has_id = True
+# if (age>=18 and has_id==True):
+#     print("allowed")
+# else:
+#     print("not allowed")
