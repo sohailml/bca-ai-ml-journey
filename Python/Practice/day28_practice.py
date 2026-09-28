@@ -509,3 +509,58 @@ Warna → "Not palindrome"
 #     print("allowed")
 # else:
 #     print("not allowed")
+
+# 47 - isme error nahi aa raha but keywords ko variable bana diya hai vo galat hai
+# str = "I'm Sohail"
+# print(str)
+
+# 48 - out of range hai index
+# s = "sohail"
+# print(s[6])
+
+# 49 - length ke liye len function use hota hai and s.len() ek valid nahi hai len(s) isse hota length
+# s = "sohail"
+# print(len(s))
+
+# 50 - isme len ke sath parenthesis() use hota hai closed bracket nahi
+# s = "sohail"
+# print(len(s))
+
+# 51 - output aayega i am learning html kyunki isko store nai kiya hai hamne
+# s = "i am learning html"
+# s = s.replace("html", "python") #fix
+# print(s)
+
+# 52 - isme eeror hai kyunki proper indentation nahi use kiya
+# age = 20
+# if age >= 18:
+#     print("can vote") #fix indentation
+
+# 53 - isme hamne if mai ye nai use kiya isilye expected ':'
+# age = 20
+# if (age >= 18): #fix expected ':'
+#     print("can vote")
+
+# 54 - B print nahi hoga kyunki if mai hi condition true ho gayi isiliye agar if ke bad ek elif ke jagah if hota to vo bhi chalta if har bar chlata hai 
+# a = 10
+# if a > 5:
+#     print("A")
+# elif a > 7:
+#     print("B")
+# if a > 7:           #extra add on
+#     print("B")
+# else:
+#     print("C")
+
+# 55 - equal opretor ke liye hame == ye use karna hota hai 
+# name = "sohail"
+# if name == "sohail": #fix ==
+#     print("match")
+
+# 56 - first ka output hail second ka so third ka empty blank line
+# s = "sohail"
+# print(s[2:])
+# print(s[:2])
+# print(s[2:2])
+
+
