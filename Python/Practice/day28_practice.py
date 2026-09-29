@@ -563,4 +563,119 @@ Warna → "Not palindrome"
 # print(s[:2])
 # print(s[2:2])
 
+# 57 -
+# s = "programming"
+# print(s[3:7])
+# print(s[7:])
 
+# 58 -
+# s = "abcdef"
+# print(s[0:5:2])
+# print(s[1::2])
+
+# 59 -
+# s = "12345"
+# print(s[::-1])
+
+# 60 - len same hi rahega
+# s = "hello"
+# s = s.capitalize()
+# print(len(s))
+
+# 61 - 
+# s = "sohail"
+# print(s[0] == s[5])
+
+# 62 -
+# s = "i love python programming"
+# print(s.count(" "))
+
+# 63 - 2 or 3 aayeag kyunki an ko ek character man ke search karega count() so do bar an aaya hai and a 3 bar
+# s = "banana"
+# print(s.count("an"))
+# print(s.count("a"))
+
+# 64 - 
+# s = input("Enter a string: ")
+# if (len(s)%2 == 0):
+#     print("Even Length")
+# else:
+#     print("Odd Length")
+
+# 65 -
+# n = input("Enter a number: ")
+# if (len(n) == 3):
+#     print("3 digit")
+# elif (len(n) == 4):
+#     print("4 digit")
+# else:
+#     print("other")
+
+# 66 -
+# s = "racecar"
+# if (s[0:] == s[::-1]):
+#     print("palindrom")
+# else:
+#     print("not")
+
+# 67 -
+# first_name = input("Enter your first name: ")
+# last_name = input("Enter your last name: ")
+# print(first_name+" "+last_name)
+# print(first_name,last_name) #simple
+
+# 68 -
+# s = "Hello World"
+# print(len(s))
+# print(s[0:5])
+# print(s[6:])
+
+# 69 -
+# word = input("Enter some word you want reverse: ")
+# print(word[::-1])
+
+# 70 -
+# sen = input("Enter a sentance: ")
+# print("In this sentance a is",sen.count("a"),"times")
+
+# 71 - 
+# age = int(input("Enter your age: "))
+# if (age>=18):
+#     print("Adult")
+# elif (18>age>=13):
+#     print("Teenage")
+# else:
+#     print("Child")
+
+# 72 -
+# first = int(input("Enter first number: "))
+# second = int(input("Enter second number: "))
+# if (first>second):
+#     print("first is greater")
+# elif (first<second):
+#     print("second is smaller")
+# else:
+#     print("both equal")
+
+# 73 -
+# char = input("Enter a character: ")
+# vowel = ["a","e","i","o","u"]
+# if (char in vowel):
+#     print("vowel")
+# else:
+#     print("consonant")
+
+# 74 -
+# username = input("Enter your username: ")
+# password = input("Enter your password: ")
+# if (username == "admin" and password == "1234"):
+#     print("login succesfully")
+# else:
+#     print("Invalid credentials")
+
+# 75 -
+# word = input("Enter a word: ")
+# if (word == word[::-1]):
+#     print("palindrome")
+# else:
+#     print("not palindrome")
