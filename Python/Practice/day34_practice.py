@@ -14,27 +14,33 @@
 # ============================================================
 
 # Q1. [Day 3] List aur Tuple mein main difference kya hai? Ek line mein likho.
-# answer:
+# answer: list ko square bracket mai likhte hai and tuple ko parenthesis mai and list mutable hoti hai change kar sakte hia but tuple change nai kar sakte immuatable hai
 
 
 # Q2. [Day 3] List ka bracket kya hai? Tuple ka bracket kya hai? Dono ka example likho.
-# answer:
+# answer: list ko square bracket mai likhte hai [] and tuple ko parenthesis ()
 
 
 # Q3. [Day 3] List mutable hoti hai — iska kya matlab? Ek example se samjhao.
-# answer:
+# answer:list mutable hoti hai iska mtlb hai ki ham list ko change kar sakte hai originl list
+# list = [2,3,"sohail"]
+# list[1] = "ansari"
+# print(list)
 
 
 # Q4. [Day 3] Tuple immutable hota hai — iska kya matlab? Agar tuple mein value change karne ki koshish karo toh kya hoga?
-# answer:
+# answer:tuple ko change nahi kar sakte hai value change karne ki kosis karen to erroe aayega example:
+# list = (2,3,"sohail")
+# list[1] = "ansari"
+# print(list)
 
 
 # Q5. [Day 3] append() aur insert() mein kya farak hai?
-# answer:
+# answer:appen() list ke last mai vo value add karta hai and insert() list ke kisi specific index mai vo value add karta
 
 
 # Q6. [Day 3] pop() aur remove() mein kya farak hai?
-# answer:
+# answer:pop() us index ki value ko hata deta hai and remove() us value ko hata deta hai jaha vo first occur hota hai
 
 
 
@@ -45,7 +51,7 @@
 # Q7. [Day 3] Output kya aayega?
 # my_list = [1, 3, "sohail", 5]
 # print(len(my_list))
-# answer:
+# answer: iski length 4 hai
 
 
 # Q8. [Day 3] Output kya aayega?
@@ -53,7 +59,7 @@
 # print(my_list[0])
 # print(my_list[1:3])
 # print(my_list[-1])
-# answer:
+# answer: iska output pehle 10 fir [20,30] third 40
 
 
 # Q9. [Day 3] Output kya aayega?
