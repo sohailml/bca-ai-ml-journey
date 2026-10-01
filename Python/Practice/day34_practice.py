@@ -66,49 +66,49 @@
 # my_list = [1, 2, 3]
 # my_list.append(100)
 # print(my_list)
-# answer:
+# answer:[1,2,3,100]
 
 
 # Q10. [Day 3] Output kya aayega?
 # my_list = [5, 2, 8, 1]
 # my_list.sort()
 # print(my_list)
-# answer:
+# answer:[1,2.5.8]
 
 
 # Q11. [Day 3] Output kya aayega?
 # my_list = [5, 2, 8, 1]
 # my_list.sort(reverse=True)
 # print(my_list)
-# answer:
+# answer:[8,5,2,1]
 
 
 # Q12. [Day 3] Output kya aayega?
 # my_list = [10, 20, 30, 40]
 # my_list.insert(1, 50)
 # print(my_list)
-# answer:
+# answer:[10,50,20,30,40]
 
 
 # Q13. [Day 3] Output kya aayega?
 # my_list = [1, 2, 3, 4]
 # my_list.reverse()
 # print(my_list)
-# answer:
+# answer:[4,3,2,1]
 
 
 # Q14. [Day 3] Output kya aayega?
 # my_list = [10, 20, 30, 40]
 # my_list.pop(2)
 # print(my_list)
-# answer:
+# answer:[10,20,40]
 
 
 # Q15. [Day 3] Output kya aayega?
 # my_list = [10, 20, 30, 40]
 # my_list.remove(30)
 # print(my_list)
-# answer:
+# answer:[10,20,40]
 
 
 # Q16. [Day 3] Output kya aayega?
@@ -117,7 +117,7 @@
 # new_list.append(4)
 # print(my_list)
 # print(new_list)
-# answer:
+# answer:1st [1,2,3] 2nd output [1,2,3,4]
 
 
 # Q17. [Day 3] Output kya aayega?
@@ -125,21 +125,21 @@
 # print(tup[1])
 # print(tup[1:3])
 # print(tup[-1])
-# answer:
+# answer:1st 20 2nd (20,30) 3rd 40
 
 
 # Q18. [Day 3] Output kya aayega?
 # tup = (1, 2, 3, 2)
 # print(tup.index(2))
 # print(tup.count(2))
-# answer:
+# answer:1st 1 second 2
 
 
 # Q19. [Day 2] Output kya aayega?
 # s = "sohail"
 # print(s[1:4])
 # print(s[::-1])
-# answer:
+# answer:1st oha 2nd liahos
 
 
 # Q20. [Day 2] Output kya aayega?
@@ -150,7 +150,7 @@
 #     print("Teen")
 # else:
 #     print("Child")
-# answer:
+# answer:Adult
 
 
 # Q21. [Day 1] Output kya aayega?
@@ -159,14 +159,14 @@
 # print(a / b)
 # print(a // b)
 # print(a % b)
-# answer:
+# answer: 1st 3.33333 2nd 3 3rd 1
 
 
 # Q22. [Day 1] Output kya aayega?
 # print("5" + "5")
 # print("5" * 2)
 # print(5 + 5)
-# answer:
+# answer:1st 55 2nd mai 55 3rd mai 10
 
 
 # Q23. [Mix: Day 2 + Day 3] Output kya aayega?
@@ -176,7 +176,7 @@
 # print(lst[1])
 # print(s[-1])
 # print(lst[-1])
-# answer:
+# answer:1st e 2nd 2 3rd o 4th 3
 
 
 # Q24. [Mix: Day 1 + Day 2 + Day 3] Output kya aayega?
@@ -185,7 +185,7 @@
 # z = [y, y + 5]
 # print(z)
 # print(type(z[0]))
-# answer:
+# answer:1st [10,15] 2nd int
 
 
 
@@ -545,8 +545,8 @@
 #  MISTAKE NOTEBOOK
 # ============================================================
 
-# Mistake 1:
-# Mistake 2:
+# Mistake 1:Q12 mai maine socha ki .insert(1,50) karne se 1st index pe jo hai vo delete hoke insert hoga but isne 1 index pe 50 add kiya or 20 ko remove nahi kiya 2nd index pe shift kar idya
+# Mistake 2:Q17 mai tup[1] maine socha tha ki output (20) aise aayega parenthesis ke andar ye mistake thi 
 # Mistake 3:
 # Mistake 4:
 # Mistake 5:
