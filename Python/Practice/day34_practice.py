@@ -195,34 +195,60 @@
 
 # Q25. [Day 3] my_list = [3, 1, 4, 1, 5, 9, 2, 6]. Length print karo, aur last element print karo.
 # answer:
+# my_list = [3, 1, 4, 1, 5, 9, 2, 6]
+# print(len(my_list))
+# print(my_list[-1])
 
 
 # Q26. [Day 3] my_list = [10, 20, 30, 40, 50]. Slicing se [20, 30, 40] print karo.
 # answer:
+# my_list = [10, 20, 30, 40, 50]
+# print(my_list[1:4])
 
 
 # Q27. [Day 3] my_list = [1, 2, 3, 4, 5]. Isme 99 ko index 2 pe insert karo aur print karo.
 # answer:
+# my_list = [1, 2, 3, 4, 5]
+# my_list.insert(2,99)
+# print(my_list)
 
 
 # Q28. [Day 3] my_list = [5, 3, 8, 1, 9]. Ascending aur descending order mein print karo.
 # answer:
+# my_list = [5, 3, 8, 1, 9]
+# my_list.sort()
+# print(my_list)
+# my_list.sort(reverse=True)
+# print(my_list)
 
 
 # Q29. [Day 3] my_list = [10, 20, 30, 40]. Index 1 wala element delete karo aur print karo.
 # answer:
+# my_list = [10, 20, 30, 40]
+# my_list.pop(1)
+# print(my_list)
 
 
 # Q30. [Day 3] my_list = [10, 20, 30, 20, 40]. Value 20 ko delete karo (pehli occurrence) aur print karo.
 # answer:
+# my_list = [10, 20, 30, 20, 40]
+# my_list.remove(20)
+# print(my_list)
 
 
 # Q31. [Day 3] tup = (1, 2, 3, 2, 4, 2). 2 kitni baar aaya? Aur 2 ka first index?
 # answer:
+# tup = (1, 2, 3, 2, 4, 2)
+# print(tup.count(2))
+# print(tup.index(2))
 
 
 # Q32. [Day 3 + Day 2] my_list = ["sohail", "ansari", "python"]. Har element ki length print karo.
 # answer:
+# my_list = ["sohail", "ansari", "python"]
+# print(len(my_list[0]))
+# print(len(my_list[1]))
+# print(len(my_list[2]))
 
 
 # Q33. [Day 3 + Day 2] s = "hello world". split() use karke list banao.
@@ -547,6 +573,6 @@
 
 # Mistake 1:Q12 mai maine socha ki .insert(1,50) karne se 1st index pe jo hai vo delete hoke insert hoga but isne 1 index pe 50 add kiya or 20 ko remove nahi kiya 2nd index pe shift kar idya
 # Mistake 2:Q17 mai tup[1] maine socha tha ki output (20) aise aayega parenthesis ke andar ye mistake thi 
-# Mistake 3:
+# Mistake 3:Q28 mai ascending and descending mai karna tha to maine direct print(my_list.sort()) and print(my_lsit.sort(reverse=True)) kar diya tha isiliye none output aa gya tha
 # Mistake 4:
 # Mistake 5:
