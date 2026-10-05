@@ -517,22 +517,57 @@
 
 # Q64. [Day 3 + Day 1] my_list = [2, 4, 6, 8]. Har element ka square karke nayi list banao.
 # answer:
+# my_list = [2, 4, 6, 8]
+# a = my_list[0]**2
+# b = my_list[1]**2
+# c = my_list[2]**2
+# d = my_list[3]**2
+# lst = []
+# lst.append(a)
+# lst.append(b)
+# lst.append(c)
+# lst.append(d)
+# print(lst)
 
 
 # Q65. [Day 3] t1 = (1, 2, 3), t2 = (4, 5). Concatenate karke naya tuple banao.
 # answer:
+# t1 = (1, 2, 3)
+# t2 = (4, 5)
+# t3 = t1+t2
+# print(t3)
 
 
 # Q66. [Day 3 + Day 2] s = "i love python". Split karo, reverse karo, join karke string banao.
 # answer:
+# s = "i love python"
+# b = s.split()
+# b.reverse()
+# print(b+[s])
+# result = s.join(b)
+# print(result)
 
 
 # Q67. [Mix: Day 1 + Day 3] my_list = [10, 20, 30]. 40 add karo do tarike se (append aur +).
 # answer:
+# my_list = [10, 20, 30]
+# my_list.append(40)
+# print(my_list)
+# print(my_list+[40])
 
 
 # Q68. [Mix: Day 2 + Day 3] User se word lo. Characters ki list banao. Reverse karo. Palindrome check karo.
 # answer:
+# word = input("Enter a word: ")
+
+# chars = list(word)
+# reverse_chars = chars.copy()
+# reverse_chars.reverse()
+
+# if chars == reverse_chars:
+#     print("Palindrome")
+# else:
+#     print("Not Palindrome")
 
 
 
