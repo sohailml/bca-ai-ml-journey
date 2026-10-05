@@ -390,67 +390,86 @@
 # my_list = [1, 2, 3]
 # my_list.append[100]
 # print(my_list)
-# answer:
+# answer: isme .append ke sath [] ye use kar liya isiliye bug hai sahi syntax append() hai
+# my_list = [1, 2, 3]
+# my_list.append(100)
+# print(my_list)
 
 
 # Q50. Bug kya hai? Fix karo.
 # my_list = [1, 2, 3]
 # my_list.push(100)
 # print(my_list)
-# answer:
+# answer:.push ki jagah .appen ayega ya
+# my_list = [1, 2, 3]
+# my_list.append(100)
+# print(my_list)
 
 
 # Q51. Bug kya hai? Do reason batao.
 # tup = (1, 2, 3)
 # tup.append(4)
 # print(tup)
-# answer:
+# answer:tup immutable hai .append nai kar sakte 
 
 
 # Q52. Bug kya hai? Fix karo.
 # my_list = [1, 2, 3]
 # print(my_list.length())
-# answer:
+# answer:isme bug ye hai ki len ki jagah length use hai and proper syntax nahi hai aise hoga:
+# my_list = [1, 2, 3]
+# print(len(my_list))
 
 
 # Q53. Bug kya hai? Fix karo.
 # my_list = [1, 2, 3]
 # print(len[my_list])
-# answer:
+# answer:isme bug ye hai ki len function parenthesis use hota hai isme bracket use hua hai
+# my_list = [1, 2, 3]
+# print(len(my_list))
 
 
 # Q54. Ye chalega ya nahi? Output kya?
 # my_list = [1, 2, 3]
 # my_list.remove(2)
 # print(my_list)
-# answer:
+# answer:output aayeaga [1,3]
 
 
 # Q55. [Day 2] Bug kya hai? Fix karo.
 # s = "sohail"
 # if s = "sohail":
 #     print("match")
-# answer:
+# answer:isme s = use hua ha python mai equal to ke liye == use hota hai
+# s = "sohail"
+# if s =="sohail":
+#     print("match")
 
 
 # Q56. [Day 2] Bug kya hai? Fix karo.
 # age = 20
 # if age >= 18:
 # print("Adult")
-# answer:
+# answer:indentation error
+# age = 20
+# if age >= 18:
+#   print("Adult")
 
 
 # Q57. [Mix: Day 1 + Day 3] Bug kya hai? Do fix batao.
 # lst = [1, 2, 3]
 # result = lst + 5
 # print(result)
-# answer:
+# answer:bug ye hai ki ham list ko int se add kar rahe to fix ya to append use kare and last mai 5 concatinate kar de ya 5 ko list bana de
+# lst = [1, 2, 3]
+# result = lst + [5]
+# print(result)
 
 
 # Q58. [Mix: Day 2 + Day 3] Bug kya hai? Kyun capitalize() list pe kaam nahi karta?
 # my_list = ["sohail", "ansari"]
 # print(my_list.capitalize())
-# answer:
+# answer:.capitalize list mai nahi use kar sakte list mai diffrent type ke data hoten hai .capitalize string ka first letter capital karta hai
 
 
 
@@ -460,22 +479,40 @@
 
 # Q59. [Day 3] my_list = [1, 2, 3, 4, 5]. Reverse karo do tarike se (reverse() aur slicing).
 # answer:
+# my_list = [1, 2, 3, 4, 5]
+# print(my_list[::-1])
+# my_list.reverse()
+# print(my_list)
 
 
 # Q60. [Day 3] my_list = [10, 20, 30, 40, 50]. Middle element nikalo bina index hardcode kiye.
 # answer:
+# my_list = [10, 20, 30, 40, 50]
+# print(my_list[len(my_list)//2])
 
 
 # Q61. [Day 3] my_list = [1, 2, 3, 4, 5]. First half aur second half alag print karo.
 # answer:
+# my_list = [1, 2, 3, 4, 5]
+# print(my_list[0:2])
+# print(my_list[3:])
 
 
 # Q62. [Day 3] tup = (1, 2, 3, 4, 5). Reverse karo (tuple mein reverse() nahi hota).
 # answer:
+# tup = (1, 2, 3, 4, 5)
+# print(tup[::-1])
 
 
 # Q63. [Day 3 + Day 2] my_list = ["apple", "banana", "cherry"]. Har word ka first character print karo.
 # answer:
+# my_list = ["apple", "banana", "cherry"]
+# first = my_list[0]
+# second = my_list[1]
+# third = my_list[2]
+# print(first[0])
+# print(second[0])
+# print(third[0])
 
 
 # Q64. [Day 3 + Day 1] my_list = [2, 4, 6, 8]. Har element ka square karke nayi list banao.
