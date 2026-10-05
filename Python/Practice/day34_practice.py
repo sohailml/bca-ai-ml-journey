@@ -253,19 +253,42 @@
 
 # Q33. [Day 3 + Day 2] s = "hello world". split() use karke list banao.
 # answer:
+# s = "hello world"
+# list = s.split()
+# print(list)
 
 
 # Q34. [Day 3 + Day 1] my_list = [10, 20, 30]. Saare elements ka sum manually nikalo.
 # answer:
+# my_list = [10, 20, 30]
+# sum = my_list[0]+my_list[2]+my_list[1]
+# print(sum)
 
 
 # Q35. [Day 3 + Day 2] User se naam input lo. First aur last character print karo. Phir usko list mein daalo.
 # answer:
+# name = input("Enter name: ")
+# start = name[0]
+# end = name[-1]
+# lst = []
+# print(start)
+# print(end)
+# lst.append(start)
+# lst.append(end)
+# print(lst)
 
 
 # Q36. [Mix: Day 1 + Day 2 + Day 3] User se 3 numbers input lo, list mein daalo, sort karo, print karo.
 # answer:
-
+# first = int(input("enter no: "))
+# second = int(input("enter no: "))
+# third = int(input("enter no: "))
+# lst =[]
+# lst.append(first)
+# lst.append(second)
+# lst.append(third)
+# lst.sort()
+# print(lst)
 
 
 # ============================================================
@@ -276,14 +299,14 @@
 # tup = (1, 2, 3)
 # tup[0] = 100
 # print(tup)
-# answer:
+# answer:error aayega tup immuatable hota hai 
 
 
 # Q38. [Day 3] Kya hoga aur kyun?
 # my_list = [1, 2, 3]
 # my_list[0] = 100
 # print(my_list)
-# answer:
+# answer: change ho jayega [100,2,3] output 1 ki jagah 100
 
 
 # Q39. [Day 3] Output kya aayega? [1,2,3] ya [1,2,3,4]? Kyun?
@@ -291,50 +314,54 @@
 # new_list = my_list
 # new_list.append(4)
 # print(my_list)
-# answer:
+# answer:[1,2,3,4] hi aayega
 
 
 # Q40. [Day 3] Q39 ko copy() use karke fix karo.
 # answer:
+# my_list = [1, 2, 3]
+# new_list =my_list.copy()
+# new_list.append(4)
+# print(my_list)
 
 
 # Q41. [Day 3] Kya error aayega?
 # my_list = [1, 2, 3]
 # print(my_list[5])
-# answer:
+# answer:index out of range 5th index hai hi nahi koi
 
 
 # Q42. [Day 3] Error ya output? Kya aayega?
 # my_list = [1, 2, 3]
 # print(my_list[1:10])
-# answer:
+# answer: error nahi aayega output [2,3] hoga
 
 
 # Q43. [Day 3] pop() mein argument nahi diya — kya hoga?
 # my_list = [10, 20, 30]
 # my_list.pop()
 # print(my_list)
-# answer:
+# answer: pop mai argument nahi diya so by defaul last ka index remove kar dega output [10,20]
 
 
 # Q44. [Day 3] Kya error aayega?
 # my_list = [1, 2, 3]
 # my_list.remove(5)
 # print(my_list)
-# answer:
+# answer:error aayega kyunki 5 present hi nai hai
 
 
 # Q45. [Day 3] Pehla print kya dega — None ya list? Kyun?
 # my_list = [1, 2, 3]
 # print(my_list.reverse())
 # print(my_list)
-# answer:
+# answer:pehel none prin hoga fir list kyunki my_list.reverse() ko direct print function mai isilye
 
 
 # Q46. [Day 3] Output kya aayega?
 # my_list = [3, 1, 2]
 # print(my_list.sort())
-# answer:
+# answer:none
 
 
 # Q47. [Day 2 + Day 3] Char lines ka output batao. String slicing vs list slicing farak batao.
@@ -344,14 +371,14 @@
 # print(lst[0])
 # print(s[0:3])
 # print(lst[0:3])
-# answer:
+# answer: list  slicing string slicing same hi kuchh jyada diffrence nahi hai list slicing new list bana ke deta hai and first output s sencond output sohail third soh fourth ["sohail"]
 
 
 # Q48. [Mix: Day 1 + Day 3] Kya error aayega? Kyun?
 # lst = [1, "2", 3.0, True]
 # print(len(lst))
 # print(lst[1] + lst[0])
-# answer:
+# answer: pehle output aayega 4 kyunki list ki lenght 4 hai and second error kyunki diffrent data type hai isiliye add nahi ho sakta
 
 
 
@@ -574,5 +601,5 @@
 # Mistake 1:Q12 mai maine socha ki .insert(1,50) karne se 1st index pe jo hai vo delete hoke insert hoga but isne 1 index pe 50 add kiya or 20 ko remove nahi kiya 2nd index pe shift kar idya
 # Mistake 2:Q17 mai tup[1] maine socha tha ki output (20) aise aayega parenthesis ke andar ye mistake thi 
 # Mistake 3:Q28 mai ascending and descending mai karna tha to maine direct print(my_list.sort()) and print(my_lsit.sort(reverse=True)) kar diya tha isiliye none output aa gya tha
-# Mistake 4:
-# Mistake 5:
+# Mistake 4:Q39 mai new list mai append hua and print mai tha my_list so maine socha ki new list mai appned hua hai to my list same rahegi and output[1,2,3] original list aayegi but new list = my list tha isiliye my list bhi append hua
+# Mistake 5:Q43 mai pop() tha koi argument nai diya tha mai socha ki kuch remove nahi hoga but last vala index delte ho gya
