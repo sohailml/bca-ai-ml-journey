@@ -577,51 +577,128 @@
 
 # Q69. [Day 3] List [10, 20, 30, 40, 50] banao, length + first + last print karo.
 # answer:
+# List = [10, 20, 30, 40, 50]
+# print(len(List))
+# print(List[0])
+# print(List[-1])
 
 
 # Q70. [Day 3] Empty list banao, 10, 20, 30 append karo, print karo.
 # answer:
+# lst =[]
+# lst.append(10)
+# lst.append(20)
+# lst.append(30)
+# print(lst)
 
 
 # Q71. [Day 3] List [5, 2, 9, 1, 7] ko sort karo, phir reverse sort karke print karo.
 # answer:
+# lst = [5, 2, 9, 1, 7]
+# lst.sort()
+# lst.reverse()
+# print(lst)
 
 
 # Q72. [Day 3] List [1, 2, 3, 4, 5] mein index 2 pe 99 insert karo.
 # answer:
+# lst = [1, 2, 3, 4, 5]
+# lst.insert(2,99)
+# print(lst)
 
 
 # Q73. [Day 3] List [10, 20, 30, 40, 50] se index 1 wala pop karo.
 # answer:
+# lst = [10, 20, 30, 40, 50]
+# lst.pop(1)
+# print(lst)
 
 
 # Q74. [Day 3] List [10, 20, 30, 20, 40] se value 20 remove karo.
 # answer:
+# lst = [10, 20, 30, 20, 40]
+# lst.remove(20)
+# print(lst)
 
 
 # Q75. [Day 3] Tuple (1, 2, 3, 2, 4, 2) ka 2 ka count aur first index print karo.
 # answer:
+# tup = (1, 2, 3, 2, 4, 2)
+# print(tup.count(2))
+# print(tup[1])
 
 
 # Q76. [Day 3 + Day 2] User se 3 words lo, list mein daalo, sort karke print karo.
 # answer:
+# word = input("enter: ")
+# word2 = input("enter: ")
+# word3 = input("enter: ")
+# lst =[]
+# lst.append(word)
+# lst.append(word2)
+# lst.append(word3)
+# lst.sort()
+# print(lst)
 
 
 # Q77. [Day 3 + Day 2] User se sentence lo, split karke list banao, length print karo.
 # answer:
+# sent = input("enter a sentance: ")
+# lst = list(sent.split())
+# print(lst)
+# print(len(lst))
 
 
 # Q78. [Day 3 + Day 1] User se 5 numbers lo, list mein daalo, sum aur average print karo (bina sum()).
 # answer:
+# num = int(input("enter: "))
+# num2 = int(input("enter: "))
+# num3 = int(input("enter: "))
+# num4 = int(input("enter: "))
+# num5 = int(input("enter: "))
+# lst =[]
+# lst.append(num)
+# lst.append(num2)
+# lst.append(num3)
+# lst.append(num4)
+# lst.append(num5)
+# print(lst)
+# print("sum is",num+num2+num3+num4+num5)
+# print("average is",(num+num2+num3+num4+num5)/5)
 
 
 # Q79. [Day 3 + Day 2] User se word lo. Characters ki list banao. Reverse karo. Palindrome check karo.
 # answer:
+# word = input("enter: ")
+# char = list(word)
+# rev = char.copy()
+# rev.reverse()
+# if char == rev:
+#     print("palindrome")
+# else:
+#     print("not")
 
 
 # Q80. [Day 3 + Day 2 + Day 1] Student naam + 3 marks lo. Marks list mein. Sort karo. Highest + lowest print karo. Agar highest >= 90 toh "Topper" warna "Average".
 # answer:
-
+# name = input("enter: ")
+# mark = int(input("enter: "))
+# mark2 = int(input("enter: "))
+# mark3 = int(input("enter: "))
+# lst =[]
+# lst.append(mark)
+# lst.append(mark2)
+# lst.append(mark3)
+# lst.sort()
+# high = lst[-1]
+# low = lst[0]
+# print(high)
+# print(low)
+# print(high+low)
+# if high >=90:
+#     print("topper")
+# else:
+#     print("average")
 
 
 # ============================================================
@@ -634,14 +711,14 @@
 # b.append(4)
 # print(a)
 # print(b)
-# answer:
+# answer:pehle [1,2,3] aayega fir [1,2,3,4] copy() ka role hai ki a ko copy kar ke ek new list banai and b mai store kar diya original value mai change nahi hoga 
 
 
 # Q82. [Mix: Day 2 + Day 3] Output kya aayega?
 # s = "sohail"
 # lst = [s, s.capitalize(), s[::-1]]
 # print(lst)
-# answer:
+# answer:[sohail,Sohail,liahos]
 
 
 # Q83. [Mix: Day 1 + Day 2 + Day 3] Output kya aayega?
@@ -650,7 +727,7 @@
 # lst = [y, y * 2, y + 5]
 # print(lst)
 # print(lst[1] > lst[0])
-# answer:
+# answer:first [10,20,15] fir true
 
 
 # Q84. [Mix: Day 2 + Day 3] Output kya aayega?
@@ -658,12 +735,16 @@
 # print(tup.count("b"))
 # print(tup.index("b"))
 # print(tup[-1])
-# answer:
+# answer:first 2 fir 1 fir b
 
 
 # Q85. [Mix: Day 1 + Day 2 + Day 3] my_list = [10, "20", 30.0, True]. Har element ka type print karo. Kaunsa string hai?
-# answer:
-
+# answer: index 1 vala string hai
+# my_list = [10, "20", 30.0, True]
+# print(type(my_list[0]))
+# print(type(my_list[1]))
+# print(type(my_list[2]))
+# print(type(my_list[3]))
 
 
 # ============================================================
