@@ -19,7 +19,7 @@
 # print(a)
 # print(b)
 # print(c)
-# answer:
+# answer: pehle [1,2,3,4,5]  second [1,2,3,4,5]then [1,2,3,6] kyunki b = a hai so a.append kiya and b.append kiya to dono equal hai isiliye ek hi output and c a ki copy hai so only c.append vala hoga
 
 
 # Q2. [Day 3] Nested list ka case. copy() ne kya kiya? Kya a bhi change hua? Shallow copy concept samjhao.
@@ -29,7 +29,7 @@
 # b.append(5)
 # print(a)
 # print(b)
-# answer:
+# answer: pehle [1,[2,3]] then [1,[2,3,4],5] b a ki copy hai so original value change nahi hoga
 
 
 # Q3. [Day 2] String immutable hai, list mutable. Ye code kya karega? Kyun ek error deta hai aur dusra nahi?
@@ -40,7 +40,7 @@
 # lst = ["hello"]
 # lst[0] = "H"
 # print(lst)
-# answer:
+# answer: string immuatable hota hai isliye error and list mutable isiliye change ho gya
 
 
 # Q4. [Day 3] + vs append() vs extend(). Teeno output batao. append([3,4]) aur + [3,4] mein fundamental farak kya hai?
@@ -50,14 +50,14 @@
 # print(a)
 # a.append(b)
 # print(a)
-# answer:
+# answer:so pehle [1,2,3,4] kyunki + hai ye add kar ke new list banata hai fir [1,2] fir a.append(b) hai so ye a mai b ko add karega nested list ki tarah so output [1,2,[3,4]]
 
 
 # Q5. [Day 3] Tuple ke andar list. Tuple immutable hai — phir bhi change ho gaya? Reason batao.
 # t = (1, 2, [3, 4])
 # t[2].append(5)
 # print(t)
-# answer:
+# answer: tuple immutable hai but tuple ka element mutable hai list hai ye isliye output (1,2,[3,4,5])
 
 
 # Q6. [Day 3] sort() vs sorted(). x, y, lst — teeno ka output? Farak batao.
@@ -67,7 +67,7 @@
 # print(x)
 # print(y)
 # print(lst)
-# answer:
+# answer:none aayega pehle kyunki ye new list return nahi karta and then [1,2,3] sorted new list return karta hai or sort to pehle se hi tha fir [1,2,3]
 
 
 # Q7. [Day 2 + Day 3] Slicing trap. 6 lines ka output batao. s[:] aur lst[:] ka type same hai ya different?
@@ -79,7 +79,7 @@
 # print(lst[::-1])
 # print(type(s[:]))
 # print(type(lst[:]))
-# answer:
+# answer: pehle sohail fir ["s","o","h","a","i","l"] then liahos  then ["l","i","a","h","o","s"] 5th string 6th list
 
 
 # Q8. [Day 3] pop() ka trap. x aur y ki value kya? Aur lst mein kya bacha?
@@ -88,7 +88,7 @@
 # y = lst.pop()
 # print(x, y)
 # print(lst)
-# answer:
+# answer: 1st 3 5 then [1,2,4]
 
 
 # Q9. [Day 1 + Day 3] Identity vs Equality. Char lines ka output aur reason batao.
@@ -99,7 +99,7 @@
 # print(a is b)
 # print(a is c)
 # print(a == c)
-# answer:
+# answer: 1st True 2nd False third True 4th True
 
 
 # Q10. [Day 3] Empty containers. Last line kya karegi? Error ya output? Kyun?
@@ -110,7 +110,7 @@
 # print(bool(a), bool(b), bool(c), bool(d))
 # print(len(a), len(b), len(c))
 # print(len(d))
-# answer:
+# answer: first false false false false 2nd 0 0 0 third error 
 
 
 
@@ -123,28 +123,28 @@
 # lst[1:4] = [10, 20]
 # print(lst)
 # print(len(lst))
-# answer:
+# answer:[1,10,20,5] len 4
 
 
 # Q12. Output kya aayega?
 # lst = [1, 2, 3]
 # lst[1:1] = [99, 100]
 # print(lst)
-# answer:
+# answer:[1, 99, 100, 2, 3]
 
 
 # Q13. Output kya aayega?
 # lst = [1, 2, 3, 4, 5]
 # del lst[1:3]
 # print(lst)
-# answer:
+# answer:[1,4,5]
 
 
 # Q14. Output kya aayega?
 # lst = [1, 2, 3]
 # print(lst * 2)
 # print(lst + [4])
-# answer:
+# answer:[1, 2, 3, 1, 2, 3] and [1, 2, 3, 4]
 
 
 # Q15. Output kya aayega?
@@ -152,7 +152,7 @@
 # print(tup * 2)
 # print(tup + (4, 5))
 # print(len(tup * 2))
-# answer:
+# answer:(1,2,3,1,2,3) then (1,2,3,4,5) then len 6
 
 
 # Q16. Output kya aayega?
@@ -162,7 +162,7 @@
 # print(lst * 2)
 # print(s + "d")
 # print(lst + ["d"])
-# answer:
+# answer: 1st abcabc 2nd ["a", "b", "c","a", "b", "c"] 3rd abcd 4th ["a", "b", "c","d"]
 
 
 # Q17. Output kya aayega?
@@ -172,7 +172,7 @@
 # lst.reverse()
 # print(lst)
 # print(lst[2:5])
-# answer:
+# answer: 1st [1,1,2,3,4,5,6,9] 2nd [9,6,5,4,3,2,1,1]  3rd [5,4,3]
 
 
 # Q18. Output kya aayega?
@@ -180,7 +180,7 @@
 # print(tup[1:4])
 # print(tup[::-1])
 # print(tup[-2:])
-# answer:
+# answer:1st (3,1,4) 2nd (2,4,1,3,5) third (4,2)
 
 
 # Q19. Output kya aayega? += ne kya kiya? lst bhi change hua?
@@ -189,7 +189,7 @@
 # lst2 += [4]
 # print(lst)
 # print(lst2)
-# answer:
+# answer:[1,2,3,4] and [1,2,3,4]
 
 
 # Q20. Teeno alag? Same? Reason batao.
@@ -200,7 +200,7 @@
 # print(a)
 # print(b)
 # print(c)
-# answer:
+# answer: [1,2,3,4] and 2nd [1,2,3,4] 3rd [1,2,3,4]
 
 
 # Q21. [Mix: Day 1+2+3] Output kya aayega?
@@ -209,7 +209,7 @@
 # z = [x, y, str(y), bool(y)]
 # print(z)
 # print(type(z[0]), type(z[1]), type(z[2]), type(z[3]))
-# answer:
+# answer: 1st ["5",5,"5",True] 2nd string int str bool
 
 
 # Q22. [Mix: Day 1+2+3] Output kya aayega?
@@ -219,7 +219,7 @@
 # result = [name, avg, avg >= 80]
 # print(result)
 # print(name.capitalize(), result[2])
-# answer:
+# answer: 1st [sohail,85.0,True] 2nd Sohail True
 
 
 
@@ -419,9 +419,9 @@
 #  MISTAKE NOTEBOOK
 # ============================================================
 
-# Mistake 1:
-# Mistake 2:
-# Mistake 3:
+# Mistake 1:Q2 me mere se galti hui ki mai shallow copy smjh nahi paya maine socha ki original value hi rahegi but nested list tha isiliye jo andar ki list thi usme changes hue
+# Mistake 2:Q8 mai x = lst.pop(2) ye hai maine socha ki ye new list return karega jisme 2nd index pe jo value hai vo remove ho jayega and print(x) hai to output list aayega jisme 2nd index ki value nahi hogi but ye to list nahi diya 2nd index ki value de diya 
+# Mistake 3:Q11 mai   maine socha ki nested list ban jayegi but element ko remove kar ke new elememnt add ho gaye
 # Mistake 4:
 # Mistake 5:
 # Mistake 6:
