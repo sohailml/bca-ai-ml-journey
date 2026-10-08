@@ -229,50 +229,119 @@
 
 # Q23. [Day 3] lst = [1, 2, 3, 4, 5, 6]. First half aur second half alag list banao slicing se. Dono ka sum compare karo (bina sum()).
 # answer:
+# lst = [1, 2, 3, 4, 5, 6]
+# first =lst[:3]
+# second = lst[3:]
+# sum1 = first[0]+first[1]+first[2]
+# sum2 = second[0]+second[1]+second[2]
+# print("diffrence between second half and first half is ",sum2-sum1)
 
 
 # Q24. [Day 3] lst = [10, 25, 30, 45, 50, 65]. Sirf woh elements ki nayi list banao jo 5 se divisible hain. (Bina loop)
 # answer:
+# lst = [10, 25, 30, 43, 50, 65]
+# new_list = [x for x in lst if x%5 == 0 ]
+# print(new_list)
 
 
 # Q25. [Day 3] lst = [1, 2, 3, 2, 4, 2, 5]. Value 2 ki saari occurrences hatao sirf remove() se. Kitni baar call karoge?
 # answer:
+# lst = [1, 2, 3, 2, 4, 2, 5]
+# lst.remove(2)
+# lst.remove(2)
+# lst.remove(2)
+# print(lst)
 
 
 # Q26. [Day 3] a = [1, 2, 3], b = [4, 5, 6]. Bina extend() ya + use kiye dono ko merge karke [1,2,3,4,5,6] banao.
 # answer:
+# a = [1, 2, 3]
+# b = [4, 5, 6]
+# for x in b:
+#     a.append(x)
+# print(a)
 
 
 # Q27. [Day 3] t = (10, 20, 30, 40, 50). Middle element nikalo bina index hardcode kiye.
 # answer:
+# t = (10, 20, 30, 40, 50)
+# mid = t[len(t)//2]
+# print(mid)
 
 
 # Q28. [Day 3 + Day 2] s = "i love python programming". Split karke list banao. Length print karo. Last word uppercase karo.
 # answer:
+# s = "i love python arogramming"
+# lst = s.split()
+# print(lst)
+# print(len(lst))
+# print(lst[-1].upper())
 
 
 # Q29. [Day 3 + Day 2] lst = ["apple", "banana", "cherry", "date"]. Har word ka first aur last letter nayi list mein daalo. Output: ['ae', 'ba', 'cy', 'de']
 # answer:
+# lst = ["apple", "banana", "cherry", "date"]
+# a = lst[0][0]+lst[0][-1]
+# b = lst[1][0]+lst[1][-1]
+# c = lst[2][0]+lst[2][-1]
+# d = lst[3][0]+lst[3][-1]
+# new_lst = []
+# new_lst.append(a)
+# new_lst.append(b)
+# new_lst.append(c)
+# new_lst.append(d)
+# print(new_lst)
 
 
 # Q30. [Day 3 + Day 1] lst = [5, 10, 15, 20, 25]. Second largest element nikalo bina sort() use kiye.
 # answer:
+# lst = [5, 10, 15, 20, 25]
+# print(lst[-2])
 
 
 # Q31. [Day 3 + Day 2] lst = [1, 2, 3, 4, 5]. Reverse karo 3 tarike se: reverse(), slicing, manually.
 # answer:
+# lst = [1, 2, 3, 4, 5]
+# print(lst[::-1])
+# lst.reverse()
+# print(lst)
 
 
 # Q32. [Day 3 + Day 2] User se word lo. Agar palindrome → "Palindrome". Agar length 3 se kam → "Too short". Warna → "Not palindrome". Order of checks socho.
 # answer:
+# word = input("enter word: ")
+# if len(word)<=3: 
+#   print("too short")
+# if word == word[::-1]:
+#   print("palindrom")
+# else:
+#   print("not plaindrome")
 
 
 # Q33. [Day 3 + Day 2] lst = [1..10]. Even aur odd numbers ki alag lists banao. Dono ki length compare karo.
 # answer:
+# lst = [1,2,3,4,5,6,7,8,9,10]
+# odd = [x for x in lst if x%2 != 0]
+# even = [x for x in lst if x%2 == 0]
+# print(odd,"length is",len(odd)) 
+# print(even,"length is",len(even)) 
 
 
 # Q34. [Day 3 + Day 1] prices = [99.5, 45.25, 200.0, 15.75]. Har price ko int mein convert karke nayi list banao. Sum manually nikalo.
 # answer:
+# prices = [99.5, 45.25, 200.0, 15.75]
+# a =int(prices[0])
+# b =int(prices[1])
+# c =int(prices[2])
+# d =int(prices[3])
+# lst = []
+# lst.append(a)
+# lst.append(b)
+# lst.append(c)
+# lst.append(d)
+# print(lst)
+# sum = a+b+c+d
+# print(sum)
 
 
 
