@@ -353,7 +353,7 @@
 # lst = [1, 2, 3]
 # lst = lst.append(4)
 # print(lst)
-# answer:
+# answer:none print karega kyunki .append ko store kar diya hai isiliye
 
 
 # Q36. Kya tup change hua? Kyun?
@@ -362,7 +362,7 @@
 # tup2 += (4,)
 # print(tup)
 # print(tup2)
-# answer:
+# answer:tup change nahi hoga immutable hota hai isliye output pehle (1,2,3) then (1,2,3,4)
 
 
 # Q37. Ye infinite loop hai — kyun? Reason batao.
@@ -370,7 +370,7 @@
 # for x in lst:
 #     lst.append(x)
 # print(lst)
-# answer:
+# answer:kyunki for x in list and then append so ye bar bar append hote jayega isiliye
 
 
 # Q38. b ki value kya? a[:] ne kya kiya?
@@ -378,7 +378,7 @@
 # b = a[:]
 # a.append(4)
 # print(b)
-# answer:
+# answer:a[:] copy ka kaam kiya yaha pe so b ki value [1,2,3]
 
 
 # Q39. Teeno lines — kaunsi error degi?
@@ -386,7 +386,7 @@
 # print(lst[1:2])
 # print(lst[1:2][0])
 # print(lst[1:2][1])
-# answer:
+# answer:fist output aayega [2] 2nd 2 3rd mai error aayega
 
 
 # Q40. Output kya hoga? (join na aaye toh skip)
@@ -395,7 +395,7 @@
 # lst.sort()
 # print(lst)
 # print("".join(lst))
-# answer:
+# answer:pehle output ["a","h","i","l","o","s"] second ahilos
 
 
 # Q41. Output kya aayega?
@@ -407,14 +407,14 @@
 # print(x == z)
 # print(y == z)
 # print(x is z)
-# answer:
+# answer:fist false 2nd true 3rd false 4th true
 
 
 # Q42. Second line kya karegi?
 # t = (1, 2, 3)
 # print(t.index(2))
 # print(t.index(5))
-# answer:
+# answer: first 2 ki index dega jo ki 1 hai and second error tuple mai hi nahi vo value
 
 
 
@@ -491,8 +491,8 @@
 # Mistake 1:Q2 me mere se galti hui ki mai shallow copy smjh nahi paya maine socha ki original value hi rahegi but nested list tha isiliye jo andar ki list thi usme changes hue
 # Mistake 2:Q8 mai x = lst.pop(2) ye hai maine socha ki ye new list return karega jisme 2nd index pe jo value hai vo remove ho jayega and print(x) hai to output list aayega jisme 2nd index ki value nahi hogi but ye to list nahi diya 2nd index ki value de diya 
 # Mistake 3:Q11 mai   maine socha ki nested list ban jayegi but element ko remove kar ke new elememnt add ho gaye
-# Mistake 4:
-# Mistake 5:
+# Mistake 4:Q38 mai b = a[:] tha bad mai a.append tha to maine socha ki b mai bhi add hoga but b ki value to fix ho gayi pehle hi
+# Mistake 5:Q40 mai "".join(lst) smjh aaya ki ye list ko join kar dega string ke formate mai
 # Mistake 6:
 # Mistake 7:
 # Mistake 8:
