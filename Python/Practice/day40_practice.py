@@ -424,30 +424,77 @@
 
 # Q43. User se 5 numbers lo, list mein daalo, sort karo, aur: highest, lowest, second highest (sorted list se index se), average (bina sum()) print karo.
 # answer:
+# first = int(input("enter first number: "))
+# second = int(input("enter second number: "))
+# third = int(input("enter third number: "))
+# fourth = int(input("enter fourth number: "))
+# fifth = int(input("enter fifth number: "))
+# lst =[]
+# lst.append(first)
+# lst.append(second)
+# lst.append(third)
+# lst.append(fourth)
+# lst.append(fifth)
+# lst.sort()
+# print("highest:",lst[-1])
+# print("lowest:",lst[0])
+# print("average:",(first+second+third+fifth+fourth)/5)
+# lst.pop(-1)
+# print("secomd highest:",lst[-1])
 
 
 # Q44. User se sentence lo: total words, total characters (with spaces), total characters (without spaces), longest word print karo.
 # answer:
 
+# sen = input("Enter sentence: ")
+# words = sen.split()
+# print(words)
+# print("Total words:", len(words))
+# print("Characters with spaces:", len(sen))
+# print("Characters without spaces:", len(sen.replace(" ", "")))
+# print("Longest word:", max(words, key=len))
+
 
 # Q45. lst = [10, 20, 30, 20, 40, 20, 50]. Value 20 ki saari occurrences hatao. Naya list print karo. Original aur nayi length compare karo.
 # answer:
+# lst = [10, 20, 30, 20, 40, 20, 50]
+# length = len(lst)
+# lst.remove(20)
+# lst.remove(20)
+# lst.remove(20)
+# print(lst)
+# new_length = len(lst)
+# print(length)
+# print(new_length)
+# print(new_length>length)
 
 
 # Q46. a = [1, 2, 3, 4, 5], b = [3, 4, 5, 6, 7]. Common elements ki nayi list banao (bina loop, bina set). Output: [3, 4, 5]
 # answer:
+# a = [1, 2, 3, 4, 5]
+# b = [3, 4, 5, 6, 7]
+# common = [x for x in a if x in b]
+# print(common)
 
 
 # Q47. User se student naam + 5 subject marks lo (list). Sort karo. Top 3 marks print karo (slicing). Lowest 2 marks print karo (slicing). Average nikaalo. Grade: >=90 Topper, >=75 Distinction, >=60 First Class, warna Needs improvement.
 # answer:
+#skip
 
 
 # Q48. s = "programming". Sabhi vowels ki list banao (manually, loop nahi). Sabhi consonants ki list banao. Dono print karo. Length compare karo.
 # answer:
+# s = "programming"
+# vowl =[x for x in s if x in "aeiou" ]
+# conso =[x for x in s if x not in "aeiou" ]
+# print("vowel:",vowl)
+# print("conso:",conso)
+# print("length compare:",len(conso)==len(vowl))
 
 
 # Q49. User se 10 numbers lo (list). Ascending sort karo. Descending sort karo. Dono lists compare karo — kya exact reverse hain? Output True/False.
 # answer:
+#skip
 
 
 # Q50. Inventory system simulate karo:
@@ -455,7 +502,7 @@
 # prices = [10, 50, 5]
 # quantity = [100, 20, 200]
 # User se item naam lo. Agar item list mein hai → index dhundho, price aur quantity print karo, total value (price × quantity) print karo. Warna → "Item not found". (index() use karo, loop nahi)
-# answer:
+# answer:#skip
 
 
 
@@ -464,23 +511,33 @@
 # ============================================================
 
 # B1. a = [1, 2, 3]. b = a kiya, phir b.append(4). Ab a mein bhi 4 hai. Kyun? Python ka design decision kyun hai? Real world example do.
-# answer:
+# answer:b = a mein copy nahi banti, dono same list ko refer karte hain, isliye b.append(4) karne par a mein bhi 4 aa jata hai.
 
 
 # B2. == aur is — Google interview classic. Ek scenario socho jaha a == b True hai but a is b False. Aur ek jaha dono True hain.
 # answer:
+# a = [1, 2, 3]
+# b = [1, 2, 3]
+# print(a == b)  # True (values same)
+# print(a is b)  # False (objects alag hain)
+
+# #or
+# a = [1, 2, 3]
+# b = a
+# print(a == b)  # True
+# print(a is b)  # True (same object)
 
 
 # B3. lst = [1, 2, 3]. lst2 = lst[:] kiya. Kya lst2 nayi list hai ya same list ka reference? Prove karo code se.
-# answer:
+# answer:lst[:] list ki shallow copy banata hai, isliye dono alag list objects hain.
 
 
 # B4. Tuple immutable hai — phir bhi uske andar list mutable kaise? Ye contradiction nahi hai? Reason batao.
-# answer:
+# answer:Ye contradiction nahi hai, kyunki tuple ke andar stored list ka reference change nahi hota, sirf list ke elements change hote hain
 
 
 # B5. s = "sohail". s + " ansari" kiya but s change nahi hua. lst + [4] kiya toh bhi lst change nahi hota. Phir list ko mutable kyun kehte hain? Confusion clear karo.
-# answer:
+# answer:+ operator string aur list dono ke liye naya object banata hai, original ko change nahi karta; list mutable hai kyunki append(), extend() ya item assignment se usi list ko modify kar sakte hain, jabki string immutable hai.
 
 
 
@@ -493,8 +550,3 @@
 # Mistake 3:Q11 mai   maine socha ki nested list ban jayegi but element ko remove kar ke new elememnt add ho gaye
 # Mistake 4:Q38 mai b = a[:] tha bad mai a.append tha to maine socha ki b mai bhi add hoga but b ki value to fix ho gayi pehle hi
 # Mistake 5:Q40 mai "".join(lst) smjh aaya ki ye list ko join kar dega string ke formate mai
-# Mistake 6:
-# Mistake 7:
-# Mistake 8:
-# Mistake 9:
-# Mistake 10:
