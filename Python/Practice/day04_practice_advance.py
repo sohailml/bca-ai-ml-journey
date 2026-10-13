@@ -1,17 +1,15 @@
 """
 ============================================================
-  PYTHON BASICS - MEGA PRACTICE SET (100 Questions)
-  Topics: Day 1 + Day 2 + Day 3 + Day 4 (sab mix)
+  PYTHON - DAY 4 MEGA PRACTICE SET (100 Questions)
+  PRIMARY: Day 4 (Dictionary & Set)
+  MIXED: Day 1, 2, 3 concepts naturally integrated
 ============================================================
-  STRUCTURE (Har section mein zyada Write a Program):
-
-  EASY:        12 Qs → 6 Write a Program
-  MEDIUM:      20 Qs → 10 Write a Program
-  HARD:        23 Qs → 12 Write a Program
-  SUPER HARD:  25 Qs → 15 Write a Program
-  ULTRA HARD:  20 Qs → 12 Write a Program
-
-  TOTAL: 100 Qs → 55 Write a Program 🔥
+  STRUCTURE:
+  - Easy:        12 Qs
+  - Medium:      20 Qs
+  - Hard:        25 Qs
+  - Super Hard:  25 Qs
+  - Ultra Hard:  18 Qs (dimag faad 🔥)
 ============================================================
 """
 
@@ -21,66 +19,67 @@
 #  Time: 30 min
 # ############################################################
 
-# Q1. [Output Predict | Day 1] Output kya aayega?
-# print("Hello")
-# print(5 + 3)
-# print("5" + "3")
+# Q1. [Output Predict] Dict basic output.
+# d = {"name": "sohail", "age": 18, "marks": 90}
+# print(len(d))
+# print(d["name"])
+# print(type(d))
 # answer:
 
 
-# Q2. [Output Predict | Day 3] Output kya aayega?
-# lst = [1, 2, 3]
-# lst.append(4)
-# print(lst)
-# print(len(lst))
+# Q2. [Output Predict] Set basic output.
+# s = {1, 2, 3, 3, 4, 4, 5}
+# print(s)
+# print(len(s))
 # answer:
 
 
-# Q3. [Debugging | Day 1] Bug kya hai? Fix karo.
-# name = "sohail
-# print(name)
+# Q3. [Debugging] Bug kya hai? Fix karo.
+# d = {"a": 1, "b": 2}
+# d.append({"c": 3})
+# print(d)
 # answer:
 
 
-# Q4. [Debugging | Day 3] Bug kya hai? Fix karo.
-# lst = [1, 2, 3]
-# lst.append[4]
-# print(lst)
+# Q4. [Debugging] Bug kya hai? Fix karo.
+# s = {1, 2, 3}
+# s.append(4)
+# print(s)
 # answer:
 
 
-# Q5. [Concept | Day 3] List aur Tuple mein main difference kya hai?
+# Q5. [Concept] Dict aur Set mein main difference kya hai?
 # answer:
 
 
-# Q6. [Code Completion | Day 4] Blank bharo - dict mein naya key-value add karna hai.
+# Q6. [Code Completion] Blank bharo - dict mein naya key-value add karna hai.
 # d = {"a": 1, "b": 2}
 # d._____({"c": 3})
 # print(d)
 # answer:
 
 
-# Q7. [Write a Program | Day 1] Program likho jo apna naam, age, city alag-alag line pe print kare.
+# Q7. [Write a Program] Apne baare mein dict banao (name, age, city). Keys, values, items print karo.
 # answer:
 
 
-# Q8. [Write a Program | Day 1] Program likho jo 2 numbers `a = 25`, `b = 7` le aur unka sum, difference, product, quotient, remainder print kare.
+# Q8. [Write a Program] Set {1, 2, 3, 4, 5} banao. 6 add karo, 1 remove karo, print karo.
 # answer:
 
 
-# Q9. [Write a Program | Day 1] Program likho jo Celsius `C = 37` ko Fahrenheit mein convert kare. (F = C * 9/5 + 32)
+# Q9. [Write a Program] User se naam aur age le. Dict banao {"name": naam, "age": age, "length": len(naam)}. Print karo.
 # answer:
 
 
-# Q10. [Write a Program | Day 1] Program likho jo rectangle ki length aur breadth le aur area, perimeter print kare.
+# Q10. [Write a Program] Do sets {1, 2, 3} aur {3, 4, 5} lo. Union, intersection, difference print karo.
 # answer:
 
 
-# Q11. [Write a Program | Day 2] Program likho jo user se ek word le aur uska reverse print kare (slicing se).
+# Q11. [Write a Program] Dict {"name": "sohail", "age": 18} mein "city": "Delhi" add karo (update se). Phir "name" key ki value uppercase karke print karo.
 # answer:
 
 
-# Q12. [Write a Program | Day 2] Program likho jo user se naam aur age input le aur print kare: "Hello [name], you are [age] years old."
+# Q12. [Write a Program] List [1, 2, 2, 3, 3, 3, 4, 4, 4, 4] ko set mein convert karo. Unique elements print karo. Original list ki length aur set ki length compare karo.
 # answer:
 
 
@@ -90,463 +89,377 @@
 #  Time: 2.5 hrs
 # ############################################################
 
-# Q13. [Output Predict | Day 1] Output kya aayega?
-# a = 10
-# b = "20"
-# print(a + int(b))
-# print(str(a) + b)
+# Q13. [Output Predict] Dict methods output.
+# d = {"name": "sohail", "age": 18}
+# print(d.keys())
+# print(d.values())
+# print(list(d.keys()))
+# print(d.get("city", "Unknown"))
 # answer:
 
 
-# Q14. [Output Predict | Day 2] Output kya aayega?
-# s = "programming"
-# print(s[0:4])
-# print(s[:5])
-# print(s[::-1])
-# answer:
-
-
-# Q15. [Output Predict | Day 3] Output kya aayega?
-# lst = [5, 2, 8, 1]
-# lst.sort()
-# print(lst)
-# lst.reverse()
-# print(lst)
-# answer:
-
-
-# Q16. [Output Predict | Day 4] Output kya aayega?
-# s1 = {1, 2, 3, 4}
-# s2 = {3, 4, 5, 6}
-# print(s1.union(s2))
-# print(s1.intersection(s2))
-# answer:
-
-
-# Q17. [Debugging | Day 2] Bug kya hai? Fix karo.
-# age = 20
-# if age >= 18:
-# print("Adult")
-# answer:
-
-
-# Q18. [Debugging | Day 4] Bug kya hai? Fix karo.
-# s = {1, 2, 3}
-# s.append(4)
+# Q14. [Output Predict] Set methods output.
+# s = {1, 2, 3, 4}
+# s.add(5)
+# s.add(2)
+# s.remove(1)
 # print(s)
-# answer:
-
-
-# Q19. [Concept | Day 4] Dict mein duplicate key daalo toh kya hota hai? Kyun?
-# answer:
-
-
-# Q20. [Code Completion | Day 2] Blank bharo - string reverse karna hai.
-# s = "python"
-# reversed_s = s[_____]
-# print(reversed_s)
-# answer:
-
-
-# Q21. [Code Completion | Day 4] Blank bharo - do sets ka intersection.
-# s1 = {1, 2, 3}
-# s2 = {2, 3, 4}
-# result = s1._____(s2)
-# print(result)
-# answer:
-
-
-# Q22. [Write a Program | Day 1] Program likho jo user se 2 numbers le aur unka sum, difference, product, division print kare.
-# answer:
-
-
-# Q23. [Write a Program | Day 1] Program likho jo user se radius le aur circle ka area (πr²) aur circumference (2πr) print kare.
-# answer:
-
-
-# Q24. [Write a Program | Day 1] Program likho jo user se principal, rate, time le aur simple interest nikaale. (SI = P × R × T / 100)
-# answer:
-
-
-# Q25. [Write a Program | Day 2] Program likho jo user se ek sentence le aur usme 'a' kitni baar aaya hai count karke print kare.
-# answer:
-
-
-# Q26. [Write a Program | Day 2] Program likho jo user se age le:
-# - Agar age >= 18 → "Adult"
-# - Agar age >= 13 → "Teenager"
-# - Warna → "Child"
-# answer:
-
-
-# Q27. [Write a Program | Day 2] Program likho jo user se ek character le aur check kare vowel hai ya consonant.
-# answer:
-
-
-# Q28. [Write a Program | Day 2] Program likho jo user se username aur password le:
-# - Agar username == "admin" aur password == "1234" → "Login successful"
-# - Warna → "Invalid credentials"
-# answer:
-
-
-# Q29. [Write a Program | Day 3] Program likho jo ek list [10, 20, 30, 40, 50] banaye aur uska length, first, last print kare.
-# answer:
-
-
-# Q30. [Write a Program | Day 3] Program likho jo empty list banaye, 10, 20, 30 append kare, print kare.
-# answer:
-
-
-# Q31. [Write a Program | Day 4] Program likho jo dict {"name": "sohail", "age": 18} mein "city": "Delhi" add kare (update se).
-# answer:
-
-
-# Q32. [Write a Program | Day 4] Program likho jo user se 5 numbers le (list mein), sum aur average print kare (bina sum()).
-# answer:
-
-
-
-# ############################################################
-#  SECTION 3: HARD (Q33-Q55)  🟠
-#  Time: 3.5 hrs
-# ############################################################
-
-# Q33. [Output Predict | Day 3] Output kya aayega? Kyun?
-# a = [1, 2, 3]
-# b = a
-# b.append(4)
-# print(a)
-# print(a is b)
-# answer:
-
-
-# Q34. [Output Predict | Day 4] Output kya aayega? (dict view dynamic)
-# d = {"a": 1, "b": 2}
-# keys = d.keys()
-# print(list(keys))
-# d.update({"c": 3})
-# print(list(keys))
-# answer:
-
-
-# Q35. [Output Predict | Day 2] Output kya aayega?
-# s = "sohail"
-# print(s[2:100])
-# print(s[-100:3])
-# print(s[3:1])
-# answer:
-
-
-# Q36. [Output Predict | Day 4] Output kya aayega?
-# s = {1, 2, 3, 4, 5}
-# x = s.pop()
-# print(x)
 # print(len(s))
 # answer:
 
 
-# Q37. [Debugging | Day 2] Bug kya hai? Fix karo.
-# s = "sohail"
-# if s = "sohail":
-#     print("match")
+# Q15. [Output Predict] Nested dict output.
+# student = {"name": "sohail", "marks": {"math": 90, "sci": 85}}
+# print(student["marks"]["math"])
+# print(student["name"].upper())
+# print(student["marks"]["math"] + student["marks"]["sci"])
 # answer:
 
 
-# Q38. [Debugging | Day 3] Bug kya hai? Fix karo.
-# my_list = [1, 2, 3]
-# my_list.push(100)
-# print(my_list)
+# Q16. [Output Predict] String + Set mix.
+# s = "programming"
+# unique = set(s)
+# print(unique)
+# print(len(s), len(unique))
 # answer:
 
 
-# Q39. [Debugging | Day 4] Bug kya hai? Fix karo.
+# Q17. [Debugging] Bug kya hai? Fix karo.
 # d = {"a": 1, "b": 2}
 # print(d["c"])
 # answer:
 
 
-# Q40. [Debugging | Day 4] Bug kya hai? Fix karo.
+# Q18. [Debugging] Bug kya hai? Fix karo.
 # s = {[1, 2], [3, 4]}
 # print(s)
 # answer:
 
 
-# Q41. [Concept | Day 3] `is` aur `==` mein kya farak hai? Ek aisa case batao jaha `a == b` True ho but `a is b` False.
+# Q19. [Debugging] Bug kya hai? Fix karo.
+# s = {1, 2, 3}
+# s.remove(10)
+# print(s)
 # answer:
 
 
-# Q42. [Concept | Day 4] Dict ki key immutable honi chahiye — kyun? Agar mutable key allowed hoti toh kya problem hoti?
+# Q20. [Concept] Dict ki key immutable honi chahiye — kyun? Mutable key allowed hoti toh kya problem hoti?
 # answer:
 
 
-# Q43. [Code Completion | Day 2] Blank bharo - check karo number positive hai ya negative.
-# n = -5
-# if _____:
-#     print("Positive")
-# elif _____:
-#     print("Zero")
-# else:
-#     print("Negative")
+# Q21. [Concept] `d.get("key")` aur `d["key"]` mein kya farak hai? Kab kaunsa use karoge?
 # answer:
 
 
-# Q44. [Code Improvement | Day 2] Ye code improve karo - cleaner banao.
-# name = "sohail"
-# if name == "sohail":
-#     result = True
-# else:
-#     result = False
+# Q22. [Code Completion] Blank bharo - do dicts merge karo.
+# d1 = {"a": 1, "b": 2}
+# d2 = {"b": 100, "c": 3}
+# d1._____(d2)
+# print(d1)
+# answer:
+
+
+# Q23. [Code Completion] Blank bharo - do sets ka intersection.
+# s1 = {1, 2, 3, 4}
+# s2 = {3, 4, 5, 6}
+# result = s1._____(s2)
 # print(result)
 # answer:
 
 
-# Q45. [Write a Program | Day 2] Program likho jo user se ek word le aur check kare palindrome hai ya nahi.
+# Q24. [Write a Program] User se ek word le. Set mein convert karke unique characters print karo. Original word ki length aur unique characters count compare karo.
 # answer:
 
 
-# Q46. [Write a Program | Day 2] Program likho jo user se ek string le aur uske first 3 aur last 3 characters print kare.
+# Q25. [Write a Program] Nested dict banao student ka — name + marks dict (3 subjects). Har subject ka marks print karo, aur total marks nikalo.
 # answer:
 
 
-# Q47. [Write a Program | Day 2] Program likho jo user se ek sentence le aur total words count kare.
+# Q26. [Write a Program] User se 5 numbers le (list mein). Set mein convert karke unique numbers print karo. Kitne duplicates the — batao.
 # answer:
 
 
-# Q48. [Write a Program | Day 3] Program likho jo list [5, 2, 9, 1, 7] ko sort kare aur print kare. Phir reverse sort karke bhi print kare.
+# Q27. [Write a Program] Dict {"math": 90, "science": 85, "english": 95} lo. Highest marks wala subject print karo (bina loop).
 # answer:
 
 
-# Q49. [Write a Program | Day 3] Program likho jo list [10, 20, 30, 20, 40] se value 20 remove kare.
+# Q28. [Write a Program] User se ek sentence le. Split karke list banao. Set mein convert karke unique words print karo. Total words aur unique words count batao.
 # answer:
 
 
-# Q50. [Write a Program | Day 3] Program likho jo tuple (1, 2, 3, 2, 4, 2) ka 2 ka count aur first index print kare.
+# Q29. [Write a Program] User se naam, age, aur 3 subject marks le. Ek dict banao jisme:
+# - name (string), age (int), marks (list), average (float)
+# Print karo:
+# - Name uppercase
+# - Average
+# - Agar average >= 80 → "Good" warna "Average"
 # answer:
 
 
-# Q51. [Write a Program | Day 3] Program likho jo user se 3 words le, list mein daale, sort karke print kare.
+# Q30. [Write a Program] Do sets {1, 2, 3, 4, 5} aur {4, 5, 6, 7} lo. Aise elements ki set banao jo:
+# - Dono mein common hain (intersection)
+# - Sirf pehle mein hain (difference)
+# - Dono mein se kisi ek mein hain (symmetric difference)
 # answer:
 
 
-# Q52. [Write a Program | Day 3] Program likho jo user se ek word le. Us word ke characters ki list banao. Reverse karo. Palindrome check karo.
+# Q31. [Write a Program] Dict {"name": "sohail", "age": 18, "marks": [85, 92, 78]} lo. Marks ka average nikalo. Dict mein naya key "average" add karo. Final dict print karo.
 # answer:
 
 
-# Q53. [Write a Program | Day 3] Program likho jo student ka naam + 3 marks le. Marks list mein daalo. Sort karo. Highest aur lowest print karo. Agar highest >= 90 → "Topper" warna "Average".
-# answer:
-
-
-# Q54. [Write a Program | Day 4] Program likho jo 2 sets {1, 2, 3} aur {3, 4, 5} le. union, intersection, difference print kare.
-# answer:
-
-
-# Q55. [Write a Program | Day 4] Program likho jo dict {"price": "99.5", "quantity": "3", "name": "pen"} le. Total price nikaalo. Agar total > 200 → "Expensive" warna "Affordable".
+# Q32. [Write a Program] User se 2 strings le. Dono ke unique characters ki sets banao. Phir:
+# - Common characters (intersection)
+# - Saare unique characters (union)
+# - Sirf pehli string ke characters (difference)
 # answer:
 
 
 
 # ############################################################
-#  SECTION 4: SUPER HARD (Q56-Q80)  🔴
-#  Time: 5 hrs
+#  SECTION 3: HARD (Q33-Q57)  🟠
+#  Time: 3.5 hrs
 # ############################################################
 
-# Q56. [Output Predict | Day 3] Shallow copy trap.
-# a = [1, [2, 3], 4]
-# b = a.copy()
-# b[1].append(99)
-# b.append(5)
-# print(a)
-# print(b)
+# Q33. [Output Predict] Dict view dynamic.
+# d = {"a": 1, "b": 2}
+# keys = d.keys()
+# print(list(keys))
+# d.update({"c": 3})
+# print(list(keys))
+# print(len(keys))
 # answer:
 
 
-# Q57. [Output Predict | Day 4] Output kya aayega?
-# d = {"a": 1, "nums": [1, 2, 3]}
-# d2 = d.copy()
-# d2["nums"].append(4)
-# d2["b"] = 2
-# print(d)
-# print(d2)
+# Q34. [Output Predict] Set pop random.
+# s = {1, 2, 3, 4, 5}
+# x = s.pop()
+# y = s.pop()
+# print(len(s))
+# print(x + y)  # Kya ye deterministic hai?
 # answer:
 
 
-# Q58. [Output Predict | Day 4] Set operations precedence.
-# s1 = {1, 2, 3, 4, 5}
-# s2 = {2, 3, 4}
-# s3 = {4, 5, 6}
-# print(s1.intersection(s2).union(s3))
-# print(s1.union(s2).intersection(s3))
+# Q35. [Output Predict] String + Dict + List mix.
+# name = "sohail"
+# marks = [85, 92, 78]
+# d = {"name": name, "marks": marks, "avg": (marks[0] + marks[1] + marks[2]) / 3}
+# print(d["name"].upper())
+# print(d["marks"][1])
+# print(d["avg"] >= 85)
 # answer:
 
 
-# Q59. [Output Predict | Day 3] Slice assignment with step.
-# lst = [1, 2, 3, 4, 5, 6]
-# lst[::2] = [10, 20, 30]
-# print(lst)
+# Q36. [Output Predict] Nested set trap.
+# s = {1, 2, 3}
+# x = s
+# y = s.copy()
+# x.add(4)
+# y.add(5)
+# print(s)
+# print(y)
+# print(s is x)
+# print(s is y)
 # answer:
 
 
-# Q60. [Debugging | Day 3] Bug kya hai? Fix karo.
-# lst = [1, 2, 3]
-# lst = lst.append(4)
-# print(lst)
+# Q37. [Output Predict] Tuple as dict key.
+# d = {(1, 2): "a", (3, 4): "b"}
+# print(d[(1, 2)])
+# print(len(d))
+# # d[(1, 2, 3)] = "c"   # ye line kya karegi?
 # answer:
 
 
-# Q61. [Debugging | Day 4] Bug kya hai? Fix karo.
+# Q38. [Debugging] Bug kya hai? Fix karo.
 # d = {"a": 1, "b": 2}
 # d.update("c", 3)
 # print(d)
 # answer:
 
 
-# Q62. [Debugging | Day 3 + Day 4] Bug kya hai? Fix karo.
-# data = {"name": "sohail", "marks": [85, 92, 78]}
-# print(data["marks"][3])
+# Q39. [Debugging] Bug kya hai? Fix karo.
+# s = {1, 2, 3}
+# x = s.pop(2)
+# print(x)
 # answer:
 
 
-# Q63. [Concept | Day 3] Shallow copy aur deep copy mein kya farak hai? Ek example se samjhao.
+# Q40. [Debugging] Bug kya hai? Fix karo.
+# d = {"a": 1, "b": 2}
+# keys = d.keys()
+# print(keys[0])
 # answer:
 
 
-# Q64. [Concept | Day 4] Set unordered hota hai — iska kya matlab? Set pe indexing kyun nahi chalti?
+# Q41. [Debugging] Bug kya hai? Fix karo.
+# d = {"name": "sohail", "marks": [85, 92]}
+# print(d["marks"][5])
 # answer:
 
 
-# Q65. [Code Completion | Day 1] Code complete karo - output "Hello Sohail, you are 18" aana chahiye.
-# name = "Sohail"
-# age = 18
-# print("Hello " + _____ + ", you are " + _____)
+# Q42. [Concept] Set unordered hota hai — iska kya matlab? Set pe indexing kyun nahi chalti? Ek real-world example do jaha set better ho list se.
 # answer:
 
 
-# Q66. [Write a Program | Day 2 + Day 3] Program likho jo user se ek word le. Us word ke sabhi vowels ki list banao, sabhi consonants ki list banao. Dono print karo. Length compare karo.
+# Q43. [Concept] Dict ki keys view, values view, items view — ye "dynamic" kyun hote hain? Example do.
 # answer:
 
 
-# Q67. [Write a Program | Day 3 + Day 4] Program likho jo do lists a = [1, 2, 3, 4, 5] aur b = [3, 4, 5, 6, 7] le. Common elements ki nayi list banao (bina loop, bina set).
+# Q44. [Concept] Set ke andar list nahi daal sakte but tuple daal sakte hain — kyun?
 # answer:
 
 
-# Q68. [Write a Program | Day 4] Program likho jo dict {"math": 90, "science": 85, "english": 95} le. Highest marks ka subject print karo (bina loop).
+# Q45. [Code Completion] Blank bharo - dict se value safely nikaalo.
+# d = {"a": 1, "b": 2}
+# val = d._____("c", 0)
+# print(val)
 # answer:
 
 
-# Q69. [Write a Program | Day 4] Program likho jo dict {"a": 10, "b": 20, "c": 30} le. Saari values ka sum manually nikalo. Average nikalo.
+# Q46. [Code Completion] Blank bharo - set se element hatao (error ke bina).
+# s = {1, 2, 3}
+# s._____(10)
+# print(s)
 # answer:
 
 
-# Q70. [Write a Program | Day 2 + Day 4] Program likho jo user se ek sentence le. Split karke list banao. Set mein convert karke unique words print karo. Total words aur unique words count batao.
+# Q47. [Write a Program] User se ek sentence le. Dict banao jisme har unique word ki length ho: {"python": 6, "is": 2, ...}. (Bina loop — manually socho)
 # answer:
 
 
-# Q71. [Write a Program | Day 1 + Day 3] Program likho jo user se 5 numbers le (list). Sum, average, max, min print kare (bina max()/min()/sum()).
+# Q48. [Write a Program] User se 5 numbers le (list mein). Un sab ka set banao. Phir check karo:
+# - Kitne unique numbers hain
+# - Kaunsa number sabse zyada baar aaya (Hint: list.count() use karo)
 # answer:
 
 
-# Q72. [Write a Program | Day 3 + Day 4] Program likho jo inventory system simulate kare:
-# items = ["pen", "book", "pencil"]
-# prices = [10, 50, 5]
-# quantity = [100, 20, 200]
-# User se item naam lo. Agar item list mein hai → index dhundho, price aur quantity print karo, total value print karo. Warna → "Item not found".
+# Q49. [Write a Program] Do lists: a = [1, 2, 3, 4, 5], b = [3, 4, 5, 6, 7]. Dono ko set mein convert karo. Phir:
+# - Common elements ki list
+# - Sirf pehli list ke elements
+# - Dono ke combined unique elements
 # answer:
 
 
-# Q73. [Write a Program | Day 2 + Day 3] Program likho jo user se ek sentence le aur:
-# - Total words count
-# - Total characters count (spaces ke saath)
-# - Total characters count (spaces ke bina)
-# - Longest word print karo
+# Q50. [Write a Program] Inventory system simulate karo:
+# items = ["pen", "book", "pencil", "eraser"]
+# prices = [10, 50, 5, 3]
+# quantity = [100, 20, 200, 150]
+# User se item naam lo:
+# - Agar mile → index dhundho, price, quantity, total value print karo
+# - Warna → "Item not found"
 # answer:
 
 
-# Q74. [Write a Program | Day 3 + Day 4] Program likho jo do dicts compare kare:
-# d1 = {"a": 1, "b": 2, "c": 3}
-# d2 = {"b": 2, "c": 3, "d": 4}
-# Common keys ki list banao. Common key-value pairs ki list banao.
+# Q51. [Write a Program] User se ek paragraph le. Dict banao:
+# - "words": total words count
+# - "chars": total characters (bina spaces)
+# - "unique_words": set ki length
+# - "longest": longest word
 # answer:
 
 
-# Q75. [Write a Program | Day 1 + Day 2] Program likho jo user se:
-# - naam (string)
-# - age (int)
-# le aur ek greeting card print kare jaise:
-# "Welcome Sohail! You are 18 years old. Next year you will be 19."
+# Q52. [Write a Program] User se naam, age, aur skills list le. Ek dict banao:
+# {"name": ..., "age": ..., "skills": set(skills), "total_skills": len(set(skills))}
+# Print karo. Agar total_skills > 3 → "Multi-skilled" warna "Learning"
 # answer:
 
 
-# Q76. [Write a Program | Day 3] Program likho jo user se 5 numbers le. Un sab ko list mein daalo. List ko sort karo. Top 3 aur bottom 2 alag-alag lists mein print karo (slicing se).
+# Q53. [Write a Program] Do dicts: d1 = {"a": 1, "b": 2, "c": 3}, d2 = {"b": 100, "c": 200, "d": 4}. Naya dict banao jisme d1 ke saare aur d2 ke saare keys hon. Agar key dono mein hai toh d2 ki value use karo.
 # answer:
 
 
-# Q77. [Write a Program | Day 4] Program likho jo ek set {10, 20, 30, 40, 50} le. User se ek number input lo. Check karo wo set mein hai ya nahi (if-else se). Agar hai → "Found" warna "Not found".
+# Q54. [Write a Program] Student data:
+# names = ["sohail", "rahul", "priya"]
+# marks = [[85, 92], [78, 88], [95, 90]]
+# Dict banao {name: [marks]}. Phir har student ka average nikaal ke print karo. Highest average wale ka naam print karo.
 # answer:
 
 
-# Q78. [Write a Program | Day 2 + Day 4] Program likho jo user se ek string le. Dict banao jisme:
-# - "original": original string
-# - "upper": uppercase version
-# - "lower": lowercase version
-# - "length": length of string
-# - "reverse": reversed string
+# Q55. [Write a Program] User se ek string le. Dict banao jisme har character ka count ho:
+# {"s": 2, "o": 1, "h": 1, ...}
+# (Bina loop — manually socho. Har character ke liye count() use karo)
 # answer:
 
 
-# Q79. [Write a Program | Day 3 + Day 4] Program likho jo user se 5 numbers le (list). Set mein convert karke unique numbers print karo. Kitne duplicates the — batao.
+# Q56. [Write a Program] Set theory: 3 sets banao:
+# python_devs = {"sohail", "rahul", "priya"}
+# ml_devs = {"sohail", "priya", "vikas"}
+# ai_devs = {"priya", "vikas", "neha"}
+# Print karo:
+# - Sabhi unique developers
+# - Jo sirf python jaante hain
+# - Jo teeno jaante hain
+# - Jo kam se kam 2 jaante hain
 # answer:
 
 
-# Q80. [Write a Program | Day 1 + Day 2 + Day 4] Program likho jo user se student ka naam, age, aur 3 subject marks le. Ek dict banao jisme:
-# - name, age, marks list, average, aur result (agar average >= 33 → "Pass" warna "Fail")
-# Final dict print karo.
+# Q57. [Write a Program] User se ek sentence le. Ek dict banao jisme:
+# - "vowels": set of vowels
+# - "consonants": set of consonants
+# - "count_vowels": len of vowels set
+# - "count_consonants": len of consonants set
+# Print karo. Agar vowels > consonants → "Vowel heavy" warna "Consonant heavy"
 # answer:
 
 
 
 # ############################################################
-#  SECTION 5: ULTRA HARD / DIMAG FAAD (Q81-Q100)  💀🔥
-#  Time: 6 hrs
+#  SECTION 4: SUPER HARD (Q58-Q82)  🔴
+#  Time: 5 hrs
 # ############################################################
 
-# Q81. [Output Predict | Day 3] Reference trap.
-# a = [1, 2]
-# b = [a, a, a]
-# a.append(3)
-# print(b)
-# print(b[0] is b[1])
-# print(b[0] is a)
+# Q58. [Output Predict] Dict with mutable values.
+# d = {"list1": [1, 2], "list2": [3, 4]}
+# d["list1"].append(5)
+# d["list2"] = d["list2"] + [5]
+# print(d)
+# print(d["list1"] is d["list2"])
 # answer:
 
 
-# Q82. [Output Predict | Day 1] Integer caching trap.
-# a = 256
-# b = 256
-# print(a is b)
-# x = 257
-# y = 257
-# print(x is y)
+# Q59. [Output Predict] Set of tuples.
+# lst = [(1, 2), (3, 4), (1, 2), (5, 6)]
+# s = set(lst)
+# print(s)
+# print(len(lst), len(s))
 # answer:
 
 
-# Q83. [Output Predict | Day 3] List of lists modification.
-# matrix = [[1, 2], [3, 4], [5, 6]]
-# row = matrix[0]
-# row.append(99)
-# print(matrix)
-# print(matrix[0] is row)
+# Q60. [Output Predict] Nested dict + list modification.
+# data = {
+#     "user": {
+#         "profile": {"name": "sohail", "skills": ["python", "ml"]}
+#     }
+# }
+# data["user"]["profile"]["skills"].append("ai")
+# data["user"]["profile"]["skills"].append("python")
+# print(data["user"]["profile"]["skills"])
+# print(len(data["user"]["profile"]["skills"]))
+# print(len(set(data["user"]["profile"]["skills"])))
 # answer:
 
 
-# Q84. [Output Predict | Day 3 + Day 4] Tuple immutability vs nested mutable.
-# t = (1, [2, 3], {"a": 1})
-# t[1].append(99)
-# t[2]["b"] = 2
-# print(t)
+# Q61. [Output Predict] Tuple in dict, list in set trap.
+# d = {"coords": (1, 2), "nums": [3, 4]}
+# print(d["coords"][0])
+# print(d["nums"][-1])
+# # s = {d["nums"]}  # ye line kya karegi?
 # answer:
 
 
-# Q85. [Debugging | Day 3 + Day 4] Bug kya hai? Fix karo.
+# Q62. [Output Predict] Dict merge + set conversion.
+# d1 = {"a": 1, "b": 2}
+# d2 = {"b": 100, "c": 3}
+# d3 = d1.copy()
+# d3.update(d2)
+# print(d3)
+# print(len(d3))
+# print(set(d3.keys()))
+# print(set(d3.values()))
+# answer:
+
+
+# Q63. [Debugging] Bug kya hai? Fix karo.
 # data = {
 #     "students": [
 #         {"name": "sohail", "marks": [85, 92]},
@@ -557,146 +470,403 @@
 # answer:
 
 
-# Q86. [Debugging | Day 4] Bug kya hai? Fix karo.
+# Q64. [Debugging] Bug kya hai? Fix karo.
+# s = {1, 2, 3}
+# for x in s:  # loop allowed nahi, but bug identify karo
+#     s.add(x + 10)
+# print(s)
+# answer:
+
+
+# Q65. [Debugging] Bug kya hai? Fix karo.
 # d = {"a": 1, "b": 2}
-# keys = d.keys()
-# print(keys[0])
+# val = d.pop("c")
+# print(val)
 # answer:
 
 
-# Q87. [Concept | Day 3] Deep copy bina copy module ke kaise karoge? Ek example do jaha shallow copy fail hoti hai.
+# Q66. [Concept] Shallow copy aur deep copy mein farak — dict aur set ke reference mein samjhao. Example do.
 # answer:
 
 
-# Q88. [Concept | Day 3 + Day 4] Tuple immutable hai — phir uske andar list mutable kaise? Ye contradiction nahi hai? Reason batao.
+# Q67. [Concept] `set` aur `frozenset` mein kya farak hai? frozenset kab use karoge? (frozenset tune padha nahi — sirf soch ke batao)
 # answer:
 
 
-# Q89. [Write a Program | FINAL BOSS - All Days] Program likho jo user se:
-# - naam (string)
-# - age (int)
-# - 5 subject marks (list)
-# - skills (list)
-#
-# Phir ye karo:
-# - Name uppercase print karo
-# - Marks ka average nikaalo (bina sum())
-# - Marks sort karke highest aur lowest print karo
-# - Skills ko set mein convert karke unique skills print karo
-# - Ek final dict banao: {"name": ..., "age": ..., "average": ..., "skills": ...} aur print karo
-# - Agar average >= 85 → "Topper" warna "Average"
+# Q68. [Code Completion] Blank bharo - dict ki saari keys ki sorted list banao.
+# d = {"c": 3, "a": 1, "b": 2}
+# keys = _____(d.keys())
+# keys._____()
+# print(keys)
 # answer:
 
 
-# Q90. [Write a Program | Day 3 + Day 4] Program likho jo inventory system simulate kare:
-# items = ["pen", "book", "pencil", "eraser"]
-# prices = [10, 50, 5, 3]
-# quantity = [100, 20, 200, 150]
-# User se item naam lo. Agar item list mein hai → index dhundho, price, quantity, total value print karo. Warna → "Item not found".
+# Q69. [Code Completion] Blank bharo - set se duplicate list banao.
+# lst = [1, 2, 2, 3, 3, 3, 4]
+# unique = _____(lst)
+# print(unique)
+# print(_____(unique))
 # answer:
 
 
-# Q91. [Write a Program | Day 2 + Day 3] Program likho jo user se ek paragraph le aur:
-# - Total sentences count kare ('.' count karke)
-# - Total words count kare
-# - Total characters count kare (bina spaces)
-# - Sabse lamba word print karo
-# answer:
-
-
-# Q92. [Write a Program | Day 3 + Day 4] Program likho jo do dicts ko merge kare:
-# d1 = {"a": 1, "b": 2, "c": 3}
-# d2 = {"b": 100, "c": 200, "d": 4}
-# Naya dict banao jisme d2 ki values d1 ko overwrite kare. Output print karo.
-# answer:
-
-
-# Q93. [Write a Program | Day 2 + Day 3] Program likho jo user se ek string le aur:
-# - Sabhi vowels ki set banao
-# - Sabhi consonants ki set banao
-# - Dono ki union banao
-# - Original string ki length aur union set ki length compare karo
-# answer:
-
-
-# Q94. [Write a Program | Day 4] Program likho jo user se 2 sets le (comma separated input se) aur:
-# - union, intersection, difference, symmetric_difference
-# - Sab print karo
-# answer:
-
-
-# Q95. [Write a Program | Day 3 + Day 4] Program likho jo student data handle kare:
-# - 3 students ke naam list mein
-# - 3 students ke marks list mein
-# - Ek dict banao {name: marks}
-# - Highest marks wale ka naam print karo (bina loop)
-# answer:
-
-
-# Q96. [Write a Program | FINAL - All Days] Program likho jo mini library management system simulate kare:
+# Q70. [Write a Program] Mini library management:
 # books = ["Python", "ML", "AI", "Data Science"]
 # authors = ["Guido", "Andrew", "Yann", "Andrew"]
-# User se ek book ka naam input lo.
-# Agar book list mein hai:
-#   - uska index dhundho
-#   - author print karo
-#   - "Book available" print karo
-# Agar nahi hai:
-#   - "Book not available" print karo
-# Saath mein: authors list se unique authors ki set banao aur print karo.
+# User se book naam lo. Agar book list mein hai:
+# - uska index dhundho
+# - author print karo
+# - "Book available"
+# Warna: "Not available"
+# Saath mein: authors se unique authors ki set banao aur print karo.
 # answer:
 
 
-# Q97. [Write a Program | Day 1 + Day 2 + Day 3] Program likho jo user se:
-# - Product name
-# - Price
-# - Quantity
-# - Discount percentage
-# le aur ek bill banao:
-# - Subtotal = price × quantity
-# - Discount = subtotal × discount / 100
-# - Final = subtotal - discount
-# - Agar final > 1000 → "Premium purchase"
-# - Warna → "Regular purchase"
+# Q71. [Write a Program] User se ek sentence le. Dict banao:
+# - Har word ki length: {word: len(word)}
+# - Longest word
+# - Shortest word
+# - Average word length
 # answer:
 
 
-# Q98. [Write a Program | Day 2 + Day 3 + Day 4] Program likho jo user se ek sentence le aur:
-# - Unique words ki set banao
-# - Har unique word ki length ka dict banao {word: length}
-# - Sabse lamba word aur uski length print karo (bina loop)
-# answer:
-
-
-# Q99. [Write a Program | FINAL BOSS 2 - All Days] Program likho jo quiz app simulate kare:
+# Q72. [Write a Program] Quiz app:
 # questions = ["Capital of India?", "2+2?", "Python creator?"]
 # answers = ["Delhi", "4", "Guido"]
-# User se 3 answers input lo (ek-ek karke)
-# Har sahi answer ke liye +1 score
-# Final score print karo (bina loop, manually 3 checks karo)
-# - Agar score == 3 → "Perfect!"
-# - Agar score == 2 → "Good"
-# - Agar score == 1 → "Try harder"
+# User se 3 answers input lo (ek-ek karke).
+# Har sahi answer ke liye score +1.
+# Final score print karo.
+# - Score == 3 → "Perfect!"
+# - Score == 2 → "Good"
+# - Score == 1 → "Try harder"
 # - Warna → "Better luck next time"
 # answer:
 
 
-# Q100. [FINAL ULTIMATE - All Days] Program likho jo complete student report card generate kare:
-# User se:
-# - naam (string)
-# - roll_no (int)
-# - 5 subject marks (list)
-# - skills (list)
-#
+# Q73. [Write a Program] Product bill:
+# User se: product_name, price, quantity, discount% le.
+# - subtotal = price × quantity
+# - discount_amount = subtotal × discount / 100
+# - final = subtotal - discount_amount
+# Ek dict banao aur print karo:
+# {"product": ..., "subtotal": ..., "discount": ..., "final": ...}
+# - Agar final > 1000 → "Premium" warna "Regular"
+# answer:
+
+
+# Q74. [Write a Program] Student report card:
+# User se: naam, roll_no, 5 subject marks (list), skills (list).
 # Generate karo:
-# - Total marks (bina sum())
-# - Average marks
-# - Grade: >=90 "A+", >=80 "A", >=70 "B", >=60 "C", warna "F"
-# - Sorted marks
-# - Highest aur lowest
-# - Unique skills (set)
+# - total (bina sum())
+# - avg
+# - grade: >=90 "A+", >=80 "A", >=70 "B", >=60 "C", warna "F"
+# - sorted marks
+# - highest, lowest
+# - unique skills (set)
 # - Final dict: {"name": ..., "roll": ..., "total": ..., "avg": ..., "grade": ..., "skills": ...}
-# - Print formatted output
+# answer:
+
+
+# Q75. [Write a Program] Employee database:
+# names = ["sohail", "rahul", "priya"]
+# salaries = [50000, 75000, 60000]
+# departments = ["IT", "HR", "IT"]
+# Dict banao {name: {"salary": ..., "dept": ...}}.
+# Print karo:
+# - IT department ke saare employees
+# - Highest salary wala employee
+# - Average salary
+# - Unique departments (set)
+# answer:
+
+
+# Q76. [Write a Program] User se do sentences le. Dono ke unique words ki sets banao. Print karo:
+# - Common words (intersection)
+# - Saare unique words (union)
+# - Sirf pehle sentence ke words (difference)
+# - Sirf dusre sentence ke words (difference)
+# answer:
+
+
+# Q77. [Write a Program] Nested dict:
+# data = {
+#     "student1": {"name": "sohail", "marks": [85, 92, 78]},
+#     "student2": {"name": "rahul", "marks": [78, 88, 92]},
+#     "student3": {"name": "priya", "marks": [95, 90, 88]}
+# }
+# Har student ka average nikaalo. Dict banao {name: avg}. Highest avg wale ka naam print karo.
+# answer:
+
+
+# Q78. [Write a Program] Text analyzer:
+# User se ek paragraph le.
+# Dict banao:
+# - total_words
+# - unique_words (set ki length)
+# - total_chars (bina spaces)
+# - vowels_set
+# - consonants_set
+# - most_common_word (list.count() use karo)
+# answer:
+
+
+# Q79. [Write a Program] Shopping cart:
+# cart = {"apple": 3, "banana": 2, "cherry": 5}  # qty
+# prices = {"apple": 50, "banana": 20, "cherry": 100}
+# Har item ka total (qty × price) nikaalo. Grand total nikaalo.
+# Final dict print karo: {item: {"qty": ..., "price": ..., "total": ...}}
+# answer:
+
+
+# Q80. [Write a Program] User se ek sentence le aur ek dict banao jisme har character ka count ho. Phir:
+# - Sabse zyada baar aane wala character
+# - Sabse kam baar aane wala character
+# - Sirf vowels ka set
+# - Sirf consonants ka set
+# answer:
+
+
+# Q81. [Write a Program] Inventory with categories:
+# products = ["pen", "book", "pencil", "eraser", "notebook"]
+# categories = ["stationery", "stationery", "stationery", "stationery", "stationery"]
+# prices = [10, 50, 5, 3, 30]
+# Dict banao {product: {"category": ..., "price": ...}}.
+# Print karo:
+# - Saare products jinki price < 20
+# - Unique categories
+# - Total inventory value (sum of all prices)
+# answer:
+
+
+# Q82. [Write a Program] User se ek string le. Isme se:
+# - Duplicate characters hata ke naya string banao (set use karo)
+# - Original string aur naya string ki length compare karo
+# - Sabse zyada baar aane wala character nikaalo
+# - Ek dict banao {char: count} aur print karo
+# answer:
+
+
+
+# ############################################################
+#  SECTION 5: ULTRA HARD / DIMAG FAAD (Q83-Q100)  💀🔥
+#  Time: 6 hrs
+#  Ye woh questions hain jo top 1% interview level ke hain
+# ############################################################
+
+# Q83. [Output Predict] Reference trap in dict.
+# a = {"x": [1, 2]}
+# b = a
+# c = a.copy()
+# a["x"].append(3)
+# c["x"].append(4)
+# b["y"] = 5
+# print(a)
+# print(b)
+# print(c)
+# print(a is b)
+# answer:
+
+
+# Q84. [Output Predict] Set comprehension with tuples.
+# pairs = [(1, 2), (2, 3), (1, 2), (4, 5)]
+# s = set(pairs)
+# print(s)
+# print(len(pairs), len(s))
+# print((1, 2) in s)
+# print((2, 1) in s)
+# answer:
+
+
+# Q85. [Output Predict] Nested mutable trap.
+# d = {"a": {"b": [1, 2]}}
+# d2 = d.copy()
+# d2["a"]["b"].append(3)
+# d2["a"]["c"] = "new"
+# print(d)
+# print(d2)
+# answer:
+
+
+# Q86. [Debugging] Bug kya hai? Fix karo.
+# data = {
+#     "marks": {"math": 90, "sci": 85}
+# }
+# keys = list(data["marks"].keys())
+# print(keys[0])
+# print(keys[-1])
+# print(data["marks"][keys[0]] + data["marks"][keys[1]])
+# answer:
+
+
+# Q87. [Debugging] Bug kya hai? Fix karo.
+# s = {1, 2, 3}
+# s2 = s
+# s2.add(4)
+# s3 = s.copy()
+# s3.add(5)
+# print(s)
+# print(s3)
+# print(s is s2)
+# print(s is s3)
+# answer:
+
+
+# Q88. [Concept] Dict view objects dynamic kyun hote hain? Ye design decision kyun liya gaya? Ek use case batao.
+# answer:
+
+
+# Q89. [Concept] Set ki internal implementation (hash table) ke baare mein socho. Set mein `in` operator O(1) kyun hota hai jabki list mein O(n)? (Tune padha nahi — sirf soch ke batao)
+# answer:
+
+
+# Q90. [Concept] Tuple as dict key kyun kaam karta hai but list nahi? Immutability ka role samjhao.
+# answer:
+
+
+# Q91. [Write a Program] User se ek paragraph le. Dict banao:
+# - Har word ka count: {word: count}
+# - Sabse zyada baar aane wala word
+# - Sabse kam baar aane wala word
+# - Total unique words
+# - Total words
+# - Agar unique_words / total_words > 0.5 → "Rich vocabulary" warna "Repetitive"
+# answer:
+
+
+# Q92. [Write a Program] Complete student management system:
+# User se 3 students ka data lo:
+# - naam, roll, 5 marks, skills
+# Data structure banao: {
+#     roll1: {"name": ..., "marks": [...], "skills": set(...), "avg": ..., "grade": ...}
+# }
+# Print karo:
+# - Sabhi students ka data
+# - Highest avg wala student
+# - Saare unique skills (union of all)
+# - Saare common skills (intersection of all)
+# answer:
+
+
+# Q93. [Write a Program] E-commerce cart:
+# products = ["laptop", "phone", "tablet"]
+# prices = [50000, 20000, 30000]
+# cart_items = ["laptop", "phone", "laptop", "tablet"]
+# # cart_items mein jo bhi products hain unka:
+# - unique items ki set banao
+# - har item ka count nikaalo (list.count() se)
+# - har item ka total (price × count)
+# - grand total
+# - Final dict: {item: {"price": ..., "qty": ..., "total": ...}, "grand_total": ...}
+# answer:
+
+
+# Q94. [Write a Program] Student grades analyzer:
+# students = {
+#     "sohail": [85, 92, 78, 88, 95],
+#     "rahul": [78, 88, 82, 90, 85],
+#     "priya": [95, 90, 88, 92, 96],
+#     "vikas": [70, 75, 68, 72, 65]
+# }
+# Har student ka avg nikaalo. Grade assign karo (>=90 A+, >=80 A, >=70 B, warna C).
+# Final dict: {name: {"avg": ..., "grade": ...}}
+# Topper print karo. Unique grades ki set print karo.
+# answer:
+
+
+# Q95. [Write a Program] Text to frequency map:
+# User se ek paragraph le.
+# Dict banao jisme:
+# - Har character ka count
+# - Har word ka count
+# - Total unique chars
+# - Total unique words
+# - Sabse zyada common char
+# - Sabse zyada common word
+# - Agar common char zyada hai → "Char heavy", warna "Word heavy"
+# answer:
+
+
+# Q96. [Write a Program] Library + members:
+# books = {"Python": 5, "ML": 3, "AI": 2}  # available copies
+# members = {"sohail", "rahul", "priya", "vikas"}
+# issued = {
+#     "sohail": ["Python", "ML"],
+#     "rahul": ["AI"],
+#     "priya": ["Python", "AI"]
+# }
+# Print karo:
+# - Kaunsa book sabse zyada issued hai
+# - Kaunsa member sabse zyada books le chuka hai
+# - Kaunse members ne kuch issue nahi kiya (set difference)
+# - Har book ki available copies ab kya hain
+# answer:
+
+
+# Q97. [Write a Program] Multi-class inventory:
+# data = {
+#     "electronics": ["phone", "laptop", "tv"],
+#     "furniture": ["chair", "table"],
+#     "clothing": ["shirt", "pant", "shirt"]
+# }
+# Print karo:
+# - Har category ke unique items
+# - Total unique items across all categories
+# - Categories jisme duplicate items hain
+# - Sabse zyada items wali category
+# - Ek final dict: {category: {"unique": ..., "total": ...}}
+# answer:
+
+
+# Q98. [Write a Program] Employee salary analysis:
+# employees = {
+#     "sohail": {"dept": "IT", "salary": 50000},
+#     "rahul": {"dept": "HR", "salary": 45000},
+#     "priya": {"dept": "IT", "salary": 75000},
+#     "vikas": {"dept": "HR", "salary": 55000}
+# }
+# Print karo:
+# - Unique departments (set)
+# - Har department ka average salary
+# - Highest paid employee
+# - Har department ke employees ki list
+# - Final dict: {dept: {"employees": [...], "avg_salary": ...}}
+# answer:
+
+
+# Q99. [Write a Program] Word frequency + sentiment:
+# User se ek paragraph le.
+# positive_words = {"good", "great", "excellent", "amazing", "best"}
+# negative_words = {"bad", "worst", "poor", "terrible", "hate"}
+# Dict banao:
+# - Har word ka count
+# - Positive words count (set intersection se)
+# - Negative words count
+# - Sentiment: positive > negative → "Positive", negative > positive → "Negative", warna "Neutral"
+# - Final output print karo
+# answer:
+
+
+# Q100. [FINAL ULTIMATE - All Days] Complete mini database:
+# User se 3 students ka data le:
+# - naam, roll_no, 5 marks, skills (comma separated)
+#
+# Build karo:
+# students = {
+#     roll: {
+#         "name": ..., "marks": [...], "skills": set(...),
+#         "total": ..., "avg": ..., "grade": ..., "rank": ...
+#     }
+# }
+#
+# Print karo:
+# - Sabhi students sorted by avg (highest first)
+# - Har student ka rank (1, 2, 3)
+# - Saare unique skills (union)
+# - Saare common skills (intersection)
+# - Class average
+# - Topper ka naam
+# - Lowest scorer ka naam
+# - Grade distribution (kitne A+, kitne A, etc.) — dict use karo
+# - Ek final summary dict print karo
 # answer:
 
 
@@ -710,3 +880,8 @@
 # Mistake 3:
 # Mistake 4:
 # Mistake 5:
+# Mistake 6:
+# Mistake 7:
+# Mistake 8:
+# Mistake 9:
+# Mistake 10:
