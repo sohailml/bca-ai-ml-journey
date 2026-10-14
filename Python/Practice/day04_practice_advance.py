@@ -196,7 +196,7 @@
 
 
 # Q21. [Concept] `d.get("key")` aur `d["key"]` mein kya farak hai? Kab kaunsa use karoge?
-# answer:
+# answer:d.get("key") error nahi deta and d["key"] agar key nahi hai dict mai so ye keyerror de dega
 
 
 # Q22. [Code Completion] Blank bharo - do dicts merge karo.
@@ -204,35 +204,77 @@
 # d2 = {"b": 100, "c": 3}
 # d1._____(d2)
 # print(d1)
-# answer:
+# answer:blank mai update aa jayega
+# d1 = {"a": 1, "b": 2}
+# d2 = {"b": 100, "c": 3}
+# d1.update(d2)
+# print(d1)
 
 
 # Q23. [Code Completion] Blank bharo - do sets ka intersection.
 # s1 = {1, 2, 3, 4}
 # s2 = {3, 4, 5, 6}
-# result = s1._____(s2)
+# result = s1._____(s2) 
 # print(result)
-# answer:
+# answer:blank mai intersection aa jayega
 
 
 # Q24. [Write a Program] User se ek word le. Set mein convert karke unique characters print karo. Original word ki length aur unique characters count compare karo.
 # answer:
+# name = input("enter your name: ")
+# unique = set(name)
+# print(unique)
+# print(len(name)>len(unique))
 
 
 # Q25. [Write a Program] Nested dict banao student ka — name + marks dict (3 subjects). Har subject ka marks print karo, aur total marks nikalo.
 # answer:
+# student = {"name":"sohail","marks":{"phy":78,"chem":82,"math":93}}
+# print(student["marks"]["phy"])
+# print(student["marks"]["chem"])
+# print(student["marks"]["math"])
+# total = student["marks"]["phy"]+student["marks"]["chem"]+student["marks"]["math"]
+# print(total)
 
 
 # Q26. [Write a Program] User se 5 numbers le (list mein). Set mein convert karke unique numbers print karo. Kitne duplicates the — batao.
 # answer:
+# a = int(input("1st: "))
+# e = int(input("2nd: "))
+# b = int(input("3rd: "))
+# c = int(input("4th: "))
+# d = int(input("5th: "))
+# lst =[]
+# lst.append(a)
+# lst.append(b)
+# lst.append(c)
+# lst.append(d)
+# lst.append(e)
+# print(lst)
+# unique = set(lst)
+# print(unique)
+# print("duplicate:",len(lst)-len(unique))
 
 
 # Q27. [Write a Program] Dict {"math": 90, "science": 85, "english": 95} lo. Highest marks wala subject print karo (bina loop).
 # answer:
+# d = {"math": 90, "science": 85, "english": 95}
+
+# highest = max(d,key=d.get)
+
+# print("Highest marks subject:", highest)
+# print("Marks:", d[highest])
 
 
 # Q28. [Write a Program] User se ek sentence le. Split karke list banao. Set mein convert karke unique words print karo. Total words aur unique words count batao.
 # answer:
+# sen = input("enter a sentance: ")
+# lst = sen.split()
+# print(lst)
+# unique = set(lst)
+# print("unique word=",unique)
+# print("total word enter by user =",len(lst))
+# print("total unique word enter by user =",len(unique))
 
 
 # Q29. [Write a Program] User se naam, age, aur 3 subject marks le. Ek dict banao jisme:
@@ -242,6 +284,30 @@
 # - Average
 # - Agar average >= 80 → "Good" warna "Average"
 # answer:
+# name = input("Enter name: ")
+# age = int(input("Enter age: "))
+
+# sub1 = float(input("Enter marks 1: "))
+# sub2 = float(input("Enter marks 2: "))
+# sub3 = float(input("Enter marks 3: "))
+
+# marks = [sub1, sub2, sub3]
+# average = sum(marks) / len(marks)
+
+# student = {
+#     "name": name,
+#     "age": age,
+#     "marks": marks,
+#     "average": average
+# }
+
+# print("Name:", student["name"].upper())
+# print("Average:", student["average"])
+
+# if student["average"] >= 80:
+#     print("Good")
+# else:
+#     print("Average")
 
 
 # Q30. [Write a Program] Do sets {1, 2, 3, 4, 5} aur {4, 5, 6, 7} lo. Aise elements ki set banao jo:
@@ -249,10 +315,23 @@
 # - Sirf pehle mein hain (difference)
 # - Dono mein se kisi ek mein hain (symmetric difference)
 # answer:
+# a = {1, 2, 3, 4, 5}
+# b = {4, 5, 6, 7}
+# intersection =a.intersection(b)
+# diffrence = a-a.intersection(b)
+# symmetric = a.symmetric_difference(b)
+# print(intersection)
+# print(diffrence)
+# print(symmetric)
 
 
 # Q31. [Write a Program] Dict {"name": "sohail", "age": 18, "marks": [85, 92, 78]} lo. Marks ka average nikalo. Dict mein naya key "average" add karo. Final dict print karo.
 # answer:
+# student = {"name": "sohail", "age": 18, "marks": [85, 92, 78]}
+# average = (student["marks"][0]+student["marks"][1]+student["marks"][2])/3
+# print(average)
+# student.update({"average":average})
+# print(student)
 
 
 # Q32. [Write a Program] User se 2 strings le. Dono ke unique characters ki sets banao. Phir:
@@ -260,6 +339,16 @@
 # - Saare unique characters (union)
 # - Sirf pehli string ke characters (difference)
 # answer:
+# s = input("enter word: ")
+# s2 = input("enter word: ")
+# set1 = set(s)
+# set2 = set(s2)
+# common = set1.intersection(set2)
+# all_char = set1.union(set2)
+# only_set1_char = set1-common
+# print(common)
+# print(all_char)
+# print(only_set1_char)
 
 
 
@@ -924,9 +1013,9 @@
 # ############################################################
 
 # LEARNING 1:Q20 dict ki immutable honi chahiye kyunki python hash value mai store karta hai or agar change hoti to hash vlaue change hote and difficulty hoti search karne mai isiliye
-# LEARNING 2:
-# LEARNING 3:
-# LEARNING 4:
+# LEARNING 2:Q21 d.get("key") error nahi deta and d["key"] agar key nahi hai dict mai so ye keyerror de dega
+# LEARNING 3:Q27 max(d,key=d.get) ye max value returen karta hai max function adn key = iska kaam hota hai ki kis basis pe compare karna hai 
+# LEARNING 4:Q30 a.symmetric_difference(b) new method so ye symmetric diffrence ke liye hai
 # LEARNING 5:
 
 # ############################################################
