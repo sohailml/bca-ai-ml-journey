@@ -24,63 +24,99 @@
 # print(len(d))
 # print(d["name"])
 # print(type(d))
-# answer:
+# answer:first 3 second sohail third dict
 
 
 # Q2. [Output Predict] Set basic output.
 # s = {1, 2, 3, 3, 4, 4, 5}
 # print(s)
 # print(len(s))
-# answer:
+# answer:{1,2,3,4,5} second 5
 
 
 # Q3. [Debugging] Bug kya hai? Fix karo.
 # d = {"a": 1, "b": 2}
 # d.append({"c": 3})
 # print(d)
-# answer:
+# answer:bug hai .append dict mai add karne ke liye update use karte hai 
+# d = {"a": 1, "b": 2}
+# d.update({"c": 3})
+# print(d)
 
 
 # Q4. [Debugging] Bug kya hai? Fix karo.
 # s = {1, 2, 3}
 # s.append(4)
 # print(s)
-# answer:
+# answer:.append bug hai set mai add karne ke liye .add() ka use karte hai
+# s = {1, 2, 3}
+# s.add(4)
+# print(s)
 
 
 # Q5. [Concept] Dict aur Set mein main difference kya hai?
-# answer:
+# answer:dict or set dono hi curly braces mai likhte hai and dono hi unorder hote hai but dict key:value pair mai store hota hai and dict mutable hota hai set bhi mutable hota hai but element immutable isiliye set mai dict and list store nahi kar sakte
 
 
 # Q6. [Code Completion] Blank bharo - dict mein naya key-value add karna hai.
 # d = {"a": 1, "b": 2}
 # d._____({"c": 3})
 # print(d)
-# answer:
+# answer:blank mai update aayega
 
 
 # Q7. [Write a Program] Apne baare mein dict banao (name, age, city). Keys, values, items print karo.
 # answer:
+# self = {"name":"sohail","age":18,"city":"new delhi"}
+# print(self)
+# print(self.items())
 
 
 # Q8. [Write a Program] Set {1, 2, 3, 4, 5} banao. 6 add karo, 1 remove karo, print karo.
 # answer:
+# st={1, 2, 3, 4, 5}
+# st.add(6)
+# st.remove(1)
+# print(st)
 
 
 # Q9. [Write a Program] User se naam aur age le. Dict banao {"name": naam, "age": age, "length": len(naam)}. Print karo.
 # answer:
+# name = input("enter your name: ")
+# age = int(input("enter your age: "))
+# dic = {"name": name, "age": age, "length_of_name": len(name)}
+# print(dic)
 
 
 # Q10. [Write a Program] Do sets {1, 2, 3} aur {3, 4, 5} lo. Union, intersection, difference print karo.
 # answer:
+# A = {1, 2, 3} 
+# B = {3, 4, 5}
+# print(A.union(B))
+# print(A.intersection(B))
+# print("A-B =",A-A.intersection(B))
 
 
 # Q11. [Write a Program] Dict {"name": "sohail", "age": 18} mein "city": "Delhi" add karo (update se). Phir "name" key ki value uppercase karke print karo.
 # answer:
+# dic = {"name": "sohail", "age": 18}
+# dic.update({"city": "delhi"})
+# print(dic)
+# name = dic.get("name")
+# print(name.upper())
 
 
 # Q12. [Write a Program] List [1, 2, 2, 3, 3, 3, 4, 4, 4, 4] ko set mein convert karo. Unique elements print karo. Original list ki length aur set ki length compare karo.
 # answer:
+# lst = [1, 2, 2, 3, 3, 3, 4, 4, 4, 4]
+# st = set(lst)
+# print(st)
+# if len(lst)<len(st):
+#     print("length of list is smaller than length of set")
+# elif len(lst)>len(st):
+#     print("length of list is bigger than length of set")
+# else:
+#     print("both length are equal")
 
 
 
@@ -95,7 +131,7 @@
 # print(d.values())
 # print(list(d.keys()))
 # print(d.get("city", "Unknown"))
-# answer:
+# answer:dict_keys(['name', 'age']) second dict_values(['sohail', 18]) third ['name', 'age'] fourth Unknown
 
 
 # Q14. [Output Predict] Set methods output.
@@ -105,7 +141,7 @@
 # s.remove(1)
 # print(s)
 # print(len(s))
-# answer:
+# answer: first {2,3,4,5} and len 4
 
 
 # Q15. [Output Predict] Nested dict output.
@@ -113,7 +149,7 @@
 # print(student["marks"]["math"])
 # print(student["name"].upper())
 # print(student["marks"]["math"] + student["marks"]["sci"])
-# answer:
+# answer:1st 90 2nd SOHAIL 3rd 175
 
 
 # Q16. [Output Predict] String + Set mix.
@@ -121,30 +157,42 @@
 # unique = set(s)
 # print(unique)
 # print(len(s), len(unique))
-# answer:
+# answer:1st {"p","r","o","g","a","m","i","n"} 2nd 11 8
 
 
 # Q17. [Debugging] Bug kya hai? Fix karo.
 # d = {"a": 1, "b": 2}
 # print(d["c"])
-# answer:
+# answer:bug hai ki ham c search kar rahe hai but dict mai c hai nahi so ham .get() use kar sakte hai ya c ko pehle add kar sakte hai
+# d = {"a": 1, "b": 2}
+# print(d.get("c","not found"))
+
+#or
+# d = {"a": 1, "b": 2}
+# d["c"] = 3
+# print(d["c"])
+# print(d)
 
 
 # Q18. [Debugging] Bug kya hai? Fix karo.
 # s = {[1, 2], [3, 4]}
 # print(s)
-# answer:
+# answer:bug hai ki ham set mai list store kar rahe hai jo ki allowed nahi hai so ham list mai stoe na karke simple store kar sakte hai 
+# s = {1, 2, 3, 4}
+# print(s)
 
 
 # Q19. [Debugging] Bug kya hai? Fix karo.
 # s = {1, 2, 3}
 # s.remove(10)
 # print(s)
-# answer:
+# answer:bug hai ki isme 10 hai hi nhai or ham remove kar rahe hai so fix hai ki remove line ko hata dena
+# s = {1, 2, 3}
+# print(s)
 
 
 # Q20. [Concept] Dict ki key immutable honi chahiye — kyun? Mutable key allowed hoti toh kya problem hoti?
-# answer:
+# answer: dict ki immutable honi chahiye kyunki python hash value mai store karta hai or agar change hoti to hash vlaue change hote and difficulty hoti search karne mai isiliye
 
 
 # Q21. [Concept] `d.get("key")` aur `d["key"]` mein kya farak hai? Kab kaunsa use karoge?
@@ -872,6 +920,16 @@
 
 
 # ############################################################
+#  LEARNING NOTEBOOK
+# ############################################################
+
+# LEARNING 1:Q20 dict ki immutable honi chahiye kyunki python hash value mai store karta hai or agar change hoti to hash vlaue change hote and difficulty hoti search karne mai isiliye
+# LEARNING 2:
+# LEARNING 3:
+# LEARNING 4:
+# LEARNING 5:
+
+# ############################################################
 #  MISTAKE NOTEBOOK
 # ############################################################
 
@@ -880,8 +938,3 @@
 # Mistake 3:
 # Mistake 4:
 # Mistake 5:
-# Mistake 6:
-# Mistake 7:
-# Mistake 8:
-# Mistake 9:
-# Mistake 10:
