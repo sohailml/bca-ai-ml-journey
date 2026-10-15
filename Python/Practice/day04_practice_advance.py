@@ -364,7 +364,7 @@
 # d.update({"c": 3})
 # print(list(keys))
 # print(len(keys))
-# answer:
+# answer:first [a,b] 2nd [a,b,c] 3rd 3
 
 
 # Q34. [Output Predict] Set pop random.
@@ -373,7 +373,7 @@
 # y = s.pop()
 # print(len(s))
 # print(x + y)  # Kya ye deterministic hai?
-# answer:
+# answer:first len 3 second pop random vlaue remive karta hai isiliye ye non determinsitic hua
 
 
 # Q35. [Output Predict] String + Dict + List mix.
@@ -383,7 +383,7 @@
 # print(d["name"].upper())
 # print(d["marks"][1])
 # print(d["avg"] >= 85)
-# answer:
+# answer:1st SOHAIL 2nd 92 3rd True
 
 
 # Q36. [Output Predict] Nested set trap.
@@ -396,78 +396,129 @@
 # print(y)
 # print(s is x)
 # print(s is y)
-# answer:
+# answer:1st {1,2,3,4} 2nd {1,2,3,5} 3rd True false
 
 
 # Q37. [Output Predict] Tuple as dict key.
 # d = {(1, 2): "a", (3, 4): "b"}
 # print(d[(1, 2)])
 # print(len(d))
-# # d[(1, 2, 3)] = "c"   # ye line kya karegi?
-# answer:
+# d[(1, 2, 3)] = "c"   # ye line kya karegi?
+# answer: 1st a second 2 and d[(1, 2, 3)] = "c" ye dict mai new bana dega 
 
 
 # Q38. [Debugging] Bug kya hai? Fix karo.
 # d = {"a": 1, "b": 2}
 # d.update("c", 3)
 # print(d)
-# answer:
+# answer: bug hai ki isme update mai c:3 ye curly bracet mai nahi hai and semicolon ki jagah commar laga hai isliye
+# d = {"a": 1, "b": 2}
+# d.update({"c":3})
+# print(d)
 
 
 # Q39. [Debugging] Bug kya hai? Fix karo.
 # s = {1, 2, 3}
 # x = s.pop(2)
 # print(x)
-# answer:
+# answer:pop ke andar 2 kyunki pop random value remove karta ha or agar hame 2 remove karna hai to pop ki jagah remive aayega
 
 
 # Q40. [Debugging] Bug kya hai? Fix karo.
 # d = {"a": 1, "b": 2}
 # keys = d.keys()
 # print(keys[0])
-# answer:
+# answer:isme bug hai keys[0] yunki .key normal list mai output nahi deta hai dict view mai deta hai isliye bug hai agar hame chahiye [0] so ham keys ko list mai chnage kar sakte hai 
+# d = {"a": 1, "b": 2}
+# keys = list(d.keys())
+# print(keys[0])
 
 
 # Q41. [Debugging] Bug kya hai? Fix karo.
 # d = {"name": "sohail", "marks": [85, 92]}
 # print(d["marks"][5])
-# answer:
+# answer: bug hai ki makrs mai 2 hi value hai and ye 5th search kar raha  index out of range isliye
 
 
 # Q42. [Concept] Set unordered hota hai — iska kya matlab? Set pe indexing kyun nahi chalti? Ek real-world example do jaha set better ho list se.
-# answer:
+# answer:Set unordered hota hai matlab uske elements ka order fix nahi hota. Isiliye set pe indexing kaam nahi karti, kyunki hum uske elements ko index number se access nahi kar sakte.
+#Real-world example: Agar mujhe students ke unique names store karne hain aur duplicate names nahi chahiye, toh list ki jagah set use kar sakte hain, kyunki set automatically duplicate values hata deta hai.
 
 
 # Q43. [Concept] Dict ki keys view, values view, items view — ye "dynamic" kyun hote hain? Example do.
-# answer:
+# answer: key value item  ye sab dyanmic hote hai jise  ham jab bhi dict mai change karenge to ye directily key value item view bhi change hoga 
+# ex:
+# d = {"a": 1, "b": 2}
+
+# keys = d.keys()
+# print(keys)
+
+# d["c"] = 3
+# print(keys)
 
 
 # Q44. [Concept] Set ke andar list nahi daal sakte but tuple daal sakte hain — kyun?
-# answer:
-
+# answer: Set ke elements hashable hone chahiye. List mutable hoti hai aur hashable nahi hoti, isliye use set mein nahi daal sakte. Tuple immutable hota hai, isliye use daal sakte hain agar uske saare elements hashable hon.
 
 # Q45. [Code Completion] Blank bharo - dict se value safely nikaalo.
 # d = {"a": 1, "b": 2}
 # val = d._____("c", 0)
 # print(val)
-# answer:
+# answer: blank mai get aayega
+# d = {"a": 1, "b": 2}
+# val = d.get("c", 0)
+# print(val)
 
 
 # Q46. [Code Completion] Blank bharo - set se element hatao (error ke bina).
 # s = {1, 2, 3}
 # s._____(10)
 # print(s)
-# answer:
-
+# answer:blank mai discard aayega
+# s = {1, 2, 3}
+# s.discard(10)
+# print(s)
 
 # Q47. [Write a Program] User se ek sentence le. Dict banao jisme har unique word ki length ho: {"python": 6, "is": 2, ...}. (Bina loop — manually socho)
 # answer:
+# s = input("enter a sentance: ")
+# st = set(s.split())
+# lst = list(st)
+# print(st)
+# dic = {
+#     lst[0]:len(lst[0])
+# }
+# print(dic)
+#or
+# s = input("Enter a sentence: ")
+# words = set(s.split())
+
+# dic = {word: len(word) for word in words}
+
+# print(dic)
 
 
 # Q48. [Write a Program] User se 5 numbers le (list mein). Un sab ka set banao. Phir check karo:
 # - Kitne unique numbers hain
 # - Kaunsa number sabse zyada baar aaya (Hint: list.count() use karo)
 # answer:
+# first = int(input("enter 1st: "))
+# second = int(input("enter 2nd: "))
+# third = int(input("enter 3rd: "))
+# fourth = int(input("enter 4th: "))
+# fifth = int(input("enter 5th: "))
+# lst = []
+# lst.append(first)
+# lst.append(second)
+# lst.append(third)
+# lst.append(fourth)
+# lst.append(fifth)
+# unique = set(lst)
+# print("there are",len(unique),"unique charachter")
+# max_count = max(lst.count(x) for x in unique)
+# a = [x for x in unique if lst.count(x) == max_count]
+
+# print("Most repeated number(s):", a)
 
 
 # Q49. [Write a Program] Do lists: a = [1, 2, 3, 4, 5], b = [3, 4, 5, 6, 7]. Dono ko set mein convert karo. Phir:
@@ -1016,7 +1067,11 @@
 # LEARNING 2:Q21 d.get("key") error nahi deta and d["key"] agar key nahi hai dict mai so ye keyerror de dega
 # LEARNING 3:Q27 max(d,key=d.get) ye max value returen karta hai max function adn key = iska kaam hota hai ki kis basis pe compare karna hai 
 # LEARNING 4:Q30 a.symmetric_difference(b) new method so ye symmetric diffrence ke liye hai
-# LEARNING 5:
+
+# LEARNING 5:Q42 Set unordered hota hai matlab uske elements ka order fix nahi hota. Isiliye set pe indexing kaam nahi karti, kyunki hum uske elements ko index number se access nahi kar sakte. Real-world example: Agar mujhe students ke unique names store karne hain aur duplicate names nahi chahiye, toh list ki jagah set use kar sakte hain, kyunki set automatically duplicate values hata deta hai.
+# LEARNING 6:Q44 Set ke elements hashable hone chahiye. List mutable hoti hai aur hashable nahi hoti, isliye use set mein nahi daal sakte. Tuple immutable hota hai, isliye use daal sakte hain agar uske saare elements hashable hon.
+# LEARNING 7:Q46 discard() ye bhi set se remove karta hai but agar value set mai nahi hai to error nahi deta 
+# LEARNING 8:Q47 word: len(word) for word in words = dictionary comprehension
 
 # ############################################################
 #  MISTAKE NOTEBOOK
