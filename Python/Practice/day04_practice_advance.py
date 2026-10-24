@@ -526,6 +526,13 @@
 # - Sirf pehli list ke elements
 # - Dono ke combined unique elements
 # answer:
+# a = [1, 2, 3, 4, 5]
+# b = [3, 4, 5, 6, 7]
+# set1 = set(a)
+# set2 = set(b)
+# print("common element =",set1.intersection(set2))
+# print("only element of list a =",set1-(set1.intersection(set2)))
+# print("unique element in both =",set1.symmetric_difference(set2))
 
 
 # Q50. [Write a Program] Inventory system simulate karo:
@@ -536,6 +543,17 @@
 # - Agar mile → index dhundho, price, quantity, total value print karo
 # - Warna → "Item not found"
 # answer:
+# items = ["pen", "book", "pencil", "eraser"]
+# prices = [10, 50, 5, 3]
+# quantity = [100, 20, 200, 150]
+# user = input("enter your item: ")
+# if user in items:
+#     idx = items.index(user)
+#     print("price of this item is:",prices[idx])
+#     print("quantity of this item is:",quantity[idx])
+#     print("your total value is:",(prices[idx])*(quantity[idx]))
+# else:
+#     print("Item not found")
 
 
 # Q51. [Write a Program] User se ek paragraph le. Dict banao:
@@ -544,6 +562,16 @@
 # - "unique_words": set ki length
 # - "longest": longest word
 # answer:
+# para = input("enter a paragraph: ")
+# lst = list(para.split())
+# char = para.replace(" ","")
+# dic = {
+#     "words":len(lst),
+#     "chars":len(char),
+#     "unique_words":len(set(lst)),
+#     "longest": max(lst, key=len) if lst else ""
+# }
+# print(dic)
 
 
 # Q52. [Write a Program] User se naam, age, aur skills list le. Ek dict banao:
@@ -1072,6 +1100,8 @@
 # LEARNING 6:Q44 Set ke elements hashable hone chahiye. List mutable hoti hai aur hashable nahi hoti, isliye use set mein nahi daal sakte. Tuple immutable hota hai, isliye use daal sakte hain agar uske saare elements hashable hon.
 # LEARNING 7:Q46 discard() ye bhi set se remove karta hai but agar value set mai nahi hai to error nahi deta 
 # LEARNING 8:Q47 word: len(word) for word in words = dictionary comprehension
+
+# LEARNING 9:Q51 "longest": max(lst, key=len) if lst else ""
 
 # ############################################################
 #  MISTAKE NOTEBOOK
