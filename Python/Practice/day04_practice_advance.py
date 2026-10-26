@@ -578,10 +578,30 @@
 # {"name": ..., "age": ..., "skills": set(skills), "total_skills": len(set(skills))}
 # Print karo. Agar total_skills > 3 → "Multi-skilled" warna "Learning"
 # answer:
+# name = input("enter your name: ")
+# age = int(input("enter your age: "))
+# skills = list(input("enter your skills: ").split())
+# dic = {
+#     "name":name,
+#     "age":age,
+#     "skills":set(skills),
+#     "total skills": len(set(skills))
+# }
+# print(dic)
+# if dic["total skills"]> 3:
+#     print("multi-skilled")
+# else:
+#     print("learning")
 
 
 # Q53. [Write a Program] Do dicts: d1 = {"a": 1, "b": 2, "c": 3}, d2 = {"b": 100, "c": 200, "d": 4}. Naya dict banao jisme d1 ke saare aur d2 ke saare keys hon. Agar key dono mein hai toh d2 ki value use karo.
 # answer:
+# d1 = {"a": 1, "b": 2, "c": 3}
+# d2 = {"b": 100, "c": 200, "d": 4}
+
+# d3 = d1.copy()
+# d3.update(d2)
+# print(d3)
 
 
 # Q54. [Write a Program] Student data:
@@ -589,12 +609,40 @@
 # marks = [[85, 92], [78, 88], [95, 90]]
 # Dict banao {name: [marks]}. Phir har student ka average nikaal ke print karo. Highest average wale ka naam print karo.
 # answer:
+# names = ["sohail", "rahul", "priya"]
+# marks = [[85, 92], [78, 88], [95, 90]]
+
+# dic = {
+#     names[0]: marks[0],
+#     names[1]: marks[1],
+#     names[2]: marks[2]
+# }
+
+# avg1 = sum(dic["sohail"]) / len(dic["sohail"])
+# avg2 = sum(dic["rahul"]) / len(dic["rahul"])
+# avg3 = sum(dic["priya"]) / len(dic["priya"])
+
+# print("sohail Average:", avg1)
+# print("rahul Average:", avg2)
+# print("priya Average:", avg3)
+
+# if avg1 > avg2 and avg1 > avg3:
+#     print("Highest average: sohail")
+# elif avg2 > avg1 and avg2 > avg3:
+#     print("Highest average: rahul")
+# else:
+#     print("Highest average: priya")
 
 
 # Q55. [Write a Program] User se ek string le. Dict banao jisme har character ka count ho:
 # {"s": 2, "o": 1, "h": 1, ...}
 # (Bina loop — manually socho. Har character ke liye count() use karo)
 # answer:
+# s = input("enter a string: ")
+# dic = {}
+# for char in s:
+#     dic[char] = s.count(char)
+# print(dic)
 
 
 # Q56. [Write a Program] Set theory: 3 sets banao:
@@ -607,6 +655,14 @@
 # - Jo teeno jaante hain
 # - Jo kam se kam 2 jaante hain
 # answer:
+# python_devs = {"sohail", "rahul", "priya"}
+# ml_devs = {"sohail", "priya", "vikas"}
+# ai_devs = {"priya", "vikas", "neha"}
+# print("All unique developers:", python_devs.union(ml_devs).union(ai_devs))
+# print("Only python developers:", python_devs - ml_devs - ai_devs)
+# print("Developers who know all three:", python_devs.intersection(ml_devs).intersection(ai_devs))
+# at_least_two = (python_devs.intersection(ml_devs)).union(python_devs.intersection(ai_devs)).union(ml_devs.intersection(ai_devs))
+# print("Developers who know at least two:", at_least_two)
 
 
 # Q57. [Write a Program] User se ek sentence le. Ek dict banao jisme:
@@ -616,6 +672,25 @@
 # - "count_consonants": len of consonants set
 # Print karo. Agar vowels > consonants → "Vowel heavy" warna "Consonant heavy"
 # answer:
+# sen = input("enter a sentence: ")
+# vowels_set = set()
+# consonants_set = set()
+
+# for char in sen:
+#     if char.lower() in "aeiou":
+#         vowels_set.add(char)
+#     elif char.isalpha():
+#         consonants_set.add(char)
+
+# print("Vowels:", vowels_set)
+# print("Consonants:", consonants_set)
+# print("Count of Vowels:", len(vowels_set))
+# print("Count of Consonants:", len(consonants_set))
+
+# if len(vowels_set) > len(consonants_set):
+#     print("Vowel heavy")
+# else:
+#     print("Consonant heavy")
 
 
 
