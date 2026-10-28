@@ -1243,7 +1243,6 @@
 # LEARNING 9:Q51 "longest": max(lst, key=len) if lst else ""
 
 # LEARNING 10:Q66 Shallow copy outer container ki copy banati hai, lekin nested objects ko share kar sakti hai. Deep copy nested objects ki bhi independent copies banati hai. Simple sets containing only integers ke case mein dono ka observable behaviour aksar same hota hai.
-
 # LEARNING 11:Q67 set mutable hota hai, jabki frozenset immutable hota hai. Dono unique elements store karte hain. frozenset ka use tab karte hain jab collection ko unchanged rakhna ho ya use dictionary key ya kisi doosre set ke element ke roop mein use karna ho.
 
 # ############################################################
