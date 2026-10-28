@@ -705,7 +705,7 @@
 # d["list2"] = d["list2"] + [5]
 # print(d)
 # print(d["list1"] is d["list2"])
-# answer:
+# answer:first {"list": [1,2,5],"list2":[3,4,5]} second false
 
 
 # Q59. [Output Predict] Set of tuples.
@@ -713,7 +713,7 @@
 # s = set(lst)
 # print(s)
 # print(len(lst), len(s))
-# answer:
+# answer:{(1,2),(3, 4), (5, 6)} second 4 3
 
 
 # Q60. [Output Predict] Nested dict + list modification.
@@ -727,15 +727,15 @@
 # print(data["user"]["profile"]["skills"])
 # print(len(data["user"]["profile"]["skills"]))
 # print(len(set(data["user"]["profile"]["skills"])))
-# answer:
+# answer:1st ["python","ml","ai",:python] 2nd 4 3rd 3
 
 
 # Q61. [Output Predict] Tuple in dict, list in set trap.
 # d = {"coords": (1, 2), "nums": [3, 4]}
 # print(d["coords"][0])
 # print(d["nums"][-1])
-# # s = {d["nums"]}  # ye line kya karegi?
-# answer:
+# s = {d["nums"]}  # ye line kya karegi?
+# answer: 1st 1 2nd 4 3rd error kyunki set ke andar list nahi store kar sakte
 
 
 # Q62. [Output Predict] Dict merge + set conversion.
@@ -747,7 +747,7 @@
 # print(len(d3))
 # print(set(d3.keys()))
 # print(set(d3.values()))
-# answer:
+# answer:1st {"a": 1, "b": 100, "c":3} 2nd 3 3rd {"a","b","c"} 4th {1,100,3}
 
 
 # Q63. [Debugging] Bug kya hai? Fix karo.
@@ -758,7 +758,14 @@
 #     ]
 # }
 # print(data["students"]["name"])
-# answer:
+# answer:students ke andar list hai so directly name se acces nahi kar sakte 
+# data = {
+#     "students": [
+#         {"name": "sohail", "marks": [85, 92]},
+#         {"name": "rahul", "marks": [78, 88]}
+#     ]
+# }
+# print(data["students"][0]["name"])
 
 
 # Q64. [Debugging] Bug kya hai? Fix karo.
@@ -766,22 +773,29 @@
 # for x in s:  # loop allowed nahi, but bug identify karo
 #     s.add(x + 10)
 # print(s)
-# answer:
+# answer:runtime error ayega kyunki loop chalte samay usi loop ki size badh rahi hai hame copy pe karna hoga
+# s = {1, 2, 3}
+# for x in s.copy():  # loop allowed nahi, but bug identify karo
+#     s.add(x + 10)
+# print(s)
 
 
 # Q65. [Debugging] Bug kya hai? Fix karo.
 # d = {"a": 1, "b": 2}
 # val = d.pop("c")
 # print(val)
-# answer:
+# answer:c hai hi nai or hame get() use karna chahiye
+# d = {"a": 1, "b": 2}
+# val = d.get("c")
+# print(val)
 
 
 # Q66. [Concept] Shallow copy aur deep copy mein farak — dict aur set ke reference mein samjhao. Example do.
-# answer:
+# answer:Shallow copy outer container ki copy banati hai, lekin nested objects ko share kar sakti hai. Deep copy nested objects ki bhi independent copies banati hai. Simple sets containing only integers ke case mein dono ka observable behaviour aksar same hota hai.
 
 
 # Q67. [Concept] `set` aur `frozenset` mein kya farak hai? frozenset kab use karoge? (frozenset tune padha nahi — sirf soch ke batao)
-# answer:
+# answer:set mutable hota hai, jabki frozenset immutable hota hai. Dono unique elements store karte hain. frozenset ka use tab karte hain jab collection ko unchanged rakhna ho ya use dictionary key ya kisi doosre set ke element ke roop mein use karna ho.
 
 
 # Q68. [Code Completion] Blank bharo - dict ki saari keys ki sorted list banao.
@@ -790,7 +804,10 @@
 # keys._____()
 # print(keys)
 # answer:
-
+# d = {"c": 3, "a": 1, "b": 2}
+# keys = list(d.keys())
+# keys.sort()
+# print(keys)
 
 # Q69. [Code Completion] Blank bharo - set se duplicate list banao.
 # lst = [1, 2, 2, 3, 3, 3, 4]
@@ -798,7 +815,10 @@
 # print(unique)
 # print(_____(unique))
 # answer:
-
+# lst = [1, 2, 2, 3, 3, 3, 4]
+# unique = set(lst)
+# print(unique)
+# print(list(unique))
 
 # Q70. [Write a Program] Mini library management:
 # books = ["Python", "ML", "AI", "Data Science"]
@@ -810,14 +830,24 @@
 # Warna: "Not available"
 # Saath mein: authors se unique authors ki set banao aur print karo.
 # answer:
-
+# books = ["Python", "ML", "AI", "Data Science"]
+# authors = ["Guido", "Andrew", "Yann", "Andrew"]
+# user = input("enter book name: ")
+# if user in books:
+#     idx =books.index(user)
+#     print("book available")
+#     print("book index:",idx)
+#     print("book authors is:",authors[idx])
+# else:
+#     print("not available")
+# print("here are all authors:",set(authors))
 
 # Q71. [Write a Program] User se ek sentence le. Dict banao:
 # - Har word ki length: {word: len(word)}
 # - Longest word
 # - Shortest word
 # - Average word length
-# answer:
+# answer:skippppppp
 
 
 # Q72. [Write a Program] Quiz app:
@@ -832,6 +862,40 @@
 # - Warna → "Better luck next time"
 # answer:
 
+# questions = ["Capital of India?", "2+2?", "Python creator?"]
+# answers = ["delhi", "4", "guido"]
+# print("q1:",questions[0])
+# ans1 = input("enter your answer: ")
+# res1 = "correct" if answers[0] == ans1 else "wronge"
+# print(res1)
+
+# print("q2:",questions[1])
+# ans2 = input("enter your answer: ")
+# res2 = "correct" if answers[1] == ans2 else "wronge"
+# print(res2)
+
+# print("q3:",questions[2])
+# ans3 = input("enter your answer: ")
+# res3 = "correct" if answers[2] == ans3 else "wronge"
+# print(res3)
+
+# score =0
+# if res1 =="correct":
+#     score+=1
+# if res2 =="correct":
+#     score+=1
+# if res3 =="correct":
+#     score+=1
+# print(score)
+
+# if score ==3:
+#     print("perfact")
+# elif score == 2:
+#     print("good")
+# elif score == 1:
+#     print("try harder")
+# else:
+#     print("better luck next time")
 
 # Q73. [Write a Program] Product bill:
 # User se: product_name, price, quantity, discount% le.
@@ -1177,6 +1241,10 @@
 # LEARNING 8:Q47 word: len(word) for word in words = dictionary comprehension
 
 # LEARNING 9:Q51 "longest": max(lst, key=len) if lst else ""
+
+# LEARNING 10:Q66 Shallow copy outer container ki copy banati hai, lekin nested objects ko share kar sakti hai. Deep copy nested objects ki bhi independent copies banati hai. Simple sets containing only integers ke case mein dono ka observable behaviour aksar same hota hai.
+
+# LEARNING 11:Q67 set mutable hota hai, jabki frozenset immutable hota hai. Dono unique elements store karte hain. frozenset ka use tab karte hain jab collection ko unchanged rakhna ho ya use dictionary key ya kisi doosre set ke element ke roop mein use karna ho.
 
 # ############################################################
 #  MISTAKE NOTEBOOK
