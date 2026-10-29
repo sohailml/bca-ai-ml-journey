@@ -906,6 +906,24 @@
 # {"product": ..., "subtotal": ..., "discount": ..., "final": ...}
 # - Agar final > 1000 → "Premium" warna "Regular"
 # answer:
+# product_name = input("enter product name: ")
+# price = float(input("enter price: "))
+# quantity = int(input("enter quantitiy: "))
+# discount = float(input("enter discount%: "))
+# subtotal = price * quantity
+# discount_amount = subtotal * discount / 100
+# final = subtotal - discount_amount
+# data = {
+#     "product":product_name,
+#     "subtotal":subtotal,
+#     "discount":discount_amount,
+#     "final":final
+# }
+# print(data)
+# if final >1000:
+#     print("premium")
+# else:
+#     print("regular")
 
 
 # Q74. [Write a Program] Student report card:
@@ -918,7 +936,7 @@
 # - highest, lowest
 # - unique skills (set)
 # - Final dict: {"name": ..., "roll": ..., "total": ..., "avg": ..., "grade": ..., "skills": ...}
-# answer:
+# answer:skipppppp
 
 
 # Q75. [Write a Program] Employee database:
@@ -932,6 +950,35 @@
 # - Average salary
 # - Unique departments (set)
 # answer:
+# names = ["sohail", "rahul", "priya"]
+# salaries = [50000, 75000, 60000]
+# departments = ["IT", "HR", "IT"]
+
+# employees = {
+#     names[0]: {"salary": salaries[0], "dept": departments[0]},
+#     names[1]: {"salary": salaries[1], "dept": departments[1]},
+#     names[2]: {"salary": salaries[2], "dept": departments[2]}
+# }
+
+# print("Employee Database:", employees)
+
+# if employees["sohail"]["dept"] == "IT":
+#     print("sohail")
+
+# if employees["rahul"]["dept"] == "IT":
+#     print("rahul")
+
+# if employees["priya"]["dept"] == "IT":
+#     print("priya")
+
+# highest = max(employees, key=lambda name: employees[name]["salary"])
+# print("Highest Salary Employee:", highest)
+
+# avg = sum(salaries) / len(salaries)
+# print("Average Salary:", avg)
+
+# unique_departments = set(departments)
+# print("Unique Departments:", unique_departments)
 
 
 # Q76. [Write a Program] User se do sentences le. Dono ke unique words ki sets banao. Print karo:
@@ -940,6 +987,14 @@
 # - Sirf pehle sentence ke words (difference)
 # - Sirf dusre sentence ke words (difference)
 # answer:
+# sen1 = input("enter your 1st sentance: ").split(" ")
+# sen2 = input("enter your 2nd sentance: ").split(" ")
+# set1 = set(sen1)
+# set2 = set(sen2)
+# print("common word:",set1.intersection(set2))
+# print("unique word:",set1.union(set2))
+# print("only word in 1st sentance:",set1.difference(set2))
+# print("only word in 2nd sentance:",set2.difference(set1))
 
 
 # Q77. [Write a Program] Nested dict:
@@ -950,6 +1005,30 @@
 # }
 # Har student ka average nikaalo. Dict banao {name: avg}. Highest avg wale ka naam print karo.
 # answer:
+# data = {
+#     "student1": {"name": "sohail", "marks": [85, 92, 78]},
+#     "student2": {"name": "rahul", "marks": [78, 88, 92]},
+#     "student3": {"name": "priya", "marks": [95, 90, 88]}
+# }
+
+# avg1 = (data["student1"]["marks"][0] + data["student1"]["marks"][1] + data["student1"]["marks"][2])/ 3
+# avg2 = (data["student2"]["marks"][0] + data["student1"]["marks"][1] + data["student1"]["marks"][2])/ 3
+# avg3 = (data["student3"]["marks"][0] + data["student1"]["marks"][1] + data["student1"]["marks"][2])/ 3
+
+# averages = {
+#     data["student1"]["name"]: avg1,
+#     data["student2"]["name"]: avg2,
+#     data["student3"]["name"]: avg3
+# }
+
+# print("Student averages:", averages)
+
+# if avg1 > avg2 and avg1 > avg3:
+#     print("Highest average:", data["student1"]["name"])
+# elif avg2 > avg1 and avg2 > avg3:
+#     print("Highest average:", data["student2"]["name"])
+# else:
+#     print("Highest average:", data["student3"]["name"])
 
 
 # Q78. [Write a Program] Text analyzer:
@@ -961,7 +1040,7 @@
 # - vowels_set
 # - consonants_set
 # - most_common_word (list.count() use karo)
-# answer:
+# answer:skipppppp
 
 
 # Q79. [Write a Program] Shopping cart:
@@ -969,7 +1048,7 @@
 # prices = {"apple": 50, "banana": 20, "cherry": 100}
 # Har item ka total (qty × price) nikaalo. Grand total nikaalo.
 # Final dict print karo: {item: {"qty": ..., "price": ..., "total": ...}}
-# answer:
+# answer:skipppppp
 
 
 # Q80. [Write a Program] User se ek sentence le aur ek dict banao jisme har character ka count ho. Phir:
@@ -977,7 +1056,7 @@
 # - Sabse kam baar aane wala character
 # - Sirf vowels ka set
 # - Sirf consonants ka set
-# answer:
+# answer:skippppp
 
 
 # Q81. [Write a Program] Inventory with categories:
@@ -990,6 +1069,40 @@
 # - Unique categories
 # - Total inventory value (sum of all prices)
 # answer:
+# products = ["pen", "book", "pencil", "eraser", "notebook"]
+# categories = ["stationery", "stationery", "stationery", "stationery", "stationery"]
+# prices = [10, 50, 5, 3, 30]
+
+# inventory = {
+#     products[0]: {"category": categories[0], "price": prices[0]},
+#     products[1]: {"category": categories[1], "price": prices[1]},
+#     products[2]: {"category": categories[2], "price": prices[2]},
+#     products[3]: {"category": categories[3], "price": prices[3]},
+#     products[4]: {"category": categories[4], "price": prices[4]}
+# }
+
+# print("Inventory:", inventory)
+
+# if inventory["pen"]["price"] < 20:
+#     print("pen")
+
+# if inventory["book"]["price"] < 20:
+#     print("book")
+
+# if inventory["pencil"]["price"] < 20:
+#     print("pencil")
+
+# if inventory["eraser"]["price"] < 20:
+#     print("eraser")
+
+# if inventory["notebook"]["price"] < 20:
+#     print("notebook")
+
+# unique_categories = set(categories)
+# print("Unique categories:", unique_categories)
+
+# total = prices[0] + prices[1] + prices[2] + prices[3] + prices[4]
+# print("Total inventory value:", total)
 
 
 # Q82. [Write a Program] User se ek string le. Isme se:
@@ -997,7 +1110,7 @@
 # - Original string aur naya string ki length compare karo
 # - Sabse zyada baar aane wala character nikaalo
 # - Ek dict banao {char: count} aur print karo
-# answer:
+# answer:skipppp
 
 
 
@@ -1244,6 +1357,8 @@
 
 # LEARNING 10:Q66 Shallow copy outer container ki copy banati hai, lekin nested objects ko share kar sakti hai. Deep copy nested objects ki bhi independent copies banati hai. Simple sets containing only integers ke case mein dono ka observable behaviour aksar same hota hai.
 # LEARNING 11:Q67 set mutable hota hai, jabki frozenset immutable hota hai. Dono unique elements store karte hain. frozenset ka use tab karte hain jab collection ko unchanged rakhna ho ya use dictionary key ya kisi doosre set ke element ke roop mein use karna ho.
+
+# LEARNING 12:Q76 print("only word in 2nd sentance:",set2.difference(set1)) 
 
 # ############################################################
 #  MISTAKE NOTEBOOK
