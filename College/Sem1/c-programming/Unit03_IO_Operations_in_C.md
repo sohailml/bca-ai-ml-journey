@@ -1,7 +1,7 @@
 # 💻 C Programming - Unit 3: I/O Operations in C
 
 > **Course:** BCA - Semester 1  
-> **Topic:** Formatted Input (`scanf`) & Output (`printf`), Interactive Programming  
+> **Topic:** Formatted Input (`scanf`) & Output (`printf`), Interactive Programming, `getchar()`, `putchar()`, `gets()`, `puts()` 
 
 ---
 
@@ -9,24 +9,21 @@
 1. [Introduction & Objectives](#-1-introduction--objectives)
 2. [Formatted Input: `scanf()`](#-2-formatted-input-scanf)
 3. [Formatted Output: `printf()`](#-3-formatted-output-printf)
-4. [Interactive Programming (Question-Answer Style)](#-4-interactive-programming-question-answer-style)
-5. [Summary & Q&A](#-5-summary--qa)
+4. [Character and String I/O Functions (`getchar`, `putchar`, `gets`, `puts`)](#-4-character-and-string-io-functions-getchar-putchar-gets-puts)
+5. [Interactive Programming (Question-Answer Style)](#-5-interactive-programming-question-answer-style)
+6. [Summary & Q&A](#-6-summary--qa)
 
 ---
 
 ## 📌 1. Introduction & Objectives
 
-C programming mein **Input** aur **Output** operations ke liye do functions sabse zyada use hote hain: **`printf()`** (output ke liye) aur **`scanf()`** (input ke liye).
-
-*   **`printf()`:** Formatted output print karta hai, format specifiers (jaise `%d`, `%s`) use karke.
-*   **`scanf()`:** Formatted input read karta hai, variables ke addresses arguments ke roop mein maangta hai (jaise `scanf("%d", &num);`).
+C programming mein **Input** aur **Output** operations ke liye kai functions hain. PDF mein specifically inka zikr hai:
+*   **`printf()`** aur **`scanf()`**: Formatted input aur output ke liye. Ye single character, numerical values, aur strings sab handle kar sakte hain.
+*   **`gets()`** aur **`puts()`**: Strings ke input aur output ke liye.
+*   **`getchar()`**: Strings/characters read karne ke liye (especially whitespace ke saath).
 
 > [!IMPORTANT]
 > **Security Note:** Input handling careful honi chahiye taaki buffer overflows jaise security risks se bacha ja sake. `printf` aur `scanf` mein specifiers ka alignment (match) hona bahut zaroori hai.
-
-**Other Functions:**
-*   `gets()` aur `puts()`: Strings ke input/output ke liye.
-*   Ye saare functions `stdio.h` header file include karne ke baad hi use ho sakte hain.
 
 **Objectives:**
 *   `printf` function ko formatted output ke liye samajhna aur implement karna.
@@ -59,7 +56,7 @@ scanf(control string, arg1, arg2, ...argn);
 | **`%i`** | Ek integer read karta hai (decimal, octal, ya hex). |
 | **`%e`, `%f`, `%g`** | Ek floating-point number read karta hai. |
 | **`%o`** | Ek octal number read karta hai. |
-| **`%s`** | Ek string read karta hai. |
+| **`%s`** | Ek string read karta hai (sirf ek word, space par ruk jata hai). |
 | **`%x`** | Ek hexadecimal number read karta hai. |
 | **`%p`** | Ek pointer read karta hai. |
 | **`%n`** | Ab tak read kiye gaye characters ki count store karta hai. |
@@ -103,9 +100,9 @@ int main() {
 
 `%s` control character sirf ek word (bina space ke) read karta hai. Agar string mein spaces hain, toh `%s` sirf pehla word read karega.
 
-**Solutions:**
+**PDF mein bataye gaye Solutions:**
 1.  **`getchar()` in Loop:** Ek loop mein `getchar()` use karke characters read karo.
-2.  **`gets()` Function:** Ye whitespace ke saath poori string read karta hai.
+2.  **`gets()` Function:** Ye whitespace ke saath poori string read karta hai (Unit ke aage discuss kiya gaya hai).
 3.  **`%[...]` Control Character:** `%s` ki jagah square brackets mein characters ki list do.
 
 **Example (Uppercase letters and spaces):**
@@ -200,11 +197,98 @@ printf("c = %d, i = %c\n", c, i);
 
 ---
 
-## 💬 4. Interactive Programming (Question-Answer Style)
+## 🔄 4. Character and String I/O Functions (`getchar`, `putchar`, `gets`, `puts`)
+
+PDF mein clearly likha hai: *"The functions scanf() and printf() permit the transfer of single character, numerical values and strings; the functions gets() and puts() facilitate the input and output of strings."* Aur *"One way is to use the getchar() function within a loop."*
+
+Isliye, ye functions exam ke liye bahut important hain. Ye `stdio.h` header file mein defined hote hain.
+
+### 4.1 `getchar()` (Character Input)
+*   **Kaam:** Ye standard input (keyboard) se **ek single character** read karta hai.
+*   **Syntax:** `int getchar(void);`
+*   **Return:** Read kiya gaya character (integer ke roop mein) return karta hai. Agar end of file (EOF) aa jaye, toh `EOF` return karta hai.
+*   **Use Case:** Strings ko character-by-character read karne ke liye (especially jab spaces bhi read karne ho, jaise `scanf("%s")` nahi karta).
+
+**Example:**
+```c
+#include <stdio.h>
+int main() {
+    char c;
+    printf("Enter a character: ");
+    c = getchar(); // Ek character read karega
+    printf("You entered: %c\n", c);
+    return 0;
+}
+```
+
+### 4.2 `putchar()` (Character Output)
+*   **Kaam:** Ye standard output (screen) par **ek single character** print karta hai.
+*   **Syntax:** `int putchar(int char);`
+*   **Return:** Print kiya gaya character return karta hai. Error par `EOF` return karta hai.
+*   **Use Case:** Single character ko screen par dikhane ke liye.
+
+**Example:**
+```c
+#include <stdio.h>
+int main() {
+    char c = 'A';
+    putchar(c); // 'A' print karega
+    putchar('\n'); // New line print karega
+    return 0;
+}
+```
+
+### 4.3 `gets()` (String Input)
+*   **Kaam:** Ye standard input se ek **poori line (string)** read karta hai, jab tak Enter (newline) na dabaya jaye. Isme spaces bhi shamil hote hain.
+*   **Syntax:** `char *gets(char *str);`
+*   **Security Issue:** `gets()` ka koi bound check nahi hota, isliye ye **buffer overflow** ka khatra paida kar sakta hai. (Aaj kal ise use nahi karte, `fgets()` better hai, par exam ke liye ye yaad rakhna).
+*   **Return:** Success par string ka pointer return karta hai, error par `NULL`.
+
+**Example:**
+```c
+#include <stdio.h>
+int main() {
+    char str[50];
+    printf("Enter a string: ");
+    gets(str); // Spaces ke saath poori line read karega
+    printf("You entered: %s\n", str);
+    return 0;
+}
+```
+
+### 4.4 `puts()` (String Output)
+*   **Kaam:** Ye standard output par ek **string print** karta hai aur automatically end mein ek **newline character (`\n`)** add kar deta hai.
+*   **Syntax:** `int puts(const char *str);`
+*   **Return:** Success par non-negative value, error par `EOF`.
+
+**Example:**
+```c
+#include <stdio.h>
+int main() {
+    char str[] = "Hello World";
+    puts(str); // "Hello World" print karega aur new line add karega
+    return 0;
+}
+```
+
+### 4.5 Comparison Table: `scanf`/`printf` vs `gets`/`puts` vs `getchar`/`putchar`
+
+| Function | Type | Purpose |
+| :--- | :--- | :--- |
+| `scanf()` | Formatted Input | Mixed data types (int, float, string) read karta hai, spaces par ruk jata hai. |
+| `printf()` | Formatted Output | Mixed data types ko format ke saath print karta hai. |
+| `gets()` | String Input | Poori line (spaces ke saath) read karta hai, par unsafe hai. |
+| `puts()` | String Output | String print karta hai aur auto newline lagata hai. |
+| `getchar()` | Character Input | Ek single character read karta hai (spaces bhi). |
+| `putchar()` | Character Output | Ek single character print karta hai. |
+
+---
+
+## 💬 5. Interactive Programming (Question-Answer Style)
 
 Interactive programming mein computer aur user ke beech question-answer dialog hota hai. C mein ye `scanf()` aur `printf()` ke alternate use se banaya jata hai.
 
-### 4.1 Program: Calculate Simple Interest
+### 5.1 Program: Calculate Simple Interest
 
 ```c
 #include <stdio.h>
@@ -254,13 +338,15 @@ Interest = 100.00
 
 ---
 
-## 📝 5. Summary & Q&A
+## 📝 6. Summary & Q&A
 
 ### Summary
 *   **`scanf()`:** Formatted input ke liye. Syntax: `scanf("format", &var1, &var2, ...)`. Variables ke addresses (`&`) arguments ke roop mein maangta hai (strings ke alawa).
 *   **`printf()`:** Formatted output ke liye. Syntax: `printf("format", var1, var2, ...)`.
 *   **Format Specifiers:** `%d` (int), `%f` (float/double), `%c` (char), `%s` (string), `%o` (octal), `%x` (hex), etc.
 *   **Width and Precision:** `%3d` (min 3 spaces), `%5.2f` (min 5 spaces, 2 decimals).
+*   **`getchar()`/`putchar()`:** Single character input/output.
+*   **`gets()`/`puts()`:** String input (spaces ke saath) / output (auto newline).
 *   **Interactive Programming:** `printf` se prompt dikhana, `scanf` se input lena, aur phir `printf` se output dikhana.
 *   **Specifier Alignment:** `printf` aur `scanf` mein specifiers ka match hona bahut zaroori hai, warna galat output ya program crash ho sakta hai.
 
@@ -287,4 +373,4 @@ Interest = 100.00
     *   *Ans:* `&` operator variable ka memory address deta hai. `scanf` ko address chahiye hota hai taaki wo us location par value store kar sake. Strings ke liye `&` nahi lagta kyunki string ka naam hi address hota hai.
 
 ---
-> **💡 Bhai ka Gyan:** Exam mein `printf` aur `scanf` ke format specifiers ka table aur unke examples zarur aate hain. `%c` vs `%d` ka difference aur `&` operator ka use `scanf` mein bahut important hai. Width/precision (`%5.2f`) ke saath simple interest wala program bhi yaad rakhna. All the best!
+> **💡 Bhai ka Gyan:** Exam mein `printf` aur `scanf` ke format specifiers ka table aur unke examples zarur aate hain. `%c` vs `%d` ka difference aur `&` operator ka use `scanf` mein bahut important hai. Width/precision (`%5.2f`) ke saath simple interest wala program bhi yaad rakhna. Aur haan, `getchar()`, `putchar()`, `gets()`, aur `puts()` ke differences ko bhi dhyan se padhna!
