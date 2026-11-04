@@ -1131,7 +1131,7 @@
 # print(b)
 # print(c)
 # print(a is b)
-# answer:
+# answer:1st {"x": [1,2,3,4,],"y":5} 2nd {"x": [1,2,3,4],"y":5} 3rd {"x": [1,2,3,4]} 4th True
 
 
 # Q84. [Output Predict] Set comprehension with tuples.
@@ -1141,7 +1141,7 @@
 # print(len(pairs), len(s))
 # print((1, 2) in s)
 # print((2, 1) in s)
-# answer:
+# answer: 1st {(1, 2), (2, 3), (4, 5)} 2nd 4 3 3rd True 4th False
 
 
 # Q85. [Output Predict] Nested mutable trap.
@@ -1151,7 +1151,7 @@
 # d2["a"]["c"] = "new"
 # print(d)
 # print(d2)
-# answer:
+# answer: 1st {"a": {"b": [1, 2, 3],"c":"new"}} 2nd {"a": {"b": [1, 2]},"c":"new"}
 
 
 # Q86. [Debugging] Bug kya hai? Fix karo.
@@ -1162,7 +1162,7 @@
 # print(keys[0])
 # print(keys[-1])
 # print(data["marks"][keys[0]] + data["marks"][keys[1]])
-# answer:
+# answer:no bug in this code
 
 
 # Q87. [Debugging] Bug kya hai? Fix karo.
@@ -1175,19 +1175,19 @@
 # print(s3)
 # print(s is s2)
 # print(s is s3)
-# answer:
+# answer: no bug and output 1st {1,2,3,4} 2nd {1,2,3,4,5} 3rd True 4th False
 
 
 # Q88. [Concept] Dict view objects dynamic kyun hote hain? Ye design decision kyun liya gaya? Ek use case batao.
-# answer:
+# answer:Dictionary view objects (keys(), values(), and items()) are dynamic because they reflect changes made to the original dictionary automatically. This design was implemented to improve memory efficiency, avoid unnecessary copying, and provide access to updated dictionary data.Use case: In a student management system, students.keys() automatically reflects newly added student names without creating a new view object.
 
 
 # Q89. [Concept] Set ki internal implementation (hash table) ke baare mein socho. Set mein `in` operator O(1) kyun hota hai jabki list mein O(n)? (Tune padha nahi — sirf soch ke batao)
-# answer:
+# answer:In Python, the in operator takes O(1) average time in a set because sets use a hash table internally. The hash function calculates the location where an element should be stored, allowing Python to check its presence quickly.In a list, Python performs a linear search by checking elements one by one, resulting in O(n) time complexity.
 
 
 # Q90. [Concept] Tuple as dict key kyun kaam karta hai but list nahi? Immutability ka role samjhao.
-# answer:
+# answer:tuple ko key kar sakte hai kyunki tuple immuatble hota hai hashable hota hai iski hash vlue stable rehta hai and list ki hash value stable nahi rhta
 
 
 # Q91. [Write a Program] User se ek paragraph le. Dict banao:
