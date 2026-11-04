@@ -1197,7 +1197,7 @@
 # - Total unique words
 # - Total words
 # - Agar unique_words / total_words > 0.5 → "Rich vocabulary" warna "Repetitive"
-# answer:
+# answer:skippppp
 
 
 # Q92. [Write a Program] Complete student management system:
@@ -1212,6 +1212,31 @@
 # - Saare unique skills (union of all)
 # - Saare common skills (intersection of all)
 # answer:
+# name1 = input("Enter name of student 1: ")
+# roll1 = input("Enter roll number of student 1: ")
+# marks1 = [int(x) for x in input("Enter 5 marks for student 1: ").split()]
+# skills1 = set(input("Enter skills for student 1 (comma-separated): ").split(","))
+# name2 = input("Enter name of student 2: ")
+# roll2 = input("Enter roll number of student 2: ")
+# marks2 = [int(x) for x in input("Enter 5 marks for student 2: ").split()]
+# skills2 = set(input("Enter skills for student 2 (comma-separated): ").split(","))
+# name3 = input("Enter name of student 3: ")
+# roll3 = input("Enter roll number of student 3: ")
+# marks3 = [int(x) for x in input("Enter 5 marks for student 3: ").split()]
+# skills3 = set(input("Enter skills for student 3 (comma-separated): ").split(","))
+# data = {
+#     roll1: {"name": name1, "marks": marks1, "skills": skills1, "avg": sum(marks1)/5, "grade": "A" if sum(marks1)/5 >= 90 else "B" if sum(marks1)/5 >= 80 else "C"},
+#     roll2: {"name": name2, "marks": marks2, "skills": skills2, "avg": sum(marks2)/5, "grade": "A" if sum(marks2)/5 >= 90 else "B" if sum(marks2)/5 >= 80 else "C"},
+#     roll3: {"name": name3, "marks": marks3, "skills": skills3, "avg": sum(marks3)/5, "grade": "A" if sum(marks3)/5 >= 90 else "B" if sum(marks3)/5 >= 80 else "C"}
+# }
+# print("Student Data:", data)
+# highest_avg_student = max(data, key=lambda roll: data[roll]["avg"])
+# print("Highest Average Student:", highest_avg_student)
+# print("Highest Average:", data[highest_avg_student]["avg"])
+# unique_skills = skills1.union(skills2).union(skills3)
+# print("Unique Skills:", unique_skills)
+# common_skills = skills1.intersection(skills2).intersection(skills3)
+# print("Common Skills:", common_skills)
 
 
 # Q93. [Write a Program] E-commerce cart:
@@ -1225,6 +1250,20 @@
 # - grand total
 # - Final dict: {item: {"price": ..., "qty": ..., "total": ...}, "grand_total": ...}
 # answer:
+# products = ["laptop", "phone", "tablet"]
+# prices = [50000, 20000, 30000]
+# cart_items = ["laptop", "phone", "laptop", "tablet"]
+# unique_items = set(cart_items)
+# item_counts = {item: cart_items.count(item) for item in unique_items}
+# item_totals = {item: prices[products.index(item)] * item_counts[item] for item in unique_items}
+# grand_total = sum(item_totals.values())
+# cart_summary = {item: {"price": prices[products.index(item)], "qty": item_counts[item], "total": item_totals[item]} for item in unique_items}
+# cart_summary["grand_total"] = grand_total
+# print(unique_items)
+# print(item_counts)
+# print(item_totals)
+# print(grand_total)
+# print(cart_summary)
 
 
 # Q94. [Write a Program] Student grades analyzer:
@@ -1238,6 +1277,55 @@
 # Final dict: {name: {"avg": ..., "grade": ...}}
 # Topper print karo. Unique grades ki set print karo.
 # answer:
+# students = {
+#     "sohail": [85, 92, 78, 88, 95],
+#     "rahul": [78, 88, 82, 90, 85],
+#     "priya": [95, 90, 88, 92, 96],
+#     "vikas": [70, 75, 68, 72, 65]
+# }
+# sohail_avg = sum(students["sohail"]) / len(students["sohail"])
+# rahul_avg = sum(students["rahul"]) / len(students["rahul"])
+# priya_avg = sum(students["priya"]) / len(students["priya"])
+# vikas_avg = sum(students["vikas"]) / len(students["vikas"])
+# if sohail_avg >= 90:
+#     sohail_grade = "A+" 
+# elif sohail_avg >= 80:
+#     sohail_grade = "A"
+# else:
+#     sohail_grade = "C"
+
+# if rahul_avg >= 90:
+#     rahul_grade = "A+"
+# elif rahul_avg >= 80:
+#     rahul_grade = "A"
+# else:
+#     rahul_grade = "C"
+
+# if priya_avg >= 90:
+#     priya_grade = "A+"
+# elif priya_avg >= 80:
+#     priya_grade = "A"
+# else:
+#     priya_grade = "C"
+
+# if vikas_avg >= 90:
+#     vikas_grade = "A+"
+# elif vikas_avg >= 80:
+#     vikas_grade = "A"
+# else:
+#     vikas_grade = "C"
+
+# final_dict = {
+#     "sohail": {"avg": sohail_avg, "grade": sohail_grade},
+#     "rahul": {"avg": rahul_avg, "grade": rahul_grade},
+#     "priya": {"avg": priya_avg, "grade": priya_grade},
+#     "vikas": {"avg": vikas_avg, "grade": vikas_grade}
+# }
+# topper = max(final_dict, key=lambda name: final_dict[name]["avg"])
+# unique_grades = set(student["grade"] for student in final_dict.values())
+# print("Final Dict:", final_dict)
+# print("Topper:", topper)
+# print("Unique Grades:", unique_grades)
 
 
 # Q95. [Write a Program] Text to frequency map:
@@ -1250,7 +1338,7 @@
 # - Sabse zyada common char
 # - Sabse zyada common word
 # - Agar common char zyada hai → "Char heavy", warna "Word heavy"
-# answer:
+# answer:skippppp
 
 
 # Q96. [Write a Program] Library + members:
@@ -1267,6 +1355,18 @@
 # - Kaunse members ne kuch issue nahi kiya (set difference)
 # - Har book ki available copies ab kya hain
 # answer:
+# books = {"Python": 5, "ML": 3, "AI": 2}
+# members = {"sohail", "rahul", "priya", "vikas"}
+# issued = {
+#     "sohail": ["Python", "ML"],
+#     "rahul": ["AI"],
+#     "priya": ["Python", "AI"]
+# }
+# print("Most issued book:", max(books, key=lambda book: sum(book in issued[member] for member in issued)))
+# print("Member with most books issued:", max(issued, key=lambda member: len(issued[member])))
+# print("Members with no issues:", members - set(issued.keys()))
+# for book in books:
+#     print(f"Available copies of {book}: {books[book] - sum(book in issued[member] for member in issued)}")
 
 
 # Q97. [Write a Program] Multi-class inventory:
@@ -1281,7 +1381,7 @@
 # - Categories jisme duplicate items hain
 # - Sabse zyada items wali category
 # - Ek final dict: {category: {"unique": ..., "total": ...}}
-# answer:
+# answer:skippppp
 
 
 # Q98. [Write a Program] Employee salary analysis:
@@ -1297,7 +1397,7 @@
 # - Highest paid employee
 # - Har department ke employees ki list
 # - Final dict: {dept: {"employees": [...], "avg_salary": ...}}
-# answer:
+# answer:skippppp
 
 
 # Q99. [Write a Program] Word frequency + sentiment:
@@ -1310,7 +1410,7 @@
 # - Negative words count
 # - Sentiment: positive > negative → "Positive", negative > positive → "Negative", warna "Neutral"
 # - Final output print karo
-# answer:
+# answer:skippppp
 
 
 # Q100. [FINAL ULTIMATE - All Days] Complete mini database:
@@ -1335,7 +1435,7 @@
 # - Lowest scorer ka naam
 # - Grade distribution (kitne A+, kitne A, etc.) — dict use karo
 # - Ek final summary dict print karo
-# answer:
+# answer:skippppp
 
 
 
@@ -1359,6 +1459,8 @@
 # LEARNING 11:Q67 set mutable hota hai, jabki frozenset immutable hota hai. Dono unique elements store karte hain. frozenset ka use tab karte hain jab collection ko unchanged rakhna ho ya use dictionary key ya kisi doosre set ke element ke roop mein use karna ho.
 
 # LEARNING 12:Q76 print("only word in 2nd sentance:",set2.difference(set1)) 
+
+# LEARNING 13:Q93 {item: cart_items.count(item) for item in unique_items}
 
 # ############################################################
 #  MISTAKE NOTEBOOK
