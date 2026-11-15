@@ -1,8 +1,7 @@
 # 🔢 Fundamentals of Computers & Digital Systems - Unit 5: Boolean Algebra and Logic Gates
 
 > **Course:** BCA - Semester 1  
-> **Topic:** Boolean Algebra, Laws, De Morgan's Theorem, SOP/POS, Logic Gates (Basic & Universal)  
-> **Format:** GitHub README Style (Ekdum aasan Hinglish mein, PDF ka saara content + Exam ke liye extra important topics)
+> **Topic:** Boolean Algebra, Laws, De Morgan's Theorem, SOP/POS, Logic Gates (Basic & Universal)
 
 ---
 
