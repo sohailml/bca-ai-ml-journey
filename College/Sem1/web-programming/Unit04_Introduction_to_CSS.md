@@ -1,8 +1,7 @@
 # 🎨 Web Programming - Unit 4: Introduction to CSS
 
 > **Course:** BCA - Semester 1  
-> **Topic:** CSS Basics, Selectors, Types of CSS, Box Model, Cascade & Specificity  
-> **Format:** GitHub README Style (Ekdum aasan Hinglish mein, PDF ka saara content + Exam ke liye extra important topics)
+> **Topic:** CSS Basics, Selectors, Types of CSS, Box Model, Cascade & Specificity
 
 ---
 
