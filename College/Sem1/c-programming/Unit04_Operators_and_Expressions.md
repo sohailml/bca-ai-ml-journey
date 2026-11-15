@@ -1,8 +1,7 @@
 # 💻 C Programming - Unit 4: Operators and Expressions
 
 > **Course:** BCA - Semester 1  
-> **Topic:** Arithmetic, Unary, Relational, Logical, Conditional, Bitwise, Increment/Decrement Operators, Library Functions, Precedence  
-> **Format:** GitHub README Style (Ekdum aasan Hinglish mein, PDF ka saara content + Exam ke liye extra important topics)
+> **Topic:** Arithmetic, Unary, Relational, Logical, Conditional, Bitwise, Increment/Decrement Operators, Library Functions, Precedence 
 
 ---
 
